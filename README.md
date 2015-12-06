@@ -1,6 +1,7 @@
 # SESE ZenCart Bootstrap Theme
 
-This is a ZenCart Theme for Southern Exposure Seed Exchange, using Bootstrap.
+This is a ZenCart Theme for Southern Exposure Seed Exchange, using Bootstrap
+v3.3.6.
 
 ## Install
 
