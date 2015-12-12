@@ -18,13 +18,14 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
  * output main page HEAD tag and related headers/meta-tags, etc
  */
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php echo HTML_PARAMS; ?>>
+<!DOCTYPE html>
+<html <?php echo HTML_PARAMS; ?>>
 <head>
 <title><?php echo META_TAG_TITLE; ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>" />
 <meta name="keywords" content="<?php echo META_TAG_KEYWORDS; ?>" />
 <meta name="description" content="<?php echo META_TAG_DESCRIPTION; ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="author" content="Southern Exposure Seed Exchange" />
 <?php if (defined('ROBOTS_PAGES_TO_SKIP') && in_array($current_page_base,explode(",",constant('ROBOTS_PAGES_TO_SKIP'))) || $current_page_base=='down_for_maintenance' || $robotsNoIndex === true) { ?>
