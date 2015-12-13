@@ -44,7 +44,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
     <div class='col-sm-7 col-md-5'>
       <div class='media'>
         <img id='site-logo' class='pull-left' style='height:100px;width:100px;background-color:red;' />
-        <h1 class='media-heading'><? echo TITLE; ?></h1>
+        <h1 class='media-heading'><?php echo TITLE; ?></h1>
       </div>
     </div>
     <div class='col-sm-5 col-md-7'>
