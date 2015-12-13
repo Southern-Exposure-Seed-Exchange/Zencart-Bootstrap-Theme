@@ -106,7 +106,4 @@ if (GOOGLE_ANALYTICS_TRACKING_TYPE == "Asynchronous") {
   require($template->get_template_dir('google_analytics.php', DIR_WS_TEMPLATE, $current_page_base, 'google_analytics') . '/google_analytics.php');
 } ?>
 
-<script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/jquery.min.js" ?>"></script>
-<script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
-
 </body>
