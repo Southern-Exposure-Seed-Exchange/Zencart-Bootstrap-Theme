@@ -12,6 +12,7 @@ main() {
                      'languages/english/modules/payment'
                      'languages/english/modules/shipping')
 
+    # Link Folders
     for FOLDER_TO_LINK in ${FOLDERS_TO_LINK[@]}; do
         SITE_FOLDER="$INCLUDES_DIR/$FOLDER_TO_LINK/$THEME_DIR_NAME"
         THEME_FOLDER="$PWD/theme/$FOLDER_TO_LINK/$THEME_DIR_NAME"
@@ -20,6 +21,14 @@ main() {
         fi
     done
 
+    # Link Function Files
+    for THEME_FILE in $PWD/theme/functions/*.php; do
+        FILE_NAME=$(basename $THEME_FILE)
+        SITE_FILE="$INCLUDES_DIR/functions/extra_functions/$FILE_NAME"
+        if [ ! -e $SITE_FILE ]; then
+            ln -s "$THEME_FILE" "$SITE_FILE"
+        fi
+    done
 }
 
 if [[ $# -ne 1 ]]; then
