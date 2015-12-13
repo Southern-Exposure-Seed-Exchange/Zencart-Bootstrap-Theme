@@ -29,16 +29,16 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="author" content="Southern Exposure Seed Exchange" />
 <?php if (defined('ROBOTS_PAGES_TO_SKIP') && in_array($current_page_base,explode(",",constant('ROBOTS_PAGES_TO_SKIP'))) || $current_page_base=='down_for_maintenance' || $robotsNoIndex === true) { ?>
-    <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noindex, nofollow" />
 <?php } ?>
 <?php if (defined('FAVICON')) { ?>
-    <link rel="icon" href="<?php echo FAVICON; ?>" type="image/x-icon" />
-    <link rel="shortcut icon" href="<?php echo FAVICON; ?>" type="image/x-icon" />
+  <link rel="icon" href="<?php echo FAVICON; ?>" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo FAVICON; ?>" type="image/x-icon" />
 <?php } ?>
 
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER . DIR_WS_HTTPS_CATALOG : HTTP_SERVER . DIR_WS_CATALOG ); ?>" />
 <?php if (isset($canonicalLink) && $canonicalLink != '') { ?>
-    <link rel="canonical" href="<?php echo $canonicalLink; ?>" />
+  <link rel="canonical" href="<?php echo $canonicalLink; ?>" />
 <?php } ?>
 
 <link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/sese.css" ?>" />
