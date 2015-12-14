@@ -147,30 +147,12 @@ foreach ($root_categories as $root_category) {
 </nav>
 
 <div id="headerWrapper">
-  <!-- TODO: Move to a sidebox
-  <div id="logoWrapper">
-    <div id="logo"> </div>
-    <div id="infocatwrapper">
-      <ul id="infocatmenu">
-        <li><a href="/about-us-ezp-18.html">About Us</a></li>
-        <li><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
-        <li><a href="/retail-stores-ezp-17.html">Retail Stores</a></li>
-        <li><a href="/events-ezp-40.html">Events</a></li>
-        <li><a href="/faq-ezp-21.html">FAQ</a></li>
-        <li><a href="/links-ezp-24.html">Links</a></li>
-        <li id="menulink-blog"><a href="/blog/" target="_blank">Blog</a></li>
-        <li><a href="/contact_us.html">Contact Us</a></li>
-      </ul>
-    </div>
-  -->
-
   <?php if (HEADER_SALES_TEXT != '') { ?>
     <!-- TODO: Move below site header search box? -->
     <div id="taglineWrapper">
         <div id="tagline"><?php echo HEADER_SALES_TEXT;?></div>
     </div>
   <?php } ?>
-  <!-- </div>  #logoWrapper -->
 
   <?php require($template->get_template_dir('tpl_modules_categories_tabs.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_categories_tabs.php'); ?>
 </div> <!-- headerWrapper -->
