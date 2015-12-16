@@ -26,3 +26,5 @@ build compressed CSS files for distribution, run `make dist`.
 Some of ZenCart's default functionality has been changed in this theme:
 
 * Removed all Banners. Any Banners added via ZenCart's Admin will not show up.
+* There is no left column. Instead, any sideboxes set to display in the left
+  column will take up 1/3 of a row in the footer.

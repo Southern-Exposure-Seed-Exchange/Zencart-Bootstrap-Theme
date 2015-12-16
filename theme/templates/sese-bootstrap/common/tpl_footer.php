@@ -25,19 +25,27 @@ if (!$flag_disable_footer) {
 ?>
 <footer>
 <div class='container'>
-<div class='row'>
-<div class='col-sm-12 text-center'>
 <?php
-/* Show the Visitors IP Address */
-if (SHOW_FOOTER_IP == '1') { ?>
-  <div id="siteinfoIP"><?php echo TEXT_YOUR_IP_ADDRESS . '  ' . $_SERVER['REMOTE_ADDR']; ?></div>
+  /* Treat the Footer as the Left Sidebar */
+  if (!$flag_disable_left) { ?>
+    <div class='row'>
+      <?php require(DIR_WS_MODULES . zen_get_module_directory($left_column_file)); ?>
+    </div>
 <?php } ?>
 
+  <div class='row'>
+  <div class='col-sm-12 text-center'>
+  <?php
+  /* Show the Visitors IP Address */
+  if (SHOW_FOOTER_IP == '1') { ?>
+    <div id="siteinfoIP"><?php echo TEXT_YOUR_IP_ADDRESS . '  ' . $_SERVER['REMOTE_ADDR']; ?></div>
+  <?php } ?>
 
-<div><?php echo FOOTER_TEXT_BODY; ?><br /></div>
 
-</div>  <!-- .col-sm-12 -->
-</div>  <!-- .row -->
+  <div><?php echo FOOTER_TEXT_BODY; ?><br /></div>
+
+  </div>  <!-- .col-sm-12 -->
+  </div>  <!-- .row -->
 </div>  <!-- .container -->
 <?php
 } // flag_disable_footer
