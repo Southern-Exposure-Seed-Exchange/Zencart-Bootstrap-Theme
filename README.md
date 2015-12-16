@@ -19,3 +19,10 @@ SASS files. The CSS is generated using `scss` and the commands are organized
 using `make`. To watch the SASS files for changes & automatically compile new
 CSS files, simply run `make`. To only build them once, run `make build`. To
 build compressed CSS files for distribution, run `make dist`.
+
+
+## Notes
+
+Some of ZenCart's default functionality has been changed in this theme:
+
+* Removed all Banners. Any Banners added via ZenCart's Admin will not show up.
