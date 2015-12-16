@@ -95,16 +95,16 @@
   /* Display the Right Sidebar */
   if (!$flag_disable_right) { ?>
     <div class='col-md-3'>
-        <ul class='nav nav-pills nav-stacked text-center'>
-          <li role="presentation"><a href="/about-us-ezp-18.html">About Us</a></li>
-          <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
-          <li role="presentation"><a href="/retail-stores-ezp-17.html">Retail Stores</a></li>
-          <li role="presentation"><a href="/events-ezp-40.html">Events</a></li>
-          <li role="presentation"><a href="/faq-ezp-21.html">FAQ</a></li>
-          <li role="presentation"><a href="/links-ezp-24.html">Links</a></li>
-          <li role="presentation"><a href="/blog/" target="_blank">Blog</a></li>
-          <li role="presentation"><a href="/contact_us.html">Contact Us</a></li>
-        </ul>
+      <ul class='nav nav-pills nav-stacked text-center'>
+        <li role="presentation"><a href="/about-us-ezp-18.html">About Us</a></li>
+        <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
+        <li role="presentation"><a href="/retail-stores-ezp-17.html">Retail Stores</a></li>
+        <li role="presentation"><a href="/events-ezp-40.html">Events</a></li>
+        <li role="presentation"><a href="/faq-ezp-21.html">FAQ</a></li>
+        <li role="presentation"><a href="/links-ezp-24.html">Links</a></li>
+        <li role="presentation"><a href="/blog/" target="_blank">Blog</a></li>
+        <li role="presentation"><a href="/contact_us.html">Contact Us</a></li>
+      </ul>
 
 <?php /* Include Sideboxes */
       require(DIR_WS_MODULES . zen_get_module_directory($right_column_file)); ?>
