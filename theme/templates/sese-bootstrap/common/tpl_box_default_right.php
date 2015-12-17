@@ -14,14 +14,17 @@
   }
   $panel_id = str_replace('_', '-', $box_id );
   $heading_id = $panel_id . 'Heading';
+  $show_heading = $title !== '';
 ?>
 <!--// bof: <?php echo $box_id; ?> //-->
 <div class="panel panel-default" id="<?php echo $panel_id; ?>">
+<?php if ($show_heading) { ?>
   <div class='panel-heading text-center'>
     <h3 class="panel-title" id="<?php echo $heading_id; ?>"><b>
       <?php echo $title; ?>
     </b></h3>
   </div>
+<?php } ?>
   <div class='panel-body'>
     <?php echo $content; ?>
   </div>
