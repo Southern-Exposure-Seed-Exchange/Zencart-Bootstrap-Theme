@@ -20,6 +20,23 @@ using `make`. To watch the SASS files for changes & automatically compile new
 CSS files, simply run `make`. To only build them once, run `make build`. To
 build compressed CSS files for distribution, run `make dist`.
 
+## Code Generation
+
+You can also use `make` to generate boilerplate code for the theme. Currently,
+only sideboxes are supported. Run `make sidebox NAME=<sidebox-name>` like so:
+
+```
+make sidebox NAME='sese_product_icons'
+```
+
+This will generate the following files with the minimal amount of code required
+for a ZenCart sidebox:
+
+```
+theme/languages/english/extra_definitions/sese-bootstrap/sese_product_icons_sidebox_defines.php
+theme/modules/sideboxes/sese-bootstrap/sese_product_icons_sidebox.php
+theme/templates/sese-bootstrap/sideboxes/tpl_sese_product_icons_sidebox.php
+```
 
 ## Notes
 

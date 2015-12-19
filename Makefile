@@ -9,3 +9,9 @@ build:
 
 dist:
 	scss --sass --sourcemap=none -t compressed --update ${SASS_DIR}:${CSS_DIR}
+
+sidebox:
+ifndef NAME
+	$(error NAME is undefined)
+endif
+	./new_sidebox.sh ${NAME}
