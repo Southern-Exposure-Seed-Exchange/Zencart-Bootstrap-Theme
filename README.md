@@ -32,11 +32,9 @@ make sidebox NAME='sese_product_icons'
 This will generate the following files with the minimal amount of code required
 for a ZenCart sidebox:
 
-```
-theme/languages/english/extra_definitions/sese-bootstrap/sese_product_icons_sidebox_defines.php
-theme/modules/sideboxes/sese-bootstrap/sese_product_icons_sidebox.php
-theme/templates/sese-bootstrap/sideboxes/tpl_sese_product_icons_sidebox.php
-```
+* `theme/languages/english/extra_definitions/sese-bootstrap/sese_product_icons_sidebox_defines.php`
+* `theme/modules/sideboxes/sese-bootstrap/sese_product_icons_sidebox.php`
+* `theme/templates/sese-bootstrap/sideboxes/tpl_sese_product_icons_sidebox.php`
 
 ## Notes
 
