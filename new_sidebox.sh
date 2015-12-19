@@ -8,22 +8,18 @@ if [ ! $# -eq 1 ]; then
     echo -e "Usage:\n\t./new_sidebox.sh <sidebox-name>\n"
     exit 1
 fi
-echo 'here'
 SIDEBOX_NAME="$1"
 THEME_NAME="sese-bootstrap"
-echo 'here'
 
 # Set File Names
 SIDEBOX_MODULE_NAME="${SIDEBOX_NAME}_sidebox.php"
 SIDEBOX_TEMPLATE_NAME="tpl_${SIDEBOX_MODULE_NAME}"
 SIDEBOX_LANGUAGE_DEFINES_NAME="${SIDEBOX_NAME}_sidebox_defines.php"
-echo 'here'
 
 # Set Variable Names
 SHOW_SIDEBOX_VAR_NAME="\$show_${SIDEBOX_NAME}_sidebox"
 SIDEBOX_HEADING_VAR_NAME="BOX_HEADING_${SIDEBOX_NAME^^}_SIDEBOX"
 SIDEBOX_TEMPLATE_VAR_NAME="\$${SIDEBOX_NAME}_template"
-echo 'here'
 
 # Generate Sidebox Module
 cat > "theme/modules/sideboxes/${THEME_NAME}/${SIDEBOX_MODULE_NAME}" <<PHP
