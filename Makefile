@@ -1,6 +1,6 @@
+# CSS Commands
 SASS_DIR="./theme/templates/sese-bootstrap/sass/"
 CSS_DIR="./theme/templates/sese-bootstrap/css/"
-
 watch:
 	scss --sass --sourcemap=inline --watch ${SASS_DIR}:${CSS_DIR}
 
@@ -10,8 +10,16 @@ build:
 dist:
 	scss --sass --sourcemap=none -t compressed --update ${SASS_DIR}:${CSS_DIR}
 
+# Installation
+install:
+ifndef ZENCART_PATH
+	$(error ZENCART_PATH is undefined)
+endif
+	./scripts/install.sh ${ZENCART_PATH}
+
+# Code Generation
 sidebox:
 ifndef NAME
 	$(error NAME is undefined)
 endif
-	./new_sidebox.sh ${NAME}
+	./scripts/new_sidebox.sh ${NAME}

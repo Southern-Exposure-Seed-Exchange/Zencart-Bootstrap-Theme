@@ -5,11 +5,11 @@ v3.3.6.
 
 ## Install
 
-Install the theme by running `install.sh`. This will create symbolic links from
+The theme can be installed using `make`. This will create symbolic links from
 your ZenCart installation to the appropriate directories in the `theme` folder:
 
 ```
-./install.sh /path/to/my/zencart-root-folder
+make install ZENCART_PATH='/path/to/my/zencart-root-folder'
 ```
 
 ## Build
