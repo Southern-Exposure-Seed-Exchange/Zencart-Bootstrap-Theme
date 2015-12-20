@@ -12,7 +12,7 @@
     </a>
     <p>
       <a href="/2015-catalog-garden-guide-rush-delivery-p-1640.html" target="_blank">
-        Click here to request a 2015 Catalog & Garden Guide.</a>
+        Click here to request a 2015 Catalog &amp; Garden Guide.</a>
       You can also view this year's catalog
       <a href="/catalog/sese-catalog-2015-web.pdf" target="_blank">online as a PDF</a>.
     </p>
@@ -92,7 +92,7 @@
       <img class='pull-right' style="margin: 4px 8px; width: 100px;"
            alt="Timber Press Guide to Vegetable Gardening in the Southeast"
            src="/images/dvd/books-gardeninginthesoutheast.jpg"></a>
-      Local Authors with New Books to Nurture the Gardener, Farmer & Seedsperson
+      Local Authors with New Books to Nurture the Gardener, Farmer &amp; Seedsperson
     </h4>
 
     <p>
