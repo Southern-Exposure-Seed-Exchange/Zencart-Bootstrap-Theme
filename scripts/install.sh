@@ -5,6 +5,7 @@ main() {
     INCLUDES_DIR="$ZENCART_ROOT/includes"
     THEME_DIR_NAME="sese-bootstrap"
     FOLDERS_TO_LINK=('templates'
+                     'modules'
                      'modules/sideboxes'
                      'languages'
                      'languages/english'
