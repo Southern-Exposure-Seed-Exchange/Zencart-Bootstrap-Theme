@@ -67,11 +67,11 @@
     <ol class='breadcrumb'>
 <?php
     $crumb_length = count($breadcrumb->_trail);
-    foreach ($breadcrumb->_trail as $index => $breadcrumb) {
+    foreach ($breadcrumb->_trail as $index => $current_breadcrumb) {
       $is_last_crumb = $index == $crumb_length - 1; ?>
       <li <?php if ($is_last_crumb) echo 'class="active"'; ?>>
-<?php   if (!$is_last_crumb) { echo "<a href='{$breadcrumb['link']}'>"; }
-        echo $breadcrumb['title'];
+<?php   if (!$is_last_crumb) { echo "<a href='{$current_breadcrumb['link']}'>"; }
+        echo $current_breadcrumb['title'];
         if (!$is_last_crumb) { echo "</a>"; } ?>
       </li>
 <?php } ?>
