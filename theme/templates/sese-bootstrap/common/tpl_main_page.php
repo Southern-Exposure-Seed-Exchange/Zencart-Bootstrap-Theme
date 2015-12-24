@@ -63,23 +63,10 @@
 <div class='row'>
 <?php
   /* Show Breadcrumbs */
-  if (DEFINE_BREADCRUMB_STATUS == '1' || (DEFINE_BREADCRUMB_STATUS == '2' && !$this_is_home_page) ) { ?>
-    <ol class='breadcrumb'>
-<?php
-    $crumb_length = count($breadcrumb->_trail);
-    foreach ($breadcrumb->_trail as $index => $current_breadcrumb) {
-      $is_last_crumb = $index == $crumb_length - 1; ?>
-      <li <?php if ($is_last_crumb) echo 'class="active"'; ?>>
-<?php   if (!$is_last_crumb) { echo "<a href='{$current_breadcrumb['link']}'>"; }
-        echo $current_breadcrumb['title'];
-        if (!$is_last_crumb) { echo "</a>"; } ?>
-      </li>
-<?php } ?>
-    </ol>
-<?php } ?>
+  if (DEFINE_BREADCRUMB_STATUS == '1' || (DEFINE_BREADCRUMB_STATUS == '2' && !$this_is_home_page) ) {
+      echo BootstrapBreadcrumbs::render($breadcrumb);
+  }
 
-
-<?php
   /* Show Upload Messages */
   if ($messageStack->size('upload') > 0) {
     echo $messageStack->output('upload');
