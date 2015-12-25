@@ -1,5 +1,5 @@
 <?php
-/** TODO: Describe the purpose of the sidebox here. */
+/** The Subscribe Sidebox displays a form for subscribing to our newsletter. */
 $show_subscribe_sidebox = true;
 if ($show_subscribe_sidebox === true) {
   $subscribe_template = 'tpl_subscribe_sidebox.php';
