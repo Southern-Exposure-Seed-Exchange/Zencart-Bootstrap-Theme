@@ -14,7 +14,7 @@ class BootstrapSplitPageResults extends splitPageResults
     }
 
 
-    $content = "<nav><ul class='pagination'>\n";
+    $content = "<nav><ul class='pagination pagination-sm'>\n";
 
     // Previous Button
     if ($this->current_page_number > 1) {
