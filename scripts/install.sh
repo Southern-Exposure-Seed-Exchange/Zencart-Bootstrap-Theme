@@ -31,6 +31,22 @@ main() {
             ln -s "$THEME_FILE" "$SITE_FILE"
         fi
     done
+
+    # Link Class Files
+    for THEME_FILE in $PWD/theme/classes/*.php; do
+        FILE_NAME=$(basename $THEME_FILE)
+        SITE_FILE="$INCLUDES_DIR/classes/$FILE_NAME"
+        if [ ! -e $SITE_FILE ]; then
+            ln -s "$THEME_FILE" "$SITE_FILE"
+        fi
+    done
+
+    # Link the Autoloader File
+    AUTOLOADER_FILE_NAME='config.sese_bootstrap.php'
+    THEME_FILE="$INCLUDES_DIR/auto_loaders/$AUTOLOADER_FILE_NAME"
+    if [ ! -e $THEME_FILE ]; then
+      ln -s "$PWD/theme/auto_loaders/$AUTOLOADER_FILE_NAME" "$THEME_FILE"
+    fi
 }
 
 if [[ $# -ne 1 ]]; then
