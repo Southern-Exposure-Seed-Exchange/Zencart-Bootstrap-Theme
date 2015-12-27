@@ -40,9 +40,22 @@ for a ZenCart sidebox:
 
 Some of ZenCart's default functionality has been changed in this theme:
 
-* Removed all Banners. Any Banners added via ZenCart's Admin will not show up.
-* There is no left column. Instead, any sideboxes set to display in the left
-  column will take up 1/3 of a row in the footer.
 * We include font files, which the default ZenCart `includes/.htaccess` does
   not allow. You will need to modify `includes/.htacces`, appending
   `woff2?|ttf` to the `FilesMatch` regular expression.
+* There is no left column. Instead, any sideboxes set to display in the left
+  column will take up 1/3 of a row in the footer.
+* Removed all Banners. Any Banners added via ZenCart's Admin will not show up.
+
+### Category Pages
+
+* The alphabetical filter has been replaced by the sorting dropdown from the
+  All Products page.
+* New/Featured/Special/Upcoming Product Boxes have been removed from invalid
+  Category pages.
+* `Add Products to Cart` buttons moved to each products row.
+* Removed filtering by manufacturers.
+* Removed table headings from products table.
+* Moved model number in products table to description column, requires enabling
+  the model number under `Admin -> Configuration -> Product Listing -> Display
+  Product Model`.

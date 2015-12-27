@@ -1,10 +1,19 @@
 @import "variables"
 @import "bootstrap"
 
+
+/** Utility Classes **/
 /* Center Images */
 img.img-center
   margin: 0 auto
 
+/* Vertically align the content to the middle */
+.vmiddle
+  display: inline-block
+  vertical-align: middle
+
+
+/** Site Layout **/
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb
   margin-bottom: 10px
@@ -16,3 +25,52 @@ img.img-center
 /* The footer background should match the color of the breadcrumbs */
 footer
   background-color:  $breadcrumb-bg
+
+
+/** Category Pages **/
+/* Pad the Category title so it lines up with the image */
+#indexCategories h1#indexCategoriesHeading,
+#indexProductList h1#productListHeading
+  margin-top: 10px
+  padding-left: 7.5px
+
+/* Reduce the vertical space around the pagination */
+#productListing .navSplitPagesLinks .pagination
+  margin-top: 0
+  margin-bottom: 10px
+
+/* Align the item count with the pagination */
+#productListing .navSplitPagesResult
+  margin-top: 4px
+
+/* Reduce space below product title */
+#productListing .itemTitle
+  margin-bottom: 5px
+
+/* Resize the organic, heirloom, etc icons in product headers */
+#productListing .itemTitle small img
+  height: 18px
+  margin-left: 0.4em
+
+/* Align the product price with the product title */
+#productListing .product-price
+  margin-top: 10px
+  font-weight: bold
+
+/* Align the product image with the product title */
+#productListing .product-image img
+  margin-top: 10px
+/* Align the quantity and add to cart button with the product description */
+#productListing .product-price
+  margin-bottom: 5px
+
+/* Set maximum dimensions for the product images */
+#productListing .product-image img
+  max-width: 100px
+#productListing .product-name .listingProductImage
+  max-width: 200px
+
+/* Ensure the quantity input is visible on all screen sizes but not huge */
+#productListing .productListing-data .input-group
+  min-width: 85px
+  max-width: 95px
