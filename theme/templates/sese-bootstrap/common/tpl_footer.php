@@ -47,6 +47,7 @@ if (!$flag_disable_footer) {
   </div>  <!-- .col-sm-12 -->
   </div>  <!-- .row -->
 </div>  <!-- .container -->
+</footer>
 <?php
 } // flag_disable_footer
 ?>
