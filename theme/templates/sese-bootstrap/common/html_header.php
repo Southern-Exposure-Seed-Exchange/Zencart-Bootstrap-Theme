@@ -41,10 +41,12 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
   <link rel="canonical" href="<?php echo $canonicalLink; ?>" />
 <?php } ?>
 
+<link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/lightbox.min.css" ?>" />
 <link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/sese.css" ?>" />
 
 <script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/jquery.min.js" ?>"></script>
-<script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
+<script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
+<script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/lightbox.min.js" ?>"></script>
 
 <?php
 if (GOOGLE_ANALYTICS_TRACKING_TYPE == "Asynchronous") {
