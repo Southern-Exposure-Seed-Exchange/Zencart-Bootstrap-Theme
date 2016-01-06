@@ -291,7 +291,7 @@
 
   define('TEXT_BASE_PRICE','Starting at: ');
 
-  define('TEXT_CLICK_TO_ENLARGE', 'larger image');
+  define('TEXT_CLICK_TO_ENLARGE', 'Click to Enlarge');
 
   define('TEXT_SORT_PRODUCTS', 'Sort products ');
   define('TEXT_DESCENDINGLY', 'descendingly');

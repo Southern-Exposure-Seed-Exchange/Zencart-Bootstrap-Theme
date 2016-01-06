@@ -59,3 +59,12 @@ Some of ZenCart's default functionality has been changed in this theme:
 * Moved model number in products table to description column, requires enabling
   the model number under `Admin -> Configuration -> Product Listing -> Display
   Product Model`.
+
+### Product Pages
+
+* Removed displaying product reviews.
+* Removed product date display.
+* Removed more information link.
+* Removed previous/listing/next buttons.
+* Removed displaying quantity discounts.
+* Removed displaying product attributes.
