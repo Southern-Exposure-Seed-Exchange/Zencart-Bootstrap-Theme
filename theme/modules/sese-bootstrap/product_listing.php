@@ -64,7 +64,8 @@ if ($listing_split->number_of_rows > 0) {
           $buy_now_button = zen_get_buy_now_button(
             $listing->fields['products_id'], $the_button, $products_link) .
             zen_get_products_quantity_min_units_display($listing->fields['products_id']);
-          $lc_text .= BootstrapProductListing::clean_buy_now($buy_now_button, $product_link);
+          $lc_text .= BootstrapUtils::clean_buy_now_button(
+            $buy_now_button, $product_link);
           $has_free_shipping = zen_get_show_product_switch(
             $listing->fields['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH') &&
             zen_get_product_is_always_free_shipping($listing->fields['products_id']);
@@ -213,14 +214,5 @@ class BootstrapProductListing
     }
 
     return $lc_button;
-  }
-  /* Replace the sold out image with a bootstrap label */
-  public static function clean_buy_now($button_html, $product_link) {
-    if (strpos($button_html, BUTTON_SOLD_OUT_ALT) !== false) {
-      $button_html = "<div class='text-center'><span class='label label-danger'>" .
-        BUTTON_SOLD_OUT_ALT . "</span><a href='{$product_link}'><div><small>" .
-        MORE_INFO_TEXT . "</small></div></a></div>";
-    }
-    return $button_html;
   }
 }

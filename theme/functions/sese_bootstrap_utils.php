@@ -29,5 +29,21 @@ class BootstrapUtils
     );
     return $icons;
   }
+
+  /** Replace the sold out variation of a button returned from the
+   * zen_get_buy_now_button function with a bootstrap label
+   */
+  public static function clean_buy_now_button($button_html, $product_link) {
+    if (strpos($button_html, BUTTON_SOLD_OUT_ALT) !== false) {
+      $button_html = "<div class='text-center'><span class='h4'><span class='label label-danger'>" .
+        BUTTON_SOLD_OUT_ALT . "</span></span>";
+      if ($product_link !== '') {
+        $button_html .= "<a href='{$product_link}'><div><small>" .
+          MORE_INFO_TEXT . "</small></div></a>";
+      }
+      $button_html .= "</div>";
+    }
+    return $button_html;
+  }
 }
 ?>

@@ -169,6 +169,8 @@ HTML;
     }
 
     $display_button = zen_get_buy_now_button($_GET['products_id'], $button);
+    $display_button = BootstrapUtils::clean_buy_now_button(
+      $display_button, '');
     if ($display_button != '' || $display_qty != '') {
       return "<div id='cart-add'>{$display_qty} {$display_button}</div>";
     }
