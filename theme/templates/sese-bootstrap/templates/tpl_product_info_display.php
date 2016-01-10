@@ -141,8 +141,9 @@ class BootstrapProductInfo
     $show_qty_in_cart  = $flag_show_product_info_in_cart_qty == 1 &&
       $_SESSION['cart']->in_cart($_GET['products_id']);
     if ($show_qty_in_cart) {
-      $button .= '<p>' . PRODUCTS_ORDER_QTY_TEXT_IN_CART .
-        $_SESSION['cart']->get_quantity($_GET['products_id']) . '</p>';
+      $cart_quantity = $_SESSION['cart']->get_quantity($_GET['products_id']);
+      $button .= '<p class="text-center" id="in-cart-text"><small>' .
+        PRODUCTS_ORDER_QTY_TEXT_IN_CART .  $cart_quantity . '</small></p>';
     }
 
     $submit_button = '<button type="submit" class="btn btn-primary">' .
