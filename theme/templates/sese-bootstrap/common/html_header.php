@@ -10,13 +10,9 @@
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: html_header.php 15761 2010-03-31 19:31:27Z drbyte $
  */
-/**
- * load the module for generating page meta-tags
- */
+/** Load the module for generating page meta-tags */
 require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
-/**
- * output main page HEAD tag and related headers/meta-tags, etc
- */
+/** Output main page HEAD tag and related headers/meta-tags, etc */
 ?>
 <!DOCTYPE html>
 <html <?php echo HTML_PARAMS; ?>>
@@ -28,7 +24,11 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="author" content="Southern Exposure Seed Exchange" />
-<?php if (defined('ROBOTS_PAGES_TO_SKIP') && in_array($current_page_base,explode(",",constant('ROBOTS_PAGES_TO_SKIP'))) || $current_page_base=='down_for_maintenance' || $robotsNoIndex === true) { ?>
+<?php
+$robots_page_exclusion = defined('ROBOTS_PAGES_TO_SKIP') &&
+  in_array($current_page_base, explode(",", constant('ROBOTS_PAGES_TO_SKIP')));
+if ($robots_page_exclusion || $current_page_base == 'down_for_maintenance' ||
+    $robotsNoIndex === true) { ?>
   <meta name="robots" content="noindex, nofollow" />
 <?php } ?>
 <?php if (defined('FAVICON')) { ?>
@@ -63,7 +63,8 @@ while(list ($key, $value) = each($directory_array)) {
   }
 
 if (GOOGLE_ANALYTICS_TRACKING_TYPE == "Asynchronous") {
-    require($template->get_template_dir('google_analytics.php',DIR_WS_TEMPLATE, $current_page_base,'google_analytics') . '/google_analytics.php');
+  require($template->get_template_dir('google_analytics.php', DIR_WS_TEMPLATE,
+      $current_page_base, 'google_analytics') . '/google_analytics.php');
 }
 ?>
 
