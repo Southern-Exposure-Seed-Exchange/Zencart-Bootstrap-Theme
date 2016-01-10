@@ -47,8 +47,21 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
 <script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/jquery.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/lightbox.min.js" ?>"></script>
-
 <?php
+/** Load all page-specific jscript_*.js files from modules/pages/PAGENAME,
+  * alphabetically */
+$directory_array = $template->get_template_part($page_directory, '/^jscript_/', '.js');
+while(list ($key, $value) = each($directory_array)) {
+  $js_include_path = "{$page_directory}/{$value}";
+  echo "<script type='text/javascript' src='{$js_include_path}'></script>\n";
+}
+/** Include content from all page-specific jscript_*.php files from
+  * modules/pages/PAGENAME, alphabetically. */
+  $directory_array = $template->get_template_part($page_directory, '/^jscript_/');
+  while(list ($key, $value) = each($directory_array)) {
+    require("{$page_directory}/{$value}"); echo "\n";
+  }
+
 if (GOOGLE_ANALYTICS_TRACKING_TYPE == "Asynchronous") {
     require($template->get_template_dir('google_analytics.php',DIR_WS_TEMPLATE, $current_page_base,'google_analytics') . '/google_analytics.php');
 }
