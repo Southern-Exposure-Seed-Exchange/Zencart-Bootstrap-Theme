@@ -47,7 +47,7 @@ if (isset($_GET['products_id']) && SHOW_PRODUCT_INFO_COLUMNS_ALSO_PURCHASED_PROD
       }
 
       $list_box_contents[$row][$col] = array(
-        'params' => 'class="col-lg-2 col-md-3 col-xs-6 text-center"',
+        'params' => 'class="' . BootstrapUtils::$thumbnail_grid_classes . '"',
         'text' => $text,
       );
 

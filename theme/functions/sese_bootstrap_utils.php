@@ -2,6 +2,9 @@
 /* Utility functions for the SESE Bootstrap Theme */
 class BootstrapUtils
 {
+  /** CSS classes for the responsive grid created by tpl_columnar_display */
+  public static $thumbnail_grid_classes = "col-lg-2 col-md-3 col-xs-6 text-center";
+
   /** Return the URL of the category page, given an array of category ids */
   public static function category_url($category_ids) {
     $cPath = implode($category_ids, '_');

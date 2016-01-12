@@ -31,7 +31,7 @@ if ($num_categories > 0) {
 
     $list_box_contents[$row][$col] =
       array(
-        'params' => 'class="categoryListBoxContents col-lg-2 col-md-3 col-xs-6 text-center"',
+        'params' => 'class="' . BootstrapUtils::$thumbnail_grid_classes . '"',
         'text' => '<a href="' . zen_href_link(FILENAME_DEFAULT, $cPath_new) . '">' .
           zen_image(DIR_WS_IMAGES . $categories->fields['categories_image'],
             $categories->fields['categories_name'],
