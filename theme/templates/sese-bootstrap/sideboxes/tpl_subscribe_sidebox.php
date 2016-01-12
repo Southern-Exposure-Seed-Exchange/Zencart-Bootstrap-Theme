@@ -1,8 +1,10 @@
 <?php
 /** Set the Content of the subscribe Sidebox */
 $text = SUBSCRIBE_SIDEBOX_TEXT;
+$button_text = BootstrapUtils::glyphicon('envelope') . " " .
+  SUBSCRIBE_SIDEBOX_BUTTON_TEXT;
 $content = <<<HTML
-<div class='help-block'>${text}</div>
+<div class='help-block'>{$text}</div>
 <form action="https://sendy.southernexposure.com/subscribe" method="POST" accept-charset="utf-8" target="_blank">
   <input type="hidden" name="list" value="EXGP5iaxXvU4tH7fWWopIQ"/>
   <div class='form-group'>
@@ -10,7 +12,7 @@ $content = <<<HTML
   </div>
   <div class='form-group'>
     <button class='form-control btn btn-primary' type="submit" name="submit" id="submit">
-      <span class='glyphicon glyphicon-envelope'></span> Subscribe
+      {$button_text}
     </button>
   </div>
 </form>

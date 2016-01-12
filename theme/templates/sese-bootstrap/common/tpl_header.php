@@ -90,14 +90,12 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
       <!-- Search Icon -->
       <button class='navbar-toggle collapsed' type='button' data-toggle='collapse'
               data-target='#search-navbar' aria-expanded='false'>
-        <span class='sr-only'>Toggle Search Menu</span>
-        <span class='glyphicon glyphicon-search'></span>
+        <?php echo BootstrapUtils::glyphicon('search', "Toggle Search Menu"); ?>
       </button>
       <!-- Shopping Cart Icon -->
       <a class='btn btn-default collapsed navbar-toggle' type='button'
          href="<?php echo zen_href_link(FILENAME_SHOPPING_CART); ?>">
-        <span class='sr-only'>Toggle Search Menu</span>
-        <span class='glyphicon glyphicon-shopping-cart'></span>
+        <?php echo BootstrapUtils::glyphicon('shopping-cart', HEADER_TITLE_CART_CONTENTS); ?>
       </a>
     </div>
 

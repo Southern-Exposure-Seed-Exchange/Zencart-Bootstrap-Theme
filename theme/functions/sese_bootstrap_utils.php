@@ -45,5 +45,13 @@ class BootstrapUtils
     }
     return $button_html;
   }
+
+  /** Return the HTML for a glyphicon, with optional screenreader-only text */
+  public static function glyphicon($icon_name, $alt_text='') {
+    if ($alt_text != '') {
+      $alt_text = "<span class='sr-only'>{$alt_text}</span>";
+    }
+    return "{$alt_text}<span class='glyphicon glyphicon-{$icon_name}'></span>";
+  }
 }
 ?>
