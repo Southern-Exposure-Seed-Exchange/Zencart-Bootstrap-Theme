@@ -23,20 +23,24 @@ $list_box_contents = '';
 if ($num_categories > 0) {
 
   while (!$categories->EOF) {
-    if (!$categories->fields['categories_image']) !$categories->fields['categories_image'] = 'pixel_trans.gif';
+    if (!$categories->fields['categories_image']) {
+      !$categories->fields['categories_image'] = 'pixel_trans.gif';
+    }
     $cPath_new = zen_get_path($categories->fields['categories_id']);
 
     // strip out 0_ from top level cats
     $cPath_new = str_replace('=0_', '=', $cPath_new);
 
-    $list_box_contents[$row][$col] =
-      array(
-        'params' => 'class="' . BootstrapUtils::$thumbnail_grid_classes . '"',
-        'text' => '<a href="' . zen_href_link(FILENAME_DEFAULT, $cPath_new) . '">' .
-          zen_image(DIR_WS_IMAGES . $categories->fields['categories_image'],
-            $categories->fields['categories_name'],
-            SUBCATEGORY_IMAGE_WIDTH, SUBCATEGORY_IMAGE_HEIGHT) . '<br />' .
-            $categories->fields['categories_name'] . '</a>');
+    $category_link = zen_href_link(FILENAME_DEFAULT, $cPath_new);
+    $category_image = zen_image(
+      DIR_WS_IMAGES . $categories->fields['categories_image'],
+      $categories->fields['categories_name'],
+      SUBCATEGORY_IMAGE_WIDTH, SUBCATEGORY_IMAGE_HEIGHT);
+
+    $list_box_contents[$row][$col] = array(
+      'params' => "class='" . BootstrapUtils::$thumbnail_grid_classes . "'",
+      'text' => "<a href='{$category_link}'>{$category_image}" .
+        "<p>{$categories->fields['categories_name']}</p></a>");
 
     $col ++;
     if ($col > (MAX_DISPLAY_CATEGORIES_PER_ROW -1)) {
