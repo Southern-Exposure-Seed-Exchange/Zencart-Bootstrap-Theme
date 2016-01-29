@@ -2,13 +2,13 @@
 SASS_DIR="./theme/templates/sese-bootstrap/sass/"
 CSS_DIR="./theme/templates/sese-bootstrap/css/"
 watch:
-	scss --sass --sourcemap=inline --watch ${SASS_DIR}:${CSS_DIR}
+	scss --sass --precision 10 --sourcemap=inline --watch ${SASS_DIR}:${CSS_DIR}
 
 build:
-	scss --sass --sourcemap=inline --update ${SASS_DIR}:${CSS_DIR}
+	scss --sass --precision 10 --sourcemap=inline --update ${SASS_DIR}:${CSS_DIR}
 
 dist:
-	scss --sass --sourcemap=none -t compressed --update ${SASS_DIR}:${CSS_DIR}
+	scss --sass --precision 10 --sourcemap=none -t compressed --update ${SASS_DIR}:${CSS_DIR}
 
 # Installation
 install:
