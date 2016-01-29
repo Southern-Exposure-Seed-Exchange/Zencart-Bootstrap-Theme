@@ -41,14 +41,16 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
 <!-- Site Header -->
 <div class='container'>
   <div id='site-header' class='row clearfix'>
-    <div class='col-sm-7 col-md-5'>
+    <div class='col-sm-8 col-md-6'>
       <div class='media'>
         <img id='site-logo' class='pull-left'
              src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" />
-        <h1 class='media-heading'><?php echo TITLE; ?></h1>
+        <div id='site-title' class='media-body'>
+          <h1 class='media-heading'><?php echo TITLE; ?></h1>
+        </div>
       </div>
     </div>
-    <div class='col-sm-5 col-md-7'>
+    <div class='col-sm-4 col-md-6'>
       <ul class='pull-right text-right'>
         <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=quick_order">'; ?>Quick Order</a></li>
       <?php if (($_SESSION['customer_id']) && (!$_SESSION['COWOA']=='True')) { ?>

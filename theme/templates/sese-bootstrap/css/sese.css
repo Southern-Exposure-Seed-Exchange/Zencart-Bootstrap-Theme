@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Fix the path to Bootstrap's Fonts */
+/* Set the height of the Site Logo & Title */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5820,6 +5822,18 @@ img.img-center {
   vertical-align: middle; }
 
 /** Site Layout */
+/* Set Logo Height */
+#site-logo {
+  height: 110px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/* Middle Align the Site Title with the Site Logo */
+#site-title {
+  display: table-cell;
+  vertical-align: middle;
+  height: 120px; }
+
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb {
   margin-bottom: 10px; }
