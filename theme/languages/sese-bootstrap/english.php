@@ -603,9 +603,9 @@
   define('COLON_SPACER', ':&nbsp;&nbsp;');
 
 // table headings for cart display and upcoming products
-  define('TABLE_HEADING_QUANTITY', 'Qty.');
-  define('TABLE_HEADING_PRODUCTS', 'Item Name');
-  define('TABLE_HEADING_TOTAL', 'Total');
+  define('TABLE_HEADING_QUANTITY', 'Quantity');
+  define('TABLE_HEADING_PRODUCTS', 'Name');
+  define('TABLE_HEADING_TOTAL', 'Item Total');
 
 // create account - login shared
   define('TABLE_HEADING_PRIVACY_CONDITIONS', 'Privacy Statement');
