@@ -43,7 +43,8 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
   <div id='site-header' class='row clearfix'>
     <div class='col-sm-7 col-md-5'>
       <div class='media'>
-        <img id='site-logo' class='pull-left' style='height:100px;width:100px;background-color:red;' />
+        <img id='site-logo' class='pull-left'
+             src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" />
         <h1 class='media-heading'><?php echo TITLE; ?></h1>
       </div>
     </div>
@@ -106,7 +107,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
 /* Use the root categories for the top level nav, with dropdowns for the first
  * level of sub-categories */
 $root_categories = BootstrapNavMenu::root_and_child_categories();
-foreach ($root_categories as $root_category) { 
+foreach ($root_categories as $root_category) {
   $root_url = BootstrapUtils::category_url(array($root_category['id']));
   if (count($root_category['children']) === 0) {
     /* Direct Link */ ?>
@@ -115,7 +116,7 @@ foreach ($root_categories as $root_category) {
       <?php echo $root_category['name']; ?>
     </a>
   </li>
-<?php 
+<?php
   } else {
     /* Dropdown Menu & Link */ ?>
     <li class='dropdown <?php if ($root_category['active']) echo 'active'; ?>'>
@@ -124,7 +125,7 @@ foreach ($root_categories as $root_category) {
       <?php echo $root_category['name']; ?> <span class='caret'></span>
     </a>
     <ul class='dropdown-menu'>
-    <?php foreach ($root_category['children'] as $child) { 
+    <?php foreach ($root_category['children'] as $child) {
       $subcategory_url = BootstrapUtils::category_url(array($root_category['id'], $child['id'])); ?>
       <li <?php if ($child['active']) echo 'class="active"'; ?>>
         <a href="<?php echo $subcategory_url; ?>"><?php echo $child['name']; ?></a>
@@ -132,9 +133,9 @@ foreach ($root_categories as $root_category) {
     <?php } ?>
     </ul>
   </li>
-<?php 
+<?php
   } ?>
-<?php 
+<?php
 } ?>
       </ul>
     </div>
