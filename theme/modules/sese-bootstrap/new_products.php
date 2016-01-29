@@ -12,7 +12,6 @@ if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
 }
 
-// initialize vars
 $categories_products_id_list = '';
 $list_of_products = '';
 $new_products_query = '';
