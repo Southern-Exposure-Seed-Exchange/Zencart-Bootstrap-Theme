@@ -5834,6 +5834,15 @@ img.img-center {
   vertical-align: middle;
   height: 120px; }
 
+/* Center the Navbar content */
+.navbar .navbar-nav {
+  float: none;
+  display: inline-block;
+  vertical-align: top; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb {
   margin-bottom: 10px; }
