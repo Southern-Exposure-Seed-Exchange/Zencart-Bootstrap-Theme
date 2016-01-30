@@ -147,7 +147,7 @@ class BootstrapProductListing
   public static function product_link($product) {
     if ($_GET['filter_id'] > 0) {
       $category_filter = $_GET['filter_id'];
-    } else if ($_GET['cPath'] > 0) {
+    } elseif ($_GET['cPath'] > 0) {
       $category_filter = $_GET['cPath'];
     } else {
       $category_filter = $product->fields['master_categories_id'];
@@ -165,7 +165,7 @@ class BootstrapProductListing
     if ($has_attributes || PRODUCT_LIST_PRICE_BUY_NOW == '0') {
       $lc_button = "<a class='btn btn-default' href='{$product_link}'>" .
         MORE_INFO_TEXT . "</a>";
-    } else if (PRODUCT_LISTING_MULTIPLE_ADD_TO_CART != 0) {
+    } elseif (PRODUCT_LISTING_MULTIPLE_ADD_TO_CART != 0) {
       $can_add_to_cart = zen_get_products_allow_add_to_cart(
         $product->fields['products_id']) != 'N';
       $in_stock_or_ignore_stock = $product->fields['products_quantity'] > 0 ||
@@ -191,7 +191,7 @@ class BootstrapProductListing
             "{$product->fields['products_id']}]' value='0' size='4' />" .
           "{$add_to_cart_button}</div>";
       }
-    } else if (PRODUCT_LIST_PRICE_BUY_NOW == '2' && !$hide_quantity) {
+    } elseif (PRODUCT_LIST_PRICE_BUY_NOW == '2' && !$hide_quantity) {
       $action_link = zen_href_link(zen_get_info_page($product->fields['products_id']),
         zen_get_all_get_params(array('action')) . 'action=add_product&products_id=' .
         $product->fields['products_id']);
