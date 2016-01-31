@@ -5828,11 +5828,20 @@ img.img-center {
   margin-top: 5px;
   margin-bottom: 5px; }
 
+/* Add space between logo & site title */
+#site-logo {
+  margin-right: 10px; }
+
 /* Middle Align the Site Title with the Site Logo */
 #site-title {
   display: table-cell;
   vertical-align: middle;
   height: 120px; }
+
+/* Don't color or decorate the site title link on hover */
+#site-title a, #site-title a:hover {
+  color: #333333;
+  text-decoration: none; }
 
 /* Center the Navbar content */
 .navbar .navbar-nav {

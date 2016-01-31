@@ -43,10 +43,10 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
   <div id='site-header' class='row clearfix'>
     <div class='col-sm-8 col-md-6'>
       <div class='media'>
-        <img id='site-logo' class='pull-left'
-             src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" />
+        <a href='/'><img id='site-logo' class='pull-left' alt='SESE Logo'
+             src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" /></a>
         <div id='site-title' class='media-body'>
-          <h1 class='media-heading'><?php echo TITLE; ?></h1>
+          <h1 class='media-heading'><a href='/'><?php echo TITLE; ?></a></h1>
         </div>
       </div>
     </div>
