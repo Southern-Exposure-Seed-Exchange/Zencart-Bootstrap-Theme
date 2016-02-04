@@ -5937,4 +5937,13 @@ footer {
 #productGeneral #cart-add #in-cart-text {
   margin-top: -5px; }
 
+/** Checkout Pages */
+/* Bold the order steps text */
+.order-steps {
+  font-weight: bold; }
+
+/* Add spacing between the order steps and the progress bar */
+.order-steps {
+  margin-bottom: 15px; }
+
 /*# sourceMappingURL=sese.css.map */
