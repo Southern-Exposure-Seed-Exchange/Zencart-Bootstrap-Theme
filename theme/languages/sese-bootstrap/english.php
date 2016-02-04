@@ -244,7 +244,7 @@
   define('ENTRY_FAX_NUMBER', 'Fax Number:');
   define('ENTRY_FAX_NUMBER_ERROR', '');
   define('ENTRY_FAX_NUMBER_TEXT', '');
-  define('ENTRY_NEWSLETTER', 'Subscribe to Our Newsletter.');
+  define('ENTRY_NEWSLETTER', 'Subscribe to Our Newsletter:');
   define('ENTRY_NEWSLETTER_TEXT', '');
   define('ENTRY_NEWSLETTER_YES', 'Subscribed');
   define('ENTRY_NEWSLETTER_NO', 'Unsubscribed');

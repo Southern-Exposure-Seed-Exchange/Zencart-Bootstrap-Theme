@@ -186,23 +186,23 @@
   } ?>
 </fieldset>
 
-<fieldset>
-<legend><?php echo ENTRY_EMAIL_PREFERENCE; ?></legend>
 <?php
   if (ACCOUNT_NEWSLETTER_STATUS != 0) {
 ?>
+<fieldset>
+<legend><?php echo ENTRY_EMAIL_PREFERENCE; ?></legend>
 <div class='form-group'>
 <?php echo
-    '<label class="col-sm-6 control-label" for="newsletter-checkbox">' .
+    '<label class="col-sm-6 col-md-4 control-label" for="newsletter-checkbox">' .
       BootstrapNoAccountModule::required_text(ENTRY_NEWSLETTER_TEXT) . ENTRY_NEWSLETTER .
-    '</label><div class="col-sm-6">' .
+    '</label><div class="col-sm-6 col-md-8">' .
       zen_draw_checkbox_field('newsletter', '1', $newsletter, 'id="newsletter-checkbox" class="form-control"') .
     '</div>'; ?>
 </div>
-<?php } ?>
 </fieldset>
-
 <?php
+  }
+
   if (CUSTOMERS_REFERRAL_STATUS == 2) { ?>
 <fieldset>
 
@@ -213,7 +213,8 @@
 <?php echo zen_draw_input_field('customers_referral', '', zen_set_field_length(TABLE_CUSTOMERS, 'customers_referral', '15') . ' class="form-control" id="customers_referral"'); ?>
 </div></div>
 </fieldset>
-<?php }
+<?php
+  }
 
 }
 
