@@ -24,9 +24,11 @@ class BootstrapCheckout
       } else {
         $class = 'col-sm-3';
       }
+      if ($step_number >= $index + 1) {
+        $class .= ' text-primary';
+      }
       $icon = '';
       if ($step_number == $index + 1) {
-        $class .= ' text-primary';
         $icon = BootstrapUtils::glyphicon('arrow-down');
       }
 
