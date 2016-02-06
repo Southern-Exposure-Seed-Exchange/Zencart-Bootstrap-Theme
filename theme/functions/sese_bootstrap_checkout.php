@@ -50,7 +50,7 @@ class BootstrapCheckout
     $help_title = TITLE_CONTINUE_CHECKOUT_PROCEDURE;
     $help_text = TEXT_CONTINUE_CHECKOUT_PROCEDURE;
     return <<<HTML
-      <div class='col-sm-12 clearfix'>
+      <div class='clearfix'>
         <div class="pull-right">
           <button type='submit' class='btn btn-primary'>{$button_text}</button>
         </div>
