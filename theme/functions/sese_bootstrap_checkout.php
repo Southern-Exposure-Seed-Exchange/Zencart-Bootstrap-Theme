@@ -44,5 +44,20 @@ class BootstrapCheckout
     return $output;
   }
 
+  /* Render the HTML for the "Continue Checkout" text & button row. */
+  public static function render_continue_checkout() {
+    $button_text = BUTTON_CONTINUE_ALT;
+    $help_title = TITLE_CONTINUE_CHECKOUT_PROCEDURE;
+    $help_text = TEXT_CONTINUE_CHECKOUT_PROCEDURE;
+    return <<<HTML
+      <div class='col-sm-12 clearfix'>
+        <div class="pull-right">
+          <button type='submit' class='btn btn-primary'>{$button_text}</button>
+        </div>
+        <p class="pull-left"><strong>{$help_title}</strong> {$help_text}</p>
+      </div>
+HTML;
+  }
+
 }
 ?>

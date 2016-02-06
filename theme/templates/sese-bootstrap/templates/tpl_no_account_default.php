@@ -26,20 +26,13 @@
 echo zen_draw_form('no_account', zen_href_link(FILENAME_NO_ACCOUNT, '', 'SSL'),
   'post', 'onsubmit="return check_form(no_account);" class="form-horizontal"');
 echo zen_draw_hidden_field('action', 'process');
-echo zen_draw_hidden_field('email_pref_html', 'email_format'); ?>
+echo zen_draw_hidden_field('email_pref_html', 'email_format');
 
-
-<?php require($template->get_template_dir(
+require($template->get_template_dir(
   'tpl_modules_no_account.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') .
-  '/tpl_modules_no_account.php'); ?>
+  '/tpl_modules_no_account.php');
 
-<div class='col-sm-12 clearfix'>
-  <div class="pull-right form-group">
-    <button type='submit' class='btn btn-primary'><?php echo BUTTON_CONTINUE_ALT; ?></button>
-  </div>
-  <p class="pull-left"><strong><?php echo TITLE_CONTINUE_CHECKOUT_PROCEDURE; ?></strong></p>
-</div>
-
+echo BootstrapCheckout::render_continue_checkout(); ?>
 
 </form>
 </div>
