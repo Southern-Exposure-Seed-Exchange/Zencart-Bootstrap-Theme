@@ -135,8 +135,8 @@
       echo '</div></div>';
     } ?>
 
-<div class='form-group'>
-<label class="control-label col-sm-4" for="state" id="stateLabel"><?php echo BootstrapNoAccountModule::required_text(ENTRY_STATE_TEXT) . ENTRY_STATE; ?></label>
+<div class='form-group' id='stateLabel'>
+<label class="control-label col-sm-4" for="state"><?php echo BootstrapNoAccountModule::required_text(ENTRY_STATE_TEXT) . ENTRY_STATE; ?></label>
 <div class='col-sm-8'>
 <?php
     echo zen_draw_input_field('state', '', zen_set_field_length(TABLE_ADDRESS_BOOK, 'entry_state', '40') . ' class="form-control" id="state"');
@@ -196,7 +196,7 @@
     '<label class="col-sm-6 col-md-4 control-label" for="newsletter-checkbox">' .
       BootstrapNoAccountModule::required_text(ENTRY_NEWSLETTER_TEXT) . ENTRY_NEWSLETTER .
     '</label><div class="col-sm-6 col-md-8">' .
-      zen_draw_checkbox_field('newsletter', '1', $newsletter, 'id="newsletter-checkbox" class="form-control"') .
+      zen_draw_checkbox_field('newsletter', '1', $newsletter, 'id="newsletter-checkbox" class="form-control" checked') .
     '</div>'; ?>
 </div>
 </fieldset>

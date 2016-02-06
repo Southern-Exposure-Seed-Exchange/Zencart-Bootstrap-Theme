@@ -12,6 +12,15 @@ img.img-center
   display: inline-block
   vertical-align: middle
 
+/* Dynamically inserted by ZenCart javascript to hide a form field */
+.hiddenField
+  display: none
+  margin: 0
+
+/* Use Bootstrap's form input styles on fields un-hidden by ZenCart */
+input.visibleField
+  @extend .form-control
+
 
 /** Site Layout **/
 /* Set Logo Height */
@@ -133,6 +142,7 @@ footer
 
 
 /** Checkout Pages **/
+
 /* Bold the order steps text */
 .order-steps
   font-weight: bold
@@ -140,3 +150,8 @@ footer
 /* Add spacing between the order steps and the progress bar */
 .order-steps
   margin-bottom: 15px
+
+/* Add the form-group class to the state text input field. ZenCart's javascript
+ * replaces the form-group class with the visibleField class. */
+div#stateLabel.visibleField
+  @extend .form-group
