@@ -20,21 +20,7 @@
 <h4><?php echo BootstrapNoAccount::login_text(); ?></h4>
 
 
-<!-- Checkout Progress -->
-<div class='row text-center order-steps'>
-  <div class='col-sm-2 col-sm-offset-1 text-primary'>
-    <?php echo BootstrapUtils::glyphicon('arrow-down'); ?><br />
-    <?php echo TEXT_ORDER_STEPS_BILLING; ?>
-  </div>
-  <div class='col-sm-2'><br /><?php echo TEXT_ORDER_STEPS_1; ?></div>
-  <div class='col-sm-2'><br /><?php echo TEXT_ORDER_STEPS_2; ?></div>
-  <div class='col-sm-2'><br /><?php echo TEXT_ORDER_STEPS_3; ?></div>
-  <div class='col-sm-2'><br /><?php echo TEXT_ORDER_STEPS_4; ?></div>
-</div>
-<div class='row'><div class='col-sm-10 col-sm-offset-1'><div class='progress'>
-  <div class='progress-bar' role='progressbar' aria-valuenow='20'
-       aria-valuemin='0' aria-valuemax='100' style='width:20%;'></div>
-</div></div></div>
+<?php echo BootstrapCheckout::render_checkout_progress(1, true); ?>
 
 <?php
 echo zen_draw_form('no_account', zen_href_link(FILENAME_NO_ACCOUNT, '', 'SSL'),
