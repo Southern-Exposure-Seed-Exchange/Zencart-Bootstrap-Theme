@@ -173,16 +173,16 @@ div#stateLabel.visibleField
     width: 25%
 
 /* Extend the hardcoded CSS classes from the Order Totals module */
-#checkoutPayment fieldset#checkoutOrderTotals
+#checkoutPayment fieldset#checkoutOrderTotals, #orderTotals
   /* Set the column widths and order */
-  #otsubtotal, #otshipping, #ottax, #ottotal
+  #otsubtotal, #otshipping, #ottax, #ottotal, #otgv
+    @extend .text-right
     .totalBox
       @extend .col-xs-2
       @extend .pull-right
     .lineTitle
       @extend .col-xs-10
       @extend .pull-left
-      @extend .text-right
   /* Fix row alignment using the linebreaks
   br.clearBoth
     @extend .col-xs-12
