@@ -155,3 +155,49 @@ footer
  * replaces the form-group class with the visibleField class. */
 div#stateLabel.visibleField
   @extend .form-group
+
+#checkoutPayment div.ccinfo
+  /* Add the form-control class to the credit card inputs since the class is
+   * hardcoded by ZenCart */
+  input, select
+    @extend .form-control
+
+  /* Show the expiration selects side-by-side */
+  select
+    display: inline-block
+  /* Reduce the width of the month select */
+  select:nth-of-type(1)
+    width: 60%
+  /* Make the year select smaller */
+  select:nth-of-type(2)
+    width: 25%
+
+/* Extend the hardcoded CSS classes from the Order Totals module */
+#checkoutPayment fieldset#checkoutOrderTotals
+  /* Set the column widths and order */
+  #otsubtotal, #otshipping, #ottax, #ottotal
+    .totalBox
+      @extend .col-xs-2
+      @extend .pull-right
+    .lineTitle
+      @extend .col-xs-10
+      @extend .pull-left
+      @extend .text-right
+  /* Fix row alignment using the linebreaks
+  br.clearBoth
+    @extend .col-xs-12
+
+#checkoutPayment fieldset
+  /* Extend the hardcoded CSS classes from the Gift Vouchers module */
+  .gvBal input, .credit-selection-input input
+    @extend .form-control
+  .gvBal
+    @extend .text-right
+    /* Put the apply/available balance input and text on the same line */
+    input
+      width: 20%
+      display: inline-block
+      margin-right: 10px
+      margin-bottom: 10px
+    br
+      display: none
