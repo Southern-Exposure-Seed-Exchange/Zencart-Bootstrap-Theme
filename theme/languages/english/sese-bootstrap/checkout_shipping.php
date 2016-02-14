@@ -19,7 +19,7 @@ define('HEADING_TITLE', '');
 
 define('TABLE_HEADING_SHIPPING_ADDRESS', 'Shipping Address');
 define('TEXT_CHOOSE_SHIPPING_DESTINATION', '');
-define('TITLE_SHIPPING_ADDRESS', 'Shipping Information:');
+define('TITLE_SHIPPING_ADDRESS', 'Shipping Information');
 
 define('TABLE_HEADING_SHIPPING_METHOD', '');
 define('TEXT_CHOOSE_SHIPPING_METHOD', 'Please select the preferred shipping method to use on this order.');

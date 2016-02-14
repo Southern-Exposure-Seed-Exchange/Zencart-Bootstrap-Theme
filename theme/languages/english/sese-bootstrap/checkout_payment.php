@@ -8,7 +8,7 @@
  */
 if($_SESSION['COWOA']) $COWOA=TRUE;
 
-define('NAVBAR_TITLE_1', 'Checkout - Step 1');
+define('NAVBAR_TITLE_1', 'Checkout');
 define('NAVBAR_TITLE_2', 'Payment Method - Step 2');
 
 if($COWOA)
@@ -18,7 +18,7 @@ define('HEADING_TITLE', '');
 
 define('TABLE_HEADING_BILLING_ADDRESS', 'Billing Address');
 define('TEXT_SELECTED_BILLING_DESTINATION', 'Your billing address should match the address on your credit card statement.');
-define('TITLE_BILLING_ADDRESS', 'Billing Address:');
+define('TITLE_BILLING_ADDRESS', 'Billing Address');
 
 define('TABLE_HEADING_PAYMENT_METHOD', 'Payment Method');
 define('TEXT_SELECT_PAYMENT_METHOD', 'Please select a payment method for this order.');
