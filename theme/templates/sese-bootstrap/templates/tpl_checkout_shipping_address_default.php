@@ -39,18 +39,11 @@ echo zen_draw_form(
                       '/' . 'tpl_modules_checkout_address_book.php'); ?>
       </fieldset><?php
      }
-  } ?>
+  }
 
-<div class='clearfix'>
-  <div class="pull-right"><?php echo zen_draw_hidden_field('action', 'submit') ?>
-    <button type='submit' class='btn btn-primary'><?php echo BUTTON_CONTINUE_ALT; ?></button></div>
-  <p class="pull-left"><?php echo TITLE_CONTINUE_CHECKOUT_PROCEDURE . '<br />' . TEXT_CONTINUE_CHECKOUT_PROCEDURE;
-    if ($process == true) { ?>
-        <?php echo '<a class="btn btn-default" href="' . zen_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') . '">' .
-          BUTTON_BACK_ALT . '</a>';
-    } ?>
-  </p>
-</div>
+  echo BootstrapCheckout::render_continue_checkout(
+    $process ? zen_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') : false) ;
+?>
 
 </form>
 </div>
