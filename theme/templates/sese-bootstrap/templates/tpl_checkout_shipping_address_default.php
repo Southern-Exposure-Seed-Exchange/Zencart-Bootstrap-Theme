@@ -26,8 +26,8 @@ echo zen_draw_form(
   if ($messageStack->size('checkout_address') > 0) { echo $messageStack->output('checkout_address'); }
 
   if ($process == false || $error == true) { ?>
-    <h2 id="checkoutShipAddressDefaultAddress"><?php echo TITLE_SHIPPING_ADDRESS; ?></h2>
-    <address><?php echo zen_address_label($_SESSION['customer_id'], $_SESSION['sendto'], true, ' ', '<br />'); ?></address><?php
+    <h2 id="checkoutShipAddressDefaultAddress"><?php echo TITLE_SHIPPING_ADDRESS; ?></h2><?php
+    echo BootstrapUtils::render_address($_SESSION['customer_id'], $_SESSION['sendto']);
     if ($addresses_count < MAX_ADDRESS_BOOK_ENTRIES) {
       /* require template to display new address form */
       require($template->get_template_dir('tpl_modules_checkout_new_address.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_checkout_new_address.php');

@@ -31,8 +31,8 @@
       <div class="pull-right">
         <a href='<?php echo $editShippingButtonLink; ?>' class='btn btn-default'>
         <?php echo BUTTON_CHANGE_ADDRESS_ALT; ?></a></div>
-    <?php } ?>
-    <address><?php echo zen_address_label($_SESSION['customer_id'], $_SESSION['sendto'], true, ' ', '<br />'); ?></address>
+    <?php }
+    echo BootstrapUtils::render_address($_SESSION['customer_id'], $_SESSION['sendto']); ?>
   </div>
   <div><?php echo TEXT_CHOOSE_SHIPPING_DESTINATION; ?></div>
 </div>

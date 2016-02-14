@@ -56,5 +56,11 @@ class BootstrapUtils
     }
     return "{$alt_text}<span class='glyphicon glyphicon-{$icon_name}'></span>";
   }
+
+  /** Return the HTML for an Address, given Customer & Address IDs */
+  public static function render_address($customer_id, $address_id) {
+    $address = zen_address_label($customer_id, $address_id, true, ' ', '<br />');
+    return "<address>{$address}</address>";
+  }
 }
 ?>
