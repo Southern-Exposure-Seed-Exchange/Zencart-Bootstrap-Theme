@@ -34,7 +34,7 @@
     <?php }
     echo BootstrapUtils::render_address($_SESSION['customer_id'], $_SESSION['sendto']); ?>
   </div>
-  <div><?php echo TEXT_CHOOSE_SHIPPING_DESTINATION; ?></div>
+  <p class='text-center text-info'><?php echo TEXT_CHOOSE_SHIPPING_DESTINATION; ?></p>
 </div>
 
 <?php
