@@ -42,8 +42,14 @@
   if (!isset($flag_disable_right)) { $flag_disable_right = false; }
 
   // global disable of column_right
-  if (COLUMN_RIGHT_STATUS == 0 or (CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '')) {
+  if (COLUMN_RIGHT_STATUS == 0 or BootstrapCheckout::user_in_checkout()) {
     $flag_disable_right = true;
+  }
+
+  if ($flag_disable_right) {
+    $main_content_class = 'col-sm-offset-1 col-sm-10';
+  } else {
+    $main_content_class = 'col-sm-9';
   }
 
   $header_template = 'tpl_header.php';
@@ -73,7 +79,7 @@
   }
 ?>
 
-  <div class='col-sm-9'>
+  <div class='<?php echo $main_content_class; ?>'>
     <?php /* Display the Main Content */ require($body_code); ?>
   </div>
 

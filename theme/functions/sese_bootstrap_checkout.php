@@ -2,6 +2,16 @@
 /* Utility functions used throughout the Checkout process. */
 class BootstrapCheckout
 {
+  /* Determine whether the User is currently in the Checkout Process */
+  public static function user_in_checkout() {
+    global $current_page_base;
+    $checkout_pages = array(
+      'no_account', 'checkout_shipping', 'checkout_payment',
+      'checkout_confirmation', 'checkout_success'
+    );
+    return in_array($current_page_base, $checkout_pages);
+  }
+
   /* Render the Checkout Progress HTML for the current step number.
    *
    * If the user is checking out without an account, the extra billing step is
