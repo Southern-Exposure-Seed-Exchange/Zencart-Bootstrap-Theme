@@ -9,7 +9,7 @@
 if($_SESSION['COWOA']) $COWOA=TRUE;
 
 define('NAVBAR_TITLE_1', 'Checkout');
-define('NAVBAR_TITLE_2', 'Payment Method - Step 2');
+define('NAVBAR_TITLE_2', 'Payment Method');
 
 if($COWOA)
 define('HEADING_TITLE', '');
