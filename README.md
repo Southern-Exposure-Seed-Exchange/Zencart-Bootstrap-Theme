@@ -68,3 +68,7 @@ Some of ZenCart's default functionality has been changed in this theme:
 * Removed previous/listing/next buttons.
 * Removed displaying quantity discounts.
 * Removed displaying product attributes.
+
+### Checkout Pages
+
+* Removed the product notifications from the Checkout Success Page.
