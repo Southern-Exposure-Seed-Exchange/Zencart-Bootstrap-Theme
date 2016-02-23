@@ -36,21 +36,6 @@ if (isset($_SESSION['payment_method_messages']) && $_SESSION['payment_method_mes
   </div><?php
 }
 
-// only show when there is a GV balance (Sam edit: do not show for COWOA
-// customers, and send redemption code via email)
-if ($customer_has_gv_balance) {
-  if ($COWOA) {
-    BootstrapCheckoutSuccess::send_gift_certificate_email();
-  } else {
-    //they have a gv in their cart, and are not a COWOA customer, so show the box (Sam) ?>
-    <div id="sendSpendWrapper" class='clearfix'><?php
-      require($template->get_template_dir(
-          'tpl_modules_send_or_spend.php', DIR_WS_TEMPLATE, $current_page_base, 'templates'
-        ) . '/tpl_modules_send_or_spend.php'); ?>
-    </div><?php
-  }
-}
-
 if (DOWNLOAD_ENABLED == 'true' and !($_SESSION['COWOA'])) {
   require($template->get_template_dir('tpl_modules_downloads.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_downloads.php');
 }
@@ -79,7 +64,24 @@ if(!($_SESSION['COWOA'])) { ?>
       echo TEXT_CHECKOUT_LOGOFF_CUSTOMER;
     }
   } ?>
-</div>
+</div><?php
+
+// only show when there is a GV balance (Sam edit: do not show for COWOA
+// customers, and send redemption code via email)
+if ($customer_has_gv_balance) {
+  if ($COWOA) {
+    BootstrapCheckoutSuccess::send_gift_certificate_email();
+  } else {
+    //they have a gv in their cart, and are not a COWOA customer, so show the box (Sam) ?>
+    <div id="sendSpendWrapper" class='clearfix'><?php
+      require($template->get_template_dir(
+          'tpl_modules_send_or_spend.php', DIR_WS_TEMPLATE, $current_page_base, 'templates'
+        ) . '/tpl_modules_send_or_spend.php'); ?>
+    </div><?php
+  }
+}
+
+?>
 
 </div>
 

@@ -1,6 +1,4 @@
-<p><strong>
-  Thanks for your order!
-</strong></p>
+<h4>Thanks for your order!</h4>
 
 <p>We'll be looking over your order today and will get in touch with you if we
   need any clarifications.  We will try to ship all orders as quickly as
