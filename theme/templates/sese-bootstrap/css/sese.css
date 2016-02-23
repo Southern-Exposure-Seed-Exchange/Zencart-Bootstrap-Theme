@@ -6188,4 +6188,12 @@ footer {
     #checkoutPayment fieldset .gvBal br {
       display: none; }
 
+#checkoutConfirmDefault #orderTotals {
+  /* Emphasize the Order Total labels on the Checkout Confirmation Page */
+  /* Align the OrderTotals with the Item Totals on the Checkout Confirmation Page */ }
+  #checkoutConfirmDefault #orderTotals .lineTitle {
+    font-weight: bold; }
+  #checkoutConfirmDefault #orderTotals .totalBox {
+    padding-right: 5px; }
+
 /*# sourceMappingURL=sese.css.map */

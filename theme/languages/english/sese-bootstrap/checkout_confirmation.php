@@ -11,15 +11,12 @@ if($_SESSION['COWOA']) $COWOA=TRUE;
 define('NAVBAR_TITLE_1', 'Checkout');
 define('NAVBAR_TITLE_2', 'Confirmation');
 
-if($COWOA)
-define('HEADING_TITLE', '');
-else
-define('HEADING_TITLE', '');
+define('HEADING_TITLE', 'Order Confirmation');
 
 define('HEADING_BILLING_ADDRESS', 'Billing/Payment Information');
 define('HEADING_DELIVERY_ADDRESS', 'Delivery/Shipping Information');
-define('HEADING_SHIPPING_METHOD', 'Shipping Method:');
-define('HEADING_PAYMENT_METHOD', 'Payment Method:');
+define('HEADING_SHIPPING_METHOD', 'Shipping Method');
+define('HEADING_PAYMENT_METHOD', 'Payment Method');
 define('HEADING_PRODUCTS', 'Shopping Cart Contents');
 define('HEADING_TAX', 'Tax');
 define('HEADING_ORDER_COMMENTS', 'Special Instructions or Order Comments');
