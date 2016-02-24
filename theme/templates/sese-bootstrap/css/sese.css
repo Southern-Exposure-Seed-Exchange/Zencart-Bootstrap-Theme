@@ -6196,4 +6196,7 @@ footer {
   #checkoutConfirmDefault #orderTotals .totalBox {
     padding-right: 5px; }
 
+#accountDefault table#prevOrders address {
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=sese.css.map */
