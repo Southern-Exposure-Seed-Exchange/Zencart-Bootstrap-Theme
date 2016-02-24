@@ -72,3 +72,7 @@ Some of ZenCart's default functionality has been changed in this theme:
 ### Checkout Pages
 
 * Removed the product notifications from the Checkout Success Page.
+
+### Account Pages
+
+* Removed email format preference input on the Account Edit Page.
