@@ -5941,6 +5941,16 @@ img.img-center {
   margin: 0; }
 
 /* Use Bootstrap's form input styles on fields un-hidden by ZenCart */
+/* Line up a pulled split nav & results count */
+.navSplitPagesLinks {
+  /* Reduce the vertical space around the pagination */
+  /* Align the item count with the pagination */ }
+  .navSplitPagesLinks .pagination {
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .navSplitPagesLinks .navSplitPagesResult {
+    margin-top: 4px; }
+
 /** Site Layout */
 /* Set Logo Height */
 #site-logo {
@@ -5990,15 +6000,6 @@ footer {
 #indexProductList h1#productListHeading {
   margin-top: 10px;
   padding-left: 7.5px; }
-
-/* Reduce the vertical space around the pagination */
-#productListing .navSplitPagesLinks .pagination {
-  margin-top: 0;
-  margin-bottom: 10px; }
-
-/* Align the item count with the pagination */
-#productListing .navSplitPagesResult {
-  margin-top: 4px; }
 
 /* Reduce space below product title */
 #productListing .itemTitle {
@@ -6108,5 +6109,8 @@ footer {
 
 #accountDefault table#prevOrders address {
   margin-bottom: 0; }
+
+#accountHistoryDefault fieldset {
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=sese.css.map */

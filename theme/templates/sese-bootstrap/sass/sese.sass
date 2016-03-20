@@ -22,6 +22,17 @@ input.visibleField
   @extend .form-control
 
 
+/* Line up a pulled split nav & results count */
+.navSplitPagesLinks
+  /* Reduce the vertical space around the pagination */
+  .pagination
+    margin-top: 0
+    margin-bottom: 10px
+  /* Align the item count with the pagination */
+  .navSplitPagesResult
+    margin-top: 4px
+
+
 /** Site Layout **/
 /* Set Logo Height */
 #site-logo
@@ -74,15 +85,6 @@ footer
 #indexProductList h1#productListHeading
   margin-top: 10px
   padding-left: 7.5px
-
-/* Reduce the vertical space around the pagination */
-#productListing .navSplitPagesLinks .pagination
-  margin-top: 0
-  margin-bottom: 10px
-
-/* Align the item count with the pagination */
-#productListing .navSplitPagesResult
-  margin-top: 4px
 
 /* Reduce space below product title */
 #productListing .itemTitle
@@ -211,3 +213,6 @@ div#stateLabel.visibleField
 
 #accountDefault table#prevOrders address
   margin-bottom: 0
+
+#accountHistoryDefault fieldset
+  margin-bottom: 15px
