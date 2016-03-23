@@ -43,10 +43,9 @@ if (isset($_GET['delete'])) { ?>
 
   if ((isset($_GET['edit']) && ($_SESSION['customer_default_address_id'] != $_GET['edit'])) || (isset($_GET['edit']) == false) ) { ?>
   <div class='form-group'>
-    <label class='control-label col-sm-4' for='primary'><?php echo SET_AS_PRIMARY; ?></label>
-    <div class='col-sm-8'>
-      <?php echo zen_draw_checkbox_field('primary', 'on', false, ' class="form-control" id="primary"'); ?>
-    </div>
+    <div class='col-sm-offset-4 col-sm-8'><div class='checkbox'><label>
+      <?php echo zen_draw_checkbox_field('primary', 'on', false, ' id="primary"') . SET_AS_PRIMARY; ?>
+    </label></div></div>
   </div><?php
 
   } ?>
