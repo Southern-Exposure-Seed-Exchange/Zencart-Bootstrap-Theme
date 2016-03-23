@@ -15,9 +15,9 @@ include(DIR_WS_MODULES . zen_get_module_directory('send_or_spend.php')); ?>
 
 <h4><?php echo BOX_HEADING_GIFT_VOUCHER; ?></h4>
 <p><?php echo TEXT_SEND_OR_SPEND; ?></p>
-<p class="pull-right">
+<p><?php echo  TEXT_BALANCE_IS . "<b>" . $customer_gv_balance . "</b>"; ?></p>
+<p>
   <a href='<?php echo zen_href_link(FILENAME_GV_SEND, '', 'SSL'); ?>' class='btn btn-default'>
     <?php echo BUTTON_SEND_A_GIFT_CERT_ALT; ?>
   </a>
 </p>
-<p><?php echo  TEXT_BALANCE_IS . $customer_gv_balance; ?></p>
