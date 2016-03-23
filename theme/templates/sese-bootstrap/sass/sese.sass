@@ -12,16 +12,6 @@ img.img-center
   display: inline-block
   vertical-align: middle
 
-/* Dynamically inserted by ZenCart javascript to hide a form field */
-.hiddenField
-  display: none
-  margin: 0
-
-/* Use Bootstrap's form input styles on fields un-hidden by ZenCart */
-input.visibleField
-  @extend .form-control
-
-
 /* Line up a pulled split nav & results count */
 .navSplitPagesLinks
   /* Reduce the vertical space around the pagination */
@@ -31,6 +21,22 @@ input.visibleField
   /* Align the item count with the pagination */
   .navSplitPagesResult
     margin-top: 4px
+
+/* Add right spacing to keep adjacent buttons from touching */
+.btn.btn-adjacent
+  margin-right: 10px
+
+
+/** ZenCart Quirks **/
+/* When dynamically showing or hiding a form field, Zencart overrides any
+ * classes on the field with either the `visibleField` or `hiddenField` class
+ * so we can't apply classes to the HTML.
+ */
+.hiddenField
+  display: none
+  margin: 0
+input.visibleField
+  @extend .form-control
 
 
 /** Site Layout **/
