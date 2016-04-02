@@ -68,7 +68,7 @@ if ($current_categories_description != '') {
 require($template->get_template_dir('tpl_modules_product_listing.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_product_listing.php');
 
 // Show the Icon Legend
-// TODO: Find out if should remove
+// TODO: Replace with Text Version
 echo '<div class="hidden-xs"><center><img src="images/icons/key.png" /></center></div>';
 
 // Handle Invalid Category
