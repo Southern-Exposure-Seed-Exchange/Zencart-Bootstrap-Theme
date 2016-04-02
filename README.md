@@ -60,6 +60,10 @@ Some of ZenCart's default functionality has been changed in this theme:
   the model number under `Admin -> Configuration -> Product Listing -> Display
   Product Model`.
 
+### All Products Page
+
+* Modify the products table to match the Category Pages.
+
 ### Product Pages
 
 * Removed displaying product reviews.

@@ -2455,7 +2455,7 @@ output {
   line-height: 1.428571429;
   color: #555555; }
 
-.form-control, input.visibleField, #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo select, #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .credit-selection-input input {
+.form-control, input.visibleField, form[name=sorter_form] #disp-order-sorter, #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo select, #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .credit-selection-input input {
   display: block;
   width: 100%;
   height: 34px;
@@ -2472,57 +2472,61 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .form-control:focus, input.visibleField:focus, #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo select:focus, #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .credit-selection-input input:focus {
+  .form-control:focus, input.visibleField:focus, form[name=sorter_form] #disp-order-sorter:focus, #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo select:focus, #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .credit-selection-input input:focus {
     border-color: #66afe9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-  .form-control::-moz-placeholder, input.visibleField::-moz-placeholder, #checkoutPayment div.ccinfo input::-moz-placeholder, #checkoutPayment div.ccinfo select::-moz-placeholder, #checkoutPayment fieldset .gvBal input::-moz-placeholder, #checkoutPayment fieldset .credit-selection-input input::-moz-placeholder {
+  .form-control::-moz-placeholder, input.visibleField::-moz-placeholder, form[name=sorter_form] #disp-order-sorter::-moz-placeholder, #checkoutPayment div.ccinfo input::-moz-placeholder, #checkoutPayment div.ccinfo select::-moz-placeholder, #checkoutPayment fieldset .gvBal input::-moz-placeholder, #checkoutPayment fieldset .credit-selection-input input::-moz-placeholder {
     color: #999;
     opacity: 1; }
-  .form-control:-ms-input-placeholder, input.visibleField:-ms-input-placeholder, #checkoutPayment div.ccinfo input:-ms-input-placeholder, #checkoutPayment div.ccinfo select:-ms-input-placeholder, #checkoutPayment fieldset .gvBal input:-ms-input-placeholder, #checkoutPayment fieldset .credit-selection-input input:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, input.visibleField:-ms-input-placeholder, form[name=sorter_form] #disp-order-sorter:-ms-input-placeholder, #checkoutPayment div.ccinfo input:-ms-input-placeholder, #checkoutPayment div.ccinfo select:-ms-input-placeholder, #checkoutPayment fieldset .gvBal input:-ms-input-placeholder, #checkoutPayment fieldset .credit-selection-input input:-ms-input-placeholder {
     color: #999; }
-  .form-control::-webkit-input-placeholder, input.visibleField::-webkit-input-placeholder, #checkoutPayment div.ccinfo input::-webkit-input-placeholder, #checkoutPayment div.ccinfo select::-webkit-input-placeholder, #checkoutPayment fieldset .gvBal input::-webkit-input-placeholder, #checkoutPayment fieldset .credit-selection-input input::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, input.visibleField::-webkit-input-placeholder, form[name=sorter_form] #disp-order-sorter::-webkit-input-placeholder, #checkoutPayment div.ccinfo input::-webkit-input-placeholder, #checkoutPayment div.ccinfo select::-webkit-input-placeholder, #checkoutPayment fieldset .gvBal input::-webkit-input-placeholder, #checkoutPayment fieldset .credit-selection-input input::-webkit-input-placeholder {
     color: #999; }
-  .form-control::-ms-expand, input.visibleField::-ms-expand, #checkoutPayment div.ccinfo input::-ms-expand, #checkoutPayment div.ccinfo select::-ms-expand, #checkoutPayment fieldset .gvBal input::-ms-expand, #checkoutPayment fieldset .credit-selection-input input::-ms-expand {
+  .form-control::-ms-expand, input.visibleField::-ms-expand, form[name=sorter_form] #disp-order-sorter::-ms-expand, #checkoutPayment div.ccinfo input::-ms-expand, #checkoutPayment div.ccinfo select::-ms-expand, #checkoutPayment fieldset .gvBal input::-ms-expand, #checkoutPayment fieldset .credit-selection-input input::-ms-expand {
     border: 0;
     background-color: transparent; }
-  .form-control[disabled], input[disabled].visibleField, #checkoutPayment div.ccinfo input[disabled], #checkoutPayment div.ccinfo select[disabled], #checkoutPayment fieldset .gvBal input[disabled], #checkoutPayment fieldset .credit-selection-input input[disabled], .form-control[readonly], input[readonly].visibleField, #checkoutPayment div.ccinfo input[readonly], #checkoutPayment div.ccinfo select[readonly], #checkoutPayment fieldset .gvBal input[readonly], #checkoutPayment fieldset .credit-selection-input input[readonly], fieldset[disabled] .form-control, fieldset[disabled] input.visibleField, fieldset[disabled] #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo fieldset[disabled] input, fieldset[disabled] #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo fieldset[disabled] select, #checkoutPayment fieldset[disabled] .gvBal input, #checkoutPayment fieldset[disabled] .credit-selection-input input {
+  .form-control[disabled], input[disabled].visibleField, form[name=sorter_form] [disabled]#disp-order-sorter, #checkoutPayment div.ccinfo input[disabled], #checkoutPayment div.ccinfo select[disabled], #checkoutPayment fieldset .gvBal input[disabled], #checkoutPayment fieldset .credit-selection-input input[disabled], .form-control[readonly], input[readonly].visibleField, form[name=sorter_form] [readonly]#disp-order-sorter, #checkoutPayment div.ccinfo input[readonly], #checkoutPayment div.ccinfo select[readonly], #checkoutPayment fieldset .gvBal input[readonly], #checkoutPayment fieldset .credit-selection-input input[readonly], fieldset[disabled] .form-control, fieldset[disabled] input.visibleField, fieldset[disabled] form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] fieldset[disabled] #disp-order-sorter, fieldset[disabled] #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo fieldset[disabled] input, fieldset[disabled] #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo fieldset[disabled] select, #checkoutPayment fieldset[disabled] .gvBal input, #checkoutPayment fieldset[disabled] .credit-selection-input input {
     background-color: #eeeeee;
     opacity: 1; }
-  .form-control[disabled], input[disabled].visibleField, #checkoutPayment div.ccinfo input[disabled], #checkoutPayment div.ccinfo select[disabled], #checkoutPayment fieldset .gvBal input[disabled], #checkoutPayment fieldset .credit-selection-input input[disabled], fieldset[disabled] .form-control, fieldset[disabled] input.visibleField, fieldset[disabled] #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo fieldset[disabled] input, fieldset[disabled] #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo fieldset[disabled] select, #checkoutPayment fieldset[disabled] .gvBal input, #checkoutPayment fieldset[disabled] .credit-selection-input input {
+  .form-control[disabled], input[disabled].visibleField, form[name=sorter_form] [disabled]#disp-order-sorter, #checkoutPayment div.ccinfo input[disabled], #checkoutPayment div.ccinfo select[disabled], #checkoutPayment fieldset .gvBal input[disabled], #checkoutPayment fieldset .credit-selection-input input[disabled], fieldset[disabled] .form-control, fieldset[disabled] input.visibleField, fieldset[disabled] form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] fieldset[disabled] #disp-order-sorter, fieldset[disabled] #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo fieldset[disabled] input, fieldset[disabled] #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo fieldset[disabled] select, #checkoutPayment fieldset[disabled] .gvBal input, #checkoutPayment fieldset[disabled] .credit-selection-input input {
     cursor: not-allowed; }
 
-textarea.form-control {
+textarea.form-control, form[name=sorter_form] textarea#disp-order-sorter {
   height: auto; }
 
 input[type="search"] {
   -webkit-appearance: none; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="date"].form-control, input[type="date"].visibleField, #checkoutPayment div.ccinfo input[type="date"], #checkoutPayment fieldset .gvBal input[type="date"], #checkoutPayment fieldset .credit-selection-input input[type="date"],
+  input[type="date"].form-control, input[type="date"].visibleField, form[name=sorter_form] input[type="date"]#disp-order-sorter, #checkoutPayment div.ccinfo input[type="date"], #checkoutPayment fieldset .gvBal input[type="date"], #checkoutPayment fieldset .credit-selection-input input[type="date"],
   input[type="time"].form-control,
   input[type="time"].visibleField,
+  form[name=sorter_form] input[type="time"]#disp-order-sorter,
   #checkoutPayment div.ccinfo input[type="time"],
   #checkoutPayment fieldset .gvBal input[type="time"],
   #checkoutPayment fieldset .credit-selection-input input[type="time"],
   input[type="datetime-local"].form-control,
   input[type="datetime-local"].visibleField,
+  form[name=sorter_form] input[type="datetime-local"]#disp-order-sorter,
   #checkoutPayment div.ccinfo input[type="datetime-local"],
   #checkoutPayment fieldset .gvBal input[type="datetime-local"],
   #checkoutPayment fieldset .credit-selection-input input[type="datetime-local"],
   input[type="month"].form-control,
   input[type="month"].visibleField,
+  form[name=sorter_form] input[type="month"]#disp-order-sorter,
   #checkoutPayment div.ccinfo input[type="month"],
   #checkoutPayment fieldset .gvBal input[type="month"],
   #checkoutPayment fieldset .credit-selection-input input[type="month"] {
     line-height: 34px; }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].visibleField, #checkoutPayment div.ccinfo .input-group-sm > input[type="date"], #checkoutPayment fieldset .gvBal .input-group-sm > input[type="date"], #checkoutPayment fieldset .credit-selection-input .input-group-sm > input[type="date"],
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].visibleField, form[name=sorter_form] .input-group-sm > input[type="date"]#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-sm > input[type="date"], #checkoutPayment fieldset .gvBal .input-group-sm > input[type="date"], #checkoutPayment fieldset .credit-selection-input .input-group-sm > input[type="date"],
   .input-group-sm > input[type="date"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].visibleField,
+  form[name=sorter_form] .input-group-sm > input[type="time"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-sm > input[type="time"],
   #checkoutPayment fieldset .gvBal .input-group-sm > input[type="time"],
   #checkoutPayment fieldset .credit-selection-input .input-group-sm > input[type="time"],
@@ -2532,6 +2536,7 @@ input[type="search"] {
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].visibleField,
+  form[name=sorter_form] .input-group-sm > input[type="datetime-local"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-sm > input[type="datetime-local"],
   #checkoutPayment fieldset .gvBal .input-group-sm > input[type="datetime-local"],
   #checkoutPayment fieldset .credit-selection-input .input-group-sm > input[type="datetime-local"],
@@ -2541,6 +2546,7 @@ input[type="search"] {
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].visibleField,
+  form[name=sorter_form] .input-group-sm > input[type="month"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-sm > input[type="month"],
   #checkoutPayment fieldset .gvBal .input-group-sm > input[type="month"],
   #checkoutPayment fieldset .credit-selection-input .input-group-sm > input[type="month"],
@@ -2548,12 +2554,13 @@ input[type="search"] {
   .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
   input[type="month"] {
     line-height: 30px; }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].visibleField, #checkoutPayment div.ccinfo .input-group-lg > input[type="date"], #checkoutPayment fieldset .gvBal .input-group-lg > input[type="date"], #checkoutPayment fieldset .credit-selection-input .input-group-lg > input[type="date"],
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].visibleField, form[name=sorter_form] .input-group-lg > input[type="date"]#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-lg > input[type="date"], #checkoutPayment fieldset .gvBal .input-group-lg > input[type="date"], #checkoutPayment fieldset .credit-selection-input .input-group-lg > input[type="date"],
   .input-group-lg > input[type="date"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
   input[type="time"].input-lg,
   .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].visibleField,
+  form[name=sorter_form] .input-group-lg > input[type="time"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-lg > input[type="time"],
   #checkoutPayment fieldset .gvBal .input-group-lg > input[type="time"],
   #checkoutPayment fieldset .credit-selection-input .input-group-lg > input[type="time"],
@@ -2563,6 +2570,7 @@ input[type="search"] {
   input[type="datetime-local"].input-lg,
   .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].visibleField,
+  form[name=sorter_form] .input-group-lg > input[type="datetime-local"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-lg > input[type="datetime-local"],
   #checkoutPayment fieldset .gvBal .input-group-lg > input[type="datetime-local"],
   #checkoutPayment fieldset .credit-selection-input .input-group-lg > input[type="datetime-local"],
@@ -2572,6 +2580,7 @@ input[type="search"] {
   input[type="month"].input-lg,
   .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].visibleField,
+  form[name=sorter_form] .input-group-lg > input[type="month"]#disp-order-sorter,
   #checkoutPayment div.ccinfo .input-group-lg > input[type="month"],
   #checkoutPayment fieldset .gvBal .input-group-lg > input[type="month"],
   #checkoutPayment fieldset .credit-selection-input .input-group-lg > input[type="month"],
@@ -2579,7 +2588,7 @@ input[type="search"] {
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
     line-height: 46px; } }
-.form-group, div#stateLabel.visibleField {
+.form-group, form[name=sorter_form], div#stateLabel.visibleField {
   margin-bottom: 15px; }
 
 .radio,
@@ -2644,15 +2653,15 @@ input[type="checkbox"] {
   padding-bottom: 7px;
   margin-bottom: 0;
   min-height: 34px; }
-  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > input.form-control-static.visibleField, #checkoutPayment div.ccinfo .input-group-lg > input.form-control-static, #checkoutPayment div.ccinfo .input-group-lg > select.form-control-static, #checkoutPayment fieldset .gvBal .input-group-lg > input.form-control-static, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input.form-control-static,
+  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > input.form-control-static.visibleField, form[name=sorter_form] .input-group-lg > .form-control-static#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-lg > input.form-control-static, #checkoutPayment div.ccinfo .input-group-lg > select.form-control-static, #checkoutPayment fieldset .gvBal .input-group-lg > input.form-control-static, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input.form-control-static,
   .input-group-lg > .form-control-static.input-group-addon,
-  .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > input.form-control-static.visibleField, #checkoutPayment div.ccinfo .input-group-sm > input.form-control-static, #checkoutPayment div.ccinfo .input-group-sm > select.form-control-static, #checkoutPayment fieldset .gvBal .input-group-sm > input.form-control-static, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input.form-control-static,
+  .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > input.form-control-static.visibleField, form[name=sorter_form] .input-group-sm > .form-control-static#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-sm > input.form-control-static, #checkoutPayment div.ccinfo .input-group-sm > select.form-control-static, #checkoutPayment fieldset .gvBal .input-group-sm > input.form-control-static, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input.form-control-static,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn {
     padding-left: 0;
     padding-right: 0; }
 
-.input-sm, .input-group-sm > .form-control, .input-group-sm > input.visibleField, #checkoutPayment div.ccinfo .input-group-sm > input, #checkoutPayment div.ccinfo .input-group-sm > select, #checkoutPayment fieldset .gvBal .input-group-sm > input, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input,
+.input-sm, .input-group-sm > .form-control, .input-group-sm > input.visibleField, form[name=sorter_form] .input-group-sm > #disp-order-sorter, #checkoutPayment div.ccinfo .input-group-sm > input, #checkoutPayment div.ccinfo .input-group-sm > select, #checkoutPayment fieldset .gvBal .input-group-sm > input, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   height: 30px;
@@ -2661,33 +2670,36 @@ input[type="checkbox"] {
   line-height: 1.5;
   border-radius: 3px; }
 
-select.input-sm, .input-group-sm > select.form-control, #checkoutPayment div.ccinfo .input-group-sm > select,
+select.input-sm, .input-group-sm > select.form-control, form[name=sorter_form] .input-group-sm > select#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-sm > select,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
   height: 30px;
   line-height: 30px; }
 
-textarea.input-sm, .input-group-sm > textarea.form-control,
+textarea.input-sm, .input-group-sm > textarea.form-control, form[name=sorter_form] .input-group-sm > textarea#disp-order-sorter,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
+form[name=sorter_form] .input-group-sm > select[multiple]#disp-order-sorter,
 #checkoutPayment div.ccinfo .input-group-sm > select[multiple],
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn {
   height: auto; }
 
-.form-group-sm .form-control, .form-group-sm input.visibleField, .form-group-sm #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-group-sm input, .form-group-sm #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-sm select, .form-group-sm #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-group-sm input, .form-group-sm #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-group-sm input {
+.form-group-sm .form-control, .form-group-sm input.visibleField, .form-group-sm form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .form-group-sm #disp-order-sorter, .form-group-sm #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-group-sm input, .form-group-sm #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-sm select, .form-group-sm #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-group-sm input, .form-group-sm #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-group-sm input {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px; }
-.form-group-sm select.form-control, .form-group-sm #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-sm select {
+.form-group-sm select.form-control, .form-group-sm form[name=sorter_form] select#disp-order-sorter, form[name=sorter_form] .form-group-sm select#disp-order-sorter, .form-group-sm #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-sm select {
   height: 30px;
   line-height: 30px; }
-.form-group-sm textarea.form-control,
+.form-group-sm textarea.form-control, .form-group-sm form[name=sorter_form] textarea#disp-order-sorter, form[name=sorter_form] .form-group-sm textarea#disp-order-sorter,
 .form-group-sm select[multiple].form-control,
+.form-group-sm form[name=sorter_form] select[multiple]#disp-order-sorter,
+form[name=sorter_form] .form-group-sm select[multiple]#disp-order-sorter,
 .form-group-sm #checkoutPayment div.ccinfo select[multiple],
 #checkoutPayment div.ccinfo .form-group-sm select[multiple] {
   height: auto; }
@@ -2698,7 +2710,7 @@ select[multiple].input-sm,
   font-size: 12px;
   line-height: 1.5; }
 
-.input-lg, .input-group-lg > .form-control, .input-group-lg > input.visibleField, #checkoutPayment div.ccinfo .input-group-lg > input, #checkoutPayment div.ccinfo .input-group-lg > select, #checkoutPayment fieldset .gvBal .input-group-lg > input, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input,
+.input-lg, .input-group-lg > .form-control, .input-group-lg > input.visibleField, form[name=sorter_form] .input-group-lg > #disp-order-sorter, #checkoutPayment div.ccinfo .input-group-lg > input, #checkoutPayment div.ccinfo .input-group-lg > select, #checkoutPayment fieldset .gvBal .input-group-lg > input, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   height: 46px;
@@ -2707,33 +2719,36 @@ select[multiple].input-sm,
   line-height: 1.3333333;
   border-radius: 6px; }
 
-select.input-lg, .input-group-lg > select.form-control, #checkoutPayment div.ccinfo .input-group-lg > select,
+select.input-lg, .input-group-lg > select.form-control, form[name=sorter_form] .input-group-lg > select#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-lg > select,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
   height: 46px;
   line-height: 46px; }
 
-textarea.input-lg, .input-group-lg > textarea.form-control,
+textarea.input-lg, .input-group-lg > textarea.form-control, form[name=sorter_form] .input-group-lg > textarea#disp-order-sorter,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
+form[name=sorter_form] .input-group-lg > select[multiple]#disp-order-sorter,
 #checkoutPayment div.ccinfo .input-group-lg > select[multiple],
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn {
   height: auto; }
 
-.form-group-lg .form-control, .form-group-lg input.visibleField, .form-group-lg #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-group-lg input, .form-group-lg #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-lg select, .form-group-lg #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-group-lg input, .form-group-lg #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-group-lg input {
+.form-group-lg .form-control, .form-group-lg input.visibleField, .form-group-lg form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .form-group-lg #disp-order-sorter, .form-group-lg #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-group-lg input, .form-group-lg #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-lg select, .form-group-lg #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-group-lg input, .form-group-lg #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-group-lg input {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px; }
-.form-group-lg select.form-control, .form-group-lg #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-lg select {
+.form-group-lg select.form-control, .form-group-lg form[name=sorter_form] select#disp-order-sorter, form[name=sorter_form] .form-group-lg select#disp-order-sorter, .form-group-lg #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-group-lg select {
   height: 46px;
   line-height: 46px; }
-.form-group-lg textarea.form-control,
+.form-group-lg textarea.form-control, .form-group-lg form[name=sorter_form] textarea#disp-order-sorter, form[name=sorter_form] .form-group-lg textarea#disp-order-sorter,
 .form-group-lg select[multiple].form-control,
+.form-group-lg form[name=sorter_form] select[multiple]#disp-order-sorter,
+form[name=sorter_form] .form-group-lg select[multiple]#disp-order-sorter,
 .form-group-lg #checkoutPayment div.ccinfo select[multiple],
 #checkoutPayment div.ccinfo .form-group-lg select[multiple] {
   height: auto; }
@@ -2746,7 +2761,7 @@ select[multiple].input-lg,
 
 .has-feedback {
   position: relative; }
-  .has-feedback .form-control, .has-feedback input.visibleField, .has-feedback #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-feedback input, .has-feedback #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-feedback select, .has-feedback #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-feedback input, .has-feedback #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-feedback input {
+  .has-feedback .form-control, .has-feedback input.visibleField, .has-feedback form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .has-feedback #disp-order-sorter, .has-feedback #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-feedback input, .has-feedback #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-feedback select, .has-feedback #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-feedback input, .has-feedback #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-feedback input {
     padding-right: 42.5px; }
 
 .form-control-feedback {
@@ -2761,12 +2776,14 @@ select[multiple].input-lg,
   text-align: center;
   pointer-events: none; }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > input.visibleField + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-lg > input + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-lg > select + .form-control-feedback, #checkoutPayment fieldset .gvBal .input-group-lg > input + .form-control-feedback, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > input.visibleField + .form-control-feedback, form[name=sorter_form] .input-group-lg > #disp-order-sorter + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-lg > input + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-lg > select + .form-control-feedback, #checkoutPayment fieldset .gvBal .input-group-lg > input + .form-control-feedback, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback,
 .form-group-lg input.visibleField + .form-control-feedback,
+.form-group-lg form[name=sorter_form] #disp-order-sorter + .form-control-feedback,
+form[name=sorter_form] .form-group-lg #disp-order-sorter + .form-control-feedback,
 .form-group-lg #checkoutPayment div.ccinfo input + .form-control-feedback,
 #checkoutPayment div.ccinfo .form-group-lg input + .form-control-feedback,
 .form-group-lg #checkoutPayment div.ccinfo select + .form-control-feedback,
@@ -2779,12 +2796,14 @@ select[multiple].input-lg,
   height: 46px;
   line-height: 46px; }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > input.visibleField + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-sm > input + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-sm > select + .form-control-feedback, #checkoutPayment fieldset .gvBal .input-group-sm > input + .form-control-feedback, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > input.visibleField + .form-control-feedback, form[name=sorter_form] .input-group-sm > #disp-order-sorter + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-sm > input + .form-control-feedback, #checkoutPayment div.ccinfo .input-group-sm > select + .form-control-feedback, #checkoutPayment fieldset .gvBal .input-group-sm > input + .form-control-feedback, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback,
 .form-group-sm input.visibleField + .form-control-feedback,
+.form-group-sm form[name=sorter_form] #disp-order-sorter + .form-control-feedback,
+form[name=sorter_form] .form-group-sm #disp-order-sorter + .form-control-feedback,
 .form-group-sm #checkoutPayment div.ccinfo input + .form-control-feedback,
 #checkoutPayment div.ccinfo .form-group-sm input + .form-control-feedback,
 .form-group-sm #checkoutPayment div.ccinfo select + .form-control-feedback,
@@ -2804,11 +2823,11 @@ select[multiple].input-lg,
 .has-success .radio-inline,
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d; }
-.has-success .form-control, .has-success input.visibleField, .has-success #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-success input, .has-success #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-success select, .has-success #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-success input, .has-success #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-success input {
+.has-success .form-control, .has-success input.visibleField, .has-success form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .has-success #disp-order-sorter, .has-success #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-success input, .has-success #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-success select, .has-success #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-success input, .has-success #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-success input {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .form-control:focus, .has-success input.visibleField:focus, .has-success #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-success input:focus, .has-success #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-success select:focus, .has-success #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-success input:focus, .has-success #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-success input:focus {
+  .has-success .form-control:focus, .has-success input.visibleField:focus, .has-success form[name=sorter_form] #disp-order-sorter:focus, form[name=sorter_form] .has-success #disp-order-sorter:focus, .has-success #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-success input:focus, .has-success #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-success select:focus, .has-success #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-success input:focus, .has-success #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-success input:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -2826,11 +2845,11 @@ select[multiple].input-lg,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b; }
-.has-warning .form-control, .has-warning input.visibleField, .has-warning #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-warning input, .has-warning #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-warning select, .has-warning #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-warning input, .has-warning #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-warning input {
+.has-warning .form-control, .has-warning input.visibleField, .has-warning form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .has-warning #disp-order-sorter, .has-warning #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-warning input, .has-warning #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-warning select, .has-warning #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-warning input, .has-warning #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-warning input {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-warning .form-control:focus, .has-warning input.visibleField:focus, .has-warning #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-warning input:focus, .has-warning #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-warning select:focus, .has-warning #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-warning input:focus, .has-warning #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-warning input:focus {
+  .has-warning .form-control:focus, .has-warning input.visibleField:focus, .has-warning form[name=sorter_form] #disp-order-sorter:focus, form[name=sorter_form] .has-warning #disp-order-sorter:focus, .has-warning #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-warning input:focus, .has-warning #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-warning select:focus, .has-warning #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-warning input:focus, .has-warning #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-warning input:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -2848,11 +2867,11 @@ select[multiple].input-lg,
 .has-error .radio-inline,
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #a94442; }
-.has-error .form-control, .has-error input.visibleField, .has-error #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-error input, .has-error #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-error select, .has-error #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-error input, .has-error #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-error input {
+.has-error .form-control, .has-error input.visibleField, .has-error form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .has-error #disp-order-sorter, .has-error #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .has-error input, .has-error #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .has-error select, .has-error #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .has-error input, .has-error #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .has-error input {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .form-control:focus, .has-error input.visibleField:focus, .has-error #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-error input:focus, .has-error #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-error select:focus, .has-error #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-error input:focus, .has-error #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-error input:focus {
+  .has-error .form-control:focus, .has-error input.visibleField:focus, .has-error form[name=sorter_form] #disp-order-sorter:focus, form[name=sorter_form] .has-error #disp-order-sorter:focus, .has-error #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .has-error input:focus, .has-error #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .has-error select:focus, .has-error #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .has-error input:focus, .has-error #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .has-error input:focus {
     border-color: #843534;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
@@ -2875,11 +2894,11 @@ select[multiple].input-lg,
   color: #737373; }
 
 @media (min-width: 768px) {
-  .form-inline .form-group, .form-inline div#stateLabel.visibleField {
+  .form-inline .form-group, .form-inline form[name=sorter_form], .form-inline div#stateLabel.visibleField {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control, .form-inline input.visibleField, .form-inline #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-inline input, .form-inline #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-inline select, .form-inline #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-inline input, .form-inline #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-inline input {
+  .form-inline .form-control, .form-inline input.visibleField, .form-inline form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .form-inline #disp-order-sorter, .form-inline #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .form-inline input, .form-inline #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .form-inline select, .form-inline #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .form-inline input, .form-inline #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .form-inline input {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -2892,6 +2911,8 @@ select[multiple].input-lg,
     .form-inline .input-group .input-group-btn,
     .form-inline .input-group .form-control,
     .form-inline .input-group input.visibleField,
+    .form-inline .input-group form[name=sorter_form] #disp-order-sorter,
+    form[name=sorter_form] .form-inline .input-group #disp-order-sorter,
     .form-inline .input-group #checkoutPayment div.ccinfo input,
     #checkoutPayment div.ccinfo .form-inline .input-group input,
     .form-inline .input-group #checkoutPayment div.ccinfo select,
@@ -2901,7 +2922,7 @@ select[multiple].input-lg,
     .form-inline .input-group #checkoutPayment fieldset .credit-selection-input input,
     #checkoutPayment fieldset .credit-selection-input .form-inline .input-group input {
       width: auto; }
-  .form-inline .input-group > .form-control, .form-inline .input-group > input.visibleField, .form-inline #checkoutPayment div.ccinfo .input-group > input, #checkoutPayment div.ccinfo .form-inline .input-group > input, .form-inline #checkoutPayment div.ccinfo .input-group > select, #checkoutPayment div.ccinfo .form-inline .input-group > select, .form-inline #checkoutPayment fieldset .gvBal .input-group > input, #checkoutPayment fieldset .gvBal .form-inline .input-group > input, .form-inline #checkoutPayment fieldset .credit-selection-input .input-group > input, #checkoutPayment fieldset .credit-selection-input .form-inline .input-group > input {
+  .form-inline .input-group > .form-control, .form-inline .input-group > input.visibleField, .form-inline form[name=sorter_form] .input-group > #disp-order-sorter, form[name=sorter_form] .form-inline .input-group > #disp-order-sorter, .form-inline #checkoutPayment div.ccinfo .input-group > input, #checkoutPayment div.ccinfo .form-inline .input-group > input, .form-inline #checkoutPayment div.ccinfo .input-group > select, #checkoutPayment div.ccinfo .form-inline .input-group > select, .form-inline #checkoutPayment fieldset .gvBal .input-group > input, #checkoutPayment fieldset .gvBal .form-inline .input-group > input, .form-inline #checkoutPayment fieldset .credit-selection-input .input-group > input, #checkoutPayment fieldset .credit-selection-input .form-inline .input-group > input {
     width: 100%; }
   .form-inline .control-label {
     margin-bottom: 0;
@@ -2932,13 +2953,13 @@ select[multiple].input-lg,
 .form-horizontal .radio,
 .form-horizontal .checkbox {
   min-height: 27px; }
-.form-horizontal .form-group, .form-horizontal div#stateLabel.visibleField {
+.form-horizontal .form-group, .form-horizontal form[name=sorter_form], .form-horizontal div#stateLabel.visibleField {
   margin-left: -15px;
   margin-right: -15px; }
-  .form-horizontal .form-group:before, .form-horizontal div#stateLabel.visibleField:before, .form-horizontal .form-group:after, .form-horizontal div#stateLabel.visibleField:after {
+  .form-horizontal .form-group:before, .form-horizontal form[name=sorter_form]:before, .form-horizontal div#stateLabel.visibleField:before, .form-horizontal .form-group:after, .form-horizontal form[name=sorter_form]:after, .form-horizontal div#stateLabel.visibleField:after {
     content: " ";
     display: table; }
-  .form-horizontal .form-group:after, .form-horizontal div#stateLabel.visibleField:after {
+  .form-horizontal .form-group:after, .form-horizontal form[name=sorter_form]:after, .form-horizontal div#stateLabel.visibleField:after {
     clear: both; }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
@@ -3549,19 +3570,21 @@ tbody.collapse.in {
     float: none;
     padding-left: 0;
     padding-right: 0; }
-  .input-group .form-control, .input-group input.visibleField, .input-group #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .input-group input, .input-group #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .input-group select, .input-group #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .input-group input, .input-group #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .input-group input {
+  .input-group .form-control, .input-group input.visibleField, .input-group form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .input-group #disp-order-sorter, .input-group #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .input-group input, .input-group #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .input-group select, .input-group #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .input-group input, .input-group #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .input-group input {
     position: relative;
     z-index: 2;
     float: left;
     width: 100%;
     margin-bottom: 0; }
-    .input-group .form-control:focus, .input-group input.visibleField:focus, .input-group #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .input-group input:focus, .input-group #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .input-group select:focus, .input-group #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .input-group input:focus, .input-group #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .input-group input:focus {
+    .input-group .form-control:focus, .input-group input.visibleField:focus, .input-group form[name=sorter_form] #disp-order-sorter:focus, form[name=sorter_form] .input-group #disp-order-sorter:focus, .input-group #checkoutPayment div.ccinfo input:focus, #checkoutPayment div.ccinfo .input-group input:focus, .input-group #checkoutPayment div.ccinfo select:focus, #checkoutPayment div.ccinfo .input-group select:focus, .input-group #checkoutPayment fieldset .gvBal input:focus, #checkoutPayment fieldset .gvBal .input-group input:focus, .input-group #checkoutPayment fieldset .credit-selection-input input:focus, #checkoutPayment fieldset .credit-selection-input .input-group input:focus {
       z-index: 3; }
 
 .input-group-addon,
 .input-group-btn,
 .input-group .form-control,
 .input-group input.visibleField,
+.input-group form[name=sorter_form] #disp-order-sorter,
+form[name=sorter_form] .input-group #disp-order-sorter,
 .input-group #checkoutPayment div.ccinfo input,
 #checkoutPayment div.ccinfo .input-group input,
 .input-group #checkoutPayment div.ccinfo select,
@@ -3575,6 +3598,8 @@ tbody.collapse.in {
   .input-group-btn:not(:first-child):not(:last-child),
   .input-group .form-control:not(:first-child):not(:last-child),
   .input-group input.visibleField:not(:first-child):not(:last-child),
+  .input-group form[name=sorter_form] #disp-order-sorter:not(:first-child):not(:last-child),
+  form[name=sorter_form] .input-group #disp-order-sorter:not(:first-child):not(:last-child),
   .input-group #checkoutPayment div.ccinfo input:not(:first-child):not(:last-child),
   #checkoutPayment div.ccinfo .input-group input:not(:first-child):not(:last-child),
   .input-group #checkoutPayment div.ccinfo select:not(:first-child):not(:last-child),
@@ -3601,13 +3626,13 @@ tbody.collapse.in {
   background-color: #eeeeee;
   border: 1px solid #ccc;
   border-radius: 4px; }
-  .input-group-addon.input-sm, #checkoutPayment div.ccinfo .input-group-sm > input.input-group-addon, #checkoutPayment div.ccinfo .input-group-sm > select.input-group-addon, #checkoutPayment fieldset .gvBal .input-group-sm > input.input-group-addon, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input.input-group-addon,
+  .input-group-addon.input-sm, form[name=sorter_form] .input-group-sm > .input-group-addon#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-sm > input.input-group-addon, #checkoutPayment div.ccinfo .input-group-sm > select.input-group-addon, #checkoutPayment fieldset .gvBal .input-group-sm > input.input-group-addon, #checkoutPayment fieldset .credit-selection-input .input-group-sm > input.input-group-addon,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 3px; }
-  .input-group-addon.input-lg, #checkoutPayment div.ccinfo .input-group-lg > input.input-group-addon, #checkoutPayment div.ccinfo .input-group-lg > select.input-group-addon, #checkoutPayment fieldset .gvBal .input-group-lg > input.input-group-addon, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input.input-group-addon,
+  .input-group-addon.input-lg, form[name=sorter_form] .input-group-lg > .input-group-addon#disp-order-sorter, #checkoutPayment div.ccinfo .input-group-lg > input.input-group-addon, #checkoutPayment div.ccinfo .input-group-lg > select.input-group-addon, #checkoutPayment fieldset .gvBal .input-group-lg > input.input-group-addon, #checkoutPayment fieldset .credit-selection-input .input-group-lg > input.input-group-addon,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 10px 16px;
@@ -3617,7 +3642,7 @@ tbody.collapse.in {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:first-child, .input-group input.visibleField:first-child, .input-group #checkoutPayment div.ccinfo input:first-child, #checkoutPayment div.ccinfo .input-group input:first-child, .input-group #checkoutPayment div.ccinfo select:first-child, #checkoutPayment div.ccinfo .input-group select:first-child, .input-group #checkoutPayment fieldset .gvBal input:first-child, #checkoutPayment fieldset .gvBal .input-group input:first-child, .input-group #checkoutPayment fieldset .credit-selection-input input:first-child, #checkoutPayment fieldset .credit-selection-input .input-group input:first-child,
+.input-group .form-control:first-child, .input-group input.visibleField:first-child, .input-group form[name=sorter_form] #disp-order-sorter:first-child, form[name=sorter_form] .input-group #disp-order-sorter:first-child, .input-group #checkoutPayment div.ccinfo input:first-child, #checkoutPayment div.ccinfo .input-group input:first-child, .input-group #checkoutPayment div.ccinfo select:first-child, #checkoutPayment div.ccinfo .input-group select:first-child, .input-group #checkoutPayment fieldset .gvBal input:first-child, #checkoutPayment fieldset .gvBal .input-group input:first-child, .input-group #checkoutPayment fieldset .credit-selection-input input:first-child, #checkoutPayment fieldset .credit-selection-input .input-group input:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .btn-group > .btn,
@@ -3630,7 +3655,7 @@ tbody.collapse.in {
 .input-group-addon:first-child {
   border-right: 0; }
 
-.input-group .form-control:last-child, .input-group input.visibleField:last-child, .input-group #checkoutPayment div.ccinfo input:last-child, #checkoutPayment div.ccinfo .input-group input:last-child, .input-group #checkoutPayment div.ccinfo select:last-child, #checkoutPayment div.ccinfo .input-group select:last-child, .input-group #checkoutPayment fieldset .gvBal input:last-child, #checkoutPayment fieldset .gvBal .input-group input:last-child, .input-group #checkoutPayment fieldset .credit-selection-input input:last-child, #checkoutPayment fieldset .credit-selection-input .input-group input:last-child,
+.input-group .form-control:last-child, .input-group input.visibleField:last-child, .input-group form[name=sorter_form] #disp-order-sorter:last-child, form[name=sorter_form] .input-group #disp-order-sorter:last-child, .input-group #checkoutPayment div.ccinfo input:last-child, #checkoutPayment div.ccinfo .input-group input:last-child, .input-group #checkoutPayment div.ccinfo select:last-child, #checkoutPayment div.ccinfo .input-group select:last-child, .input-group #checkoutPayment fieldset .gvBal input:last-child, #checkoutPayment fieldset .gvBal .input-group input:last-child, .input-group #checkoutPayment fieldset .credit-selection-input input:last-child, #checkoutPayment fieldset .credit-selection-input .input-group input:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group > .btn,
@@ -3965,11 +3990,11 @@ tbody.collapse.in {
   margin-top: 8px;
   margin-bottom: 8px; }
   @media (min-width: 768px) {
-    .navbar-form .form-group, .navbar-form div#stateLabel.visibleField {
+    .navbar-form .form-group, .navbar-form form[name=sorter_form], .navbar-form div#stateLabel.visibleField {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle; }
-    .navbar-form .form-control, .navbar-form input.visibleField, .navbar-form #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .navbar-form input, .navbar-form #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .navbar-form select, .navbar-form #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .navbar-form input, .navbar-form #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .navbar-form input {
+    .navbar-form .form-control, .navbar-form input.visibleField, .navbar-form form[name=sorter_form] #disp-order-sorter, form[name=sorter_form] .navbar-form #disp-order-sorter, .navbar-form #checkoutPayment div.ccinfo input, #checkoutPayment div.ccinfo .navbar-form input, .navbar-form #checkoutPayment div.ccinfo select, #checkoutPayment div.ccinfo .navbar-form select, .navbar-form #checkoutPayment fieldset .gvBal input, #checkoutPayment fieldset .gvBal .navbar-form input, .navbar-form #checkoutPayment fieldset .credit-selection-input input, #checkoutPayment fieldset .credit-selection-input .navbar-form input {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -3982,6 +4007,8 @@ tbody.collapse.in {
       .navbar-form .input-group .input-group-btn,
       .navbar-form .input-group .form-control,
       .navbar-form .input-group input.visibleField,
+      .navbar-form .input-group form[name=sorter_form] #disp-order-sorter,
+      form[name=sorter_form] .navbar-form .input-group #disp-order-sorter,
       .navbar-form .input-group #checkoutPayment div.ccinfo input,
       #checkoutPayment div.ccinfo .navbar-form .input-group input,
       .navbar-form .input-group #checkoutPayment div.ccinfo select,
@@ -3991,7 +4018,7 @@ tbody.collapse.in {
       .navbar-form .input-group #checkoutPayment fieldset .credit-selection-input input,
       #checkoutPayment fieldset .credit-selection-input .navbar-form .input-group input {
         width: auto; }
-    .navbar-form .input-group > .form-control, .navbar-form .input-group > input.visibleField, .navbar-form #checkoutPayment div.ccinfo .input-group > input, #checkoutPayment div.ccinfo .navbar-form .input-group > input, .navbar-form #checkoutPayment div.ccinfo .input-group > select, #checkoutPayment div.ccinfo .navbar-form .input-group > select, .navbar-form #checkoutPayment fieldset .gvBal .input-group > input, #checkoutPayment fieldset .gvBal .navbar-form .input-group > input, .navbar-form #checkoutPayment fieldset .credit-selection-input .input-group > input, #checkoutPayment fieldset .credit-selection-input .navbar-form .input-group > input {
+    .navbar-form .input-group > .form-control, .navbar-form .input-group > input.visibleField, .navbar-form form[name=sorter_form] .input-group > #disp-order-sorter, form[name=sorter_form] .navbar-form .input-group > #disp-order-sorter, .navbar-form #checkoutPayment div.ccinfo .input-group > input, #checkoutPayment div.ccinfo .navbar-form .input-group > input, .navbar-form #checkoutPayment div.ccinfo .input-group > select, #checkoutPayment div.ccinfo .navbar-form .input-group > select, .navbar-form #checkoutPayment fieldset .gvBal .input-group > input, #checkoutPayment fieldset .gvBal .navbar-form .input-group > input, .navbar-form #checkoutPayment fieldset .credit-selection-input .input-group > input, #checkoutPayment fieldset .credit-selection-input .navbar-form .input-group > input {
       width: 100%; }
     .navbar-form .control-label {
       margin-bottom: 0;
@@ -4012,9 +4039,9 @@ tbody.collapse.in {
     .navbar-form .has-feedback .form-control-feedback {
       top: 0; } }
   @media (max-width: 767px) {
-    .navbar-form .form-group, .navbar-form div#stateLabel.visibleField {
+    .navbar-form .form-group, .navbar-form form[name=sorter_form], .navbar-form div#stateLabel.visibleField {
       margin-bottom: 5px; }
-      .navbar-form .form-group:last-child, .navbar-form div#stateLabel.visibleField:last-child {
+      .navbar-form .form-group:last-child, .navbar-form form[name=sorter_form]:last-child, .navbar-form div#stateLabel.visibleField:last-child {
         margin-bottom: 0; } }
   @media (min-width: 768px) {
     .navbar-form {
@@ -5957,6 +5984,10 @@ img.img-center {
 .hiddenField {
   display: none;
   margin: 0; }
+
+/* Style the Zencart's Product Sorter & put it next to it's label */
+form[name=sorter_form] {
+  display: inline-block; }
 
 /** Site Layout */
 /* Set Logo Height */

@@ -37,6 +37,12 @@ img.img-center
   margin: 0
 input.visibleField
   @extend .form-control
+/* Style the Zencart's Product Sorter & put it next to it's label */
+form[name=sorter_form]
+  display: inline-block
+  @extend .form-group
+  #disp-order-sorter
+    @extend .form-control
 
 
 /** Site Layout **/
