@@ -160,7 +160,7 @@ class BootstrapProductListing
   /* Return the quantity & add to cart button for a product */
   public static function product_cart_button($product, $product_link) {
     global $how_many;
-    $has_attributes = zen_has_product_attributes($listing->fields['products_id']);
+    $has_attributes = zen_has_product_attributes($product->fields['products_id']);
     $hide_quantity = $product->fields['products_qty_box_status'] == 0;
     if ($has_attributes || PRODUCT_LIST_PRICE_BUY_NOW == '0') {
       $lc_button = "<a class='btn btn-default' href='{$product_link}'>" .
@@ -170,7 +170,7 @@ class BootstrapProductListing
         $product->fields['products_id']) != 'N';
       $in_stock_or_ignore_stock = $product->fields['products_quantity'] > 0 ||
         SHOW_PRODUCTS_SOLD_OUT_IMAGE == 0;
-      $not_call_for_price = $listing->fields['product_is_call'] == 0;
+      $not_call_for_price = $product->fields['product_is_call'] == 0;
       if (!$hide_quantity && $can_add_to_cart &&
           $not_call_for_price && $in_stock_or_ignore_stock) {
         $how_many++;
