@@ -27,7 +27,7 @@
 <p class="mainContent text-success"><?php echo TEXT_SUCCESS; ?></p>
 
 <p class='clearfix'>
-  <span class='btn btn-default pull-left'><?php echo zen_back_link() . BUTTON_BACK_ALT . '</a>'; ?></span>
+  <?php echo zen_back_link(); ?><span class="pull-left btn btn-default"><?php echo BUTTON_BACK_ALT; ?></span></a>
 </p>
 
 <?php
@@ -83,7 +83,7 @@
 
 <p class='clearfix'>
   <button class='btn btn-primary pull-right' type='submit'><?php echo BUTTON_SEND_ALT; ?></button>
-  <span class='btn btn-default pull-left'><?php echo zen_back_link() . BUTTON_BACK_ALT . '</a>'; ?></span>
+  <?php echo zen_back_link(); ?><span class="pull-left btn btn-default"><?php echo BUTTON_BACK_ALT; ?></span></a>
 </p>
 <?php
   }
