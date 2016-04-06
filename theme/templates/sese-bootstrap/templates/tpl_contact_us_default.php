@@ -27,7 +27,7 @@
 <p class="mainContent text-success"><?php echo TEXT_SUCCESS; ?></p>
 
 <p class='clearfix'>
-  <?php echo zen_back_link(); ?><span class="pull-left btn btn-default"><?php echo BUTTON_BACK_ALT; ?></span></a>
+  <?php echo BootstrapUtils::back_link(); ?>
 </p>
 
 <?php
@@ -83,7 +83,7 @@
 
 <p class='clearfix'>
   <button class='btn btn-primary pull-right' type='submit'><?php echo BUTTON_SEND_ALT; ?></button>
-  <?php echo zen_back_link(); ?><span class="pull-left btn btn-default"><?php echo BUTTON_BACK_ALT; ?></span></a>
+  <?php echo BootstrapUtils::back_link(); ?>
 </p>
 <?php
   }

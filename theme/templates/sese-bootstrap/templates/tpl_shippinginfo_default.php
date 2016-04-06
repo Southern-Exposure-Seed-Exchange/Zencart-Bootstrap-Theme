@@ -20,7 +20,7 @@ if (DEFINE_SHIPPINGINFO_STATUS >= 1 and DEFINE_SHIPPINGINFO_STATUS <= 2) { ?>
 } ?>
 
 <p class='clearfix'>
-  <?php echo zen_back_link(); ?><span class="pull-left btn btn-default"><?php echo BUTTON_BACK_ALT; ?></span></a>
+  <?php echo BootstrapUtils::back_link(); ?>
 </p>
 
 </div>

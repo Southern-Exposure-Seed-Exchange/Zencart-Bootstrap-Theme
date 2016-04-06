@@ -62,5 +62,11 @@ class BootstrapUtils
     $address = zen_address_label($customer_id, $address_id, true, ' ', '<br />');
     return "<address>{$address}</address>";
   }
+
+  /** Return a left-pulled Link to take the User Back a Page. */
+  public static function back_link() {
+    return zen_back_link() . "<span class='pull-left btn btn-default'>" .
+      BUTTON_BACK_ALT . "</span></a>";
+  }
 }
 ?>
