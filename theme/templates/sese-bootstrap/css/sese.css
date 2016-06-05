@@ -6011,6 +6011,27 @@ form[name=sorter_form] {
   color: #333333;
   text-decoration: none; }
 
+/* Quick Links */
+ul.quick-links li {
+  background-color: #eeeeee;
+  display: inline-block;
+  border-style: solid;
+  border-color: #222222;
+  border-width: 0px 1px 1px 1px;
+  padding: 3px 5px; }
+  ul.quick-links li a {
+    color: #333333; }
+  ul.quick-links li:hover {
+    background-color: #555555; }
+    ul.quick-links li:hover a, ul.quick-links li:hover a:hover {
+      color: #eeeeee;
+      text-decoration: none; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    ul.quick-links li {
+      border-width: 1px;
+      padding: 3px 4px;
+      margin: 2px 1px; } }
+
 /* Center the Navbar content */
 .navbar .navbar-nav {
   float: none;

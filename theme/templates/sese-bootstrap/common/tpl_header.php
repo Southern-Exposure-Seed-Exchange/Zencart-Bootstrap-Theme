@@ -50,25 +50,9 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
         </div>
       </div>
     </div>
-    <div class='col-sm-4 col-md-6'>
-      <ul class='pull-right text-right'>
-        <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=quick_order">'; ?>Quick Order</a></li>
-      <?php if (($_SESSION['customer_id']) && (!$_SESSION['COWOA']=='True')) { ?>
-        <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-      <?php } ?>
-
-      <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-        <li><a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><?php echo HEADER_TITLE_CART_CONTENTS; ?></a></li>
-      <?php }?>
-      <?php if (($_SESSION['customer_id']) /*&& (!$_SESSION['COWOA']=='True')*/) { ?>
-          <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGOFF; ?></a></li>
-      <?php
-          } else {
-              if (STORE_STATUS == '0') {
-      ?>
-        <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-      <?php   }
-            } ?>
+    <div class='col-sm-4 col-md-6 hidden-xs'>
+      <ul class='pull-right text-right quick-links'>
+        <?php BootstrapHeader::quick_links(); ?>
       </ul>
       <div class='pull-right'>
         <?php require(DIR_WS_MODULES . 'sideboxes/search_header.php'); ?>
@@ -139,6 +123,8 @@ foreach ($root_categories as $root_category) {
   } ?>
 <?php
 } ?>
+        <!-- Mobile-only Nav Links -->
+        <?php BootstrapHeader::quick_links("visible-xs"); ?>
       </ul>
     </div>
 
@@ -157,4 +143,29 @@ foreach ($root_categories as $root_category) {
 
   <?php require($template->get_template_dir('tpl_modules_categories_tabs.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_categories_tabs.php'); ?>
 </div> <!-- headerWrapper -->
-<?php } ?>
+<?php }
+
+class BootstrapHeader
+{
+  public static function quick_links($extra_class) { ?>
+    <li class='<?php echo $extra_class; ?>'><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=quick_order">'; ?>Quick Order</a></li><?php
+    if (($_SESSION['customer_id']) && (!$_SESSION['COWOA']=='True')) { ?>
+      <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li><?php
+    }
+
+    if ($_SESSION['cart']->count_contents() != 0) { ?>
+      <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">
+        <?php echo HEADER_TITLE_CART_CONTENTS . " (<small>" . $_SESSION['cart']->count_contents() . "</small>)"; ?>
+      </a></li><?php
+    }
+    if (($_SESSION['customer_id']) /*&& (!$_SESSION['COWOA']=='True')*/) { ?>
+      <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGOFF; ?></a></li><?php
+    } else {
+      if (STORE_STATUS == '0') { ?>
+        <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li> <?php
+      }
+    }
+  }
+}
+
+?>

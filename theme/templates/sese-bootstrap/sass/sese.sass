@@ -68,6 +68,29 @@ form[name=sorter_form]
   text-decoration: none
 
 
+/* Quick Links */
+ul.quick-links
+  li
+    background-color: $gray-lighter
+    display: inline-block
+    border-style: solid
+    border-color: $gray-darker
+    border-width: 0px 1px 1px 1px
+    padding: 3px 5px
+    a
+      color: $text-color
+    &:hover
+      background-color: $gray
+      a, a:hover
+        color: $gray-lighter
+        text-decoration: none
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+      border-width: 1px
+      padding: 3px 4px
+      margin: 2px 1px
+
+
+
 /* Center the Navbar content */
 .navbar .navbar-nav
   float: none

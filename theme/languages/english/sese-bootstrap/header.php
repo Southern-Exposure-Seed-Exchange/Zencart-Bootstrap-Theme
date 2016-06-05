@@ -10,7 +10,7 @@
 // header text in includes/header.php
   define('HEADER_TITLE_CREATE_ACCOUNT', 'Create Account');
   define('HEADER_TITLE_MY_ACCOUNT', 'My Account');
-  define('HEADER_TITLE_CART_CONTENTS', 'Shopping Cart');
+  define('HEADER_TITLE_CART_CONTENTS', 'Cart');
   define('HEADER_TITLE_CHECKOUT', 'Checkout');
   define('HEADER_TITLE_TOP', 'Top');
   define('HEADER_TITLE_CATALOG', 'Home');
