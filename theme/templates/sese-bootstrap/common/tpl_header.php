@@ -90,6 +90,14 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
       </a>
     </div>
 
+    <!-- Search Nav Menu -->
+    <div id='search-navbar' class='collapse navbar-collapse'>
+      <?php echo BootstrapHeader::nav_search(); ?>
+      <ul class='nav navbar-nav'>
+        <li><a href="<?php echo zen_href_link(FILENAME_ADVANCED_SEARCH); ?>">Advanced Search</a></li>
+      </ul>
+    </div>
+
     <!-- Category Nav Menu -->
     <div id='category-navbar' class='collapse navbar-collapse'>
       <ul class='nav navbar-nav'>
@@ -169,6 +177,20 @@ class BootstrapHeader
         <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li> <?php
       }
     }
+  }
+
+  public static function nav_search() {
+    global $request_type;
+    $content = "";
+    $content .= zen_draw_form('quick_find_header', zen_href_link(FILENAME_ADVANCED_SEARCH_RESULT, '', $request_type, false), 'get');
+    $content .= zen_draw_hidden_field('main_page',FILENAME_ADVANCED_SEARCH_RESULT);
+    $content .= zen_draw_hidden_field('search_in_description', '1') . zen_hide_session_id();
+
+    $content .= "<div class='input-group'>";
+    $content .= zen_draw_input_field('keyword', '', 'class="form-control"') .
+      '<span class="input-group-btn"><button class="btn btn-default" type="submit">Search</button></span>';
+    $content .= "</div>";
+    return $content;
   }
 }
 

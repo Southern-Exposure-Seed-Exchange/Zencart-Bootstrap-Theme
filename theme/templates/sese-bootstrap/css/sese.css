@@ -6040,6 +6040,10 @@ ul.quick-links {
 div.quick-search .input-group {
   width: 16em; }
 
+/* Hide Mobile Search on Larger Screens */
+@media (min-width: 768px) {
+  #search-navbar {
+    display: none !important; } }
 /* Center the Navbar content */
 .navbar .navbar-nav {
   float: none;

@@ -97,6 +97,11 @@ div.quick-search
   .input-group
     width: 16em
 
+/* Hide Mobile Search on Larger Screens */
+@media  (min-width: $screen-sm-min)
+  #search-navbar
+    display: none !important
+
 
 /* Center the Navbar content */
 .navbar .navbar-nav
