@@ -6065,6 +6065,13 @@ div.quick-search .input-group {
 footer {
   background-color: #f5f5f5; }
 
+/** Sidebar */
+/* Don't Color the Product Icon Links */
+#seseproducticonssidebox .media-list a {
+  color: #333333; }
+  #seseproducticonssidebox .media-list a:hover, #seseproducticonssidebox .media-list a:active {
+    text-decoration: none; }
+
 /** Category Pages */
 /* Pad the Category title so it lines up with the image */
 #indexCategories h1#indexCategoriesHeading,
