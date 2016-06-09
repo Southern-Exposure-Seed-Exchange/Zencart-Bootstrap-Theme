@@ -70,12 +70,14 @@ form[name=sorter_form]
 
 /* Quick Links */
 ul.quick-links
+  margin-bottom: 3px
   li
     background-color: $gray-lighter
     display: inline-block
     border-style: solid
     border-color: $gray-darker
-    border-width: 0px 1px 1px 1px
+    border-width: 0 1px 1px 1px
+    border-radius: 0 0 3px 3px
     padding: 3px 5px
     a
       color: $text-color
@@ -86,9 +88,14 @@ ul.quick-links
         text-decoration: none
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
       border-width: 1px
+      border-radius: 3px
       padding: 3px 4px
       margin: 2px 1px
 
+/* Quick Search */
+div.quick-search
+  .input-group
+    width: 16em
 
 
 /* Center the Navbar content */

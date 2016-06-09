@@ -6012,25 +6012,33 @@ form[name=sorter_form] {
   text-decoration: none; }
 
 /* Quick Links */
-ul.quick-links li {
-  background-color: #eeeeee;
-  display: inline-block;
-  border-style: solid;
-  border-color: #222222;
-  border-width: 0px 1px 1px 1px;
-  padding: 3px 5px; }
-  ul.quick-links li a {
-    color: #333333; }
-  ul.quick-links li:hover {
-    background-color: #555555; }
-    ul.quick-links li:hover a, ul.quick-links li:hover a:hover {
-      color: #eeeeee;
-      text-decoration: none; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    ul.quick-links li {
-      border-width: 1px;
-      padding: 3px 4px;
-      margin: 2px 1px; } }
+ul.quick-links {
+  margin-bottom: 3px; }
+  ul.quick-links li {
+    background-color: #eeeeee;
+    display: inline-block;
+    border-style: solid;
+    border-color: #222222;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 3px 3px;
+    padding: 3px 5px; }
+    ul.quick-links li a {
+      color: #333333; }
+    ul.quick-links li:hover {
+      background-color: #555555; }
+      ul.quick-links li:hover a, ul.quick-links li:hover a:hover {
+        color: #eeeeee;
+        text-decoration: none; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      ul.quick-links li {
+        border-width: 1px;
+        border-radius: 3px;
+        padding: 3px 4px;
+        margin: 2px 1px; } }
+
+/* Quick Search */
+div.quick-search .input-group {
+  width: 16em; }
 
 /* Center the Navbar content */
 .navbar .navbar-nav {

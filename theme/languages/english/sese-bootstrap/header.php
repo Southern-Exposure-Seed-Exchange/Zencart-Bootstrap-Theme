@@ -25,7 +25,7 @@
   define('HEADER_LOGO_IMAGE', 'logo.gif');
 
 // header Search Button/Box Search Button
-  define('HEADER_SEARCH_BUTTON','Search');
+  define('HEADER_SEARCH_BUTTON','<span class="glyphicon glyphicon-search"></span>');
   define('HEADER_SEARCH_DEFAULT_TEXT', '');
 
 ?>

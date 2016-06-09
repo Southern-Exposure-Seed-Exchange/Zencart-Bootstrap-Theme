@@ -51,11 +51,15 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
       </div>
     </div>
     <div class='col-sm-4 col-md-6 hidden-xs'>
-      <ul class='pull-right text-right quick-links'>
-        <?php BootstrapHeader::quick_links(); ?>
-      </ul>
-      <div class='pull-right'>
-        <?php require(DIR_WS_MODULES . 'sideboxes/search_header.php'); ?>
+      <div class='clearfix'>
+        <ul class='pull-right text-right quick-links'>
+          <?php BootstrapHeader::quick_links(); ?>
+        </ul>
+      </div>
+      <div class='clearfix'>
+        <div class='pull-right quick-search'>
+          <?php require(DIR_WS_MODULES . 'sideboxes/search_header.php'); ?>
+        </div>
       </div>
     </div>
   </div>
