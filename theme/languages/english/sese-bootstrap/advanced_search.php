@@ -16,20 +16,20 @@
   define('HEADING_SEARCH_CRITERIA', 'Choose Your Search Terms');
 
   define('TEXT_SEARCH_IN_DESCRIPTION', 'Search In Product Descriptions');
-  define('ENTRY_CATEGORIES', 'Limit to Category:');
+  define('ENTRY_CATEGORIES', 'Limit to Category');
   define('ENTRY_INCLUDE_SUBCATEGORIES', 'Include Subcategories');
   define('ENTRY_MANUFACTURERS', 'Limit to Manufacturer');
   // Text for OG/Eco/Mid-alantic/Heirloom filter (PAVAN)
   define('ENTRY_FILTER_TYPE', 'Filter by Type');
   // END PAVAN
-define('ENTRY_PRICE_RANGE', 'Search by Price Range');
-  define('ENTRY_PRICE_FROM', 'Price From:');
-  define('ENTRY_PRICE_TO', 'Price To:');
-define('ENTRY_DATE_RANGE', 'Search by Date Added');
+  define('ENTRY_PRICE_RANGE', 'Search by Price Range');
+  define('ENTRY_PRICE_FROM', 'From...');
+  define('ENTRY_PRICE_TO', 'To...');
+  define('ENTRY_DATE_RANGE', 'Search by Date Added');
   define('ENTRY_DATE_FROM', 'Date From:');
   define('ENTRY_DATE_TO', 'Date To:');
 
-  define('TEXT_SEARCH_HELP_LINK', 'Search Help [?]');
+  define('TEXT_SEARCH_HELP_LINK', '<span class="sr-only">Search Help</span><span class="glyphicon glyphicon-question-sign"></span>');
 
   define('TEXT_ALL_CATEGORIES', 'All Categories');
   define('TEXT_ALL_MANUFACTURERS', 'All Manufacturers');
