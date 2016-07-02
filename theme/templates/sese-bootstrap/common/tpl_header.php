@@ -190,6 +190,7 @@ class BootstrapHeader
     $content .= zen_draw_input_field('keyword', '', 'class="form-control"') .
       '<span class="input-group-btn"><button class="btn btn-default" type="submit">Search</button></span>';
     $content .= "</div>";
+    $content .= "</form>";
     return $content;
   }
 }
