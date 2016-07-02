@@ -19,15 +19,19 @@ class BootstrapUtils
     $icons = array(
       'organic' =>
         array('title' => 'Certified Organic',
+              'description' => 'Certified Organic by Quality Certification Services',
               'image' => "$template_image_folder/organic-certified.png"),
       'heirloom' =>
         array('title' => 'Heirloom',
+              'description' => 'Heirlooms introduced before 1940',
               'image' => "$template_image_folder/heirloom.png"),
       'southeast' =>
         array('title' => 'Especially well-suited to the Southeast',
+              'description' => 'Varieties well-suited to the Mid-Atlantic and further South',
               'image' => "$template_image_folder/southeast.png"),
       'eco' =>
         array('title' => 'Ecologically Grown',
+              'description' => 'Grown by small ecological farmers',
               'image' => "$template_image_folder/ecologically-grown.png"),
     );
     return $icons;
