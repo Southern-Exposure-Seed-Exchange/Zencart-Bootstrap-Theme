@@ -93,7 +93,7 @@ define('BUTTON_SEARCH_ALT', 'Search');
 define('BUTTON_SEND_ALT', 'Send Now');
 define('BUTTON_SEND_ANOTHER_ALT', 'Send Another Gift Certificate');
 define('BUTTON_SEND_A_GIFT_CERT_ALT', 'Send A Gift Certificate');
-define('BUTTON_SHIPPING_ESTIMATOR_ALT', 'Estimate Shipping');
+define('BUTTON_SHIPPING_ESTIMATOR_ALT', 'Calculate Shipping');
 define('BUTTON_SOLD_OUT_ALT', 'Sold Out');
 define('BUTTON_SOLD_OUT_SMALL_ALT', 'Sold Out');
 define('BUTTON_SUBMIT_ALT', 'Submit');
