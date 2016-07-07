@@ -29,6 +29,7 @@ define('TITLE_NO_SHIPPING_AVAILABLE', 'Not Available At This Time');
 define('TEXT_NO_SHIPPING_AVAILABLE','<span class="alert">Sorry, we are not shipping to your region at this time.</span><br />Please contact us for alternate arrangements.');
 
 define('TABLE_HEADING_COMMENTS', 'Special Instructions or Comments About Your Order');
+define('TEXT_EXTRA_SHIPPING', 'You will be emailed a tracking number when your order has shipped.');
 
 if($COWOA)
 define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', '');

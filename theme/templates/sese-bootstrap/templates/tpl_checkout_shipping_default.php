@@ -113,6 +113,8 @@
     </div>
   </fieldset>
 
+  <p class='text-center'><b><?php echo TEXT_EXTRA_SHIPPING; ?></b></p>
+
   <?php echo BootstrapCheckout::render_continue_checkout(); ?>
 
 </form>
