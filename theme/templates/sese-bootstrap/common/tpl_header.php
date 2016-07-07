@@ -159,9 +159,11 @@ foreach ($root_categories as $root_category) {
 
 class BootstrapHeader
 {
-  public static function quick_links($extra_class) { ?>
+  public static function quick_links($extra_class) {
+    $is_logged_in = ($_SESSION['customer_id']) && (!$_SESSION['COWOA']=='True');
+    $extra_class = $is_logged_in ? $extra_class . " logged-in" : $extra_class; ?>
     <li class='<?php echo $extra_class; ?>'><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=quick_order">'; ?>Quick Order</a></li><?php
-    if (($_SESSION['customer_id']) && (!$_SESSION['COWOA']=='True')) { ?>
+    if ($is_logged_in) { ?>
       <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li><?php
     }
 
@@ -170,7 +172,7 @@ class BootstrapHeader
         <?php echo HEADER_TITLE_CART_CONTENTS . " (<small>" . $_SESSION['cart']->count_contents() . "</small>)"; ?>
       </a></li><?php
     }
-    if (($_SESSION['customer_id']) /*&& (!$_SESSION['COWOA']=='True')*/) { ?>
+    if ($is_logged_in) { ?>
       <li class='<?php echo $extra_class; ?>'><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGOFF; ?></a></li><?php
     } else {
       if (STORE_STATUS == '0') { ?>

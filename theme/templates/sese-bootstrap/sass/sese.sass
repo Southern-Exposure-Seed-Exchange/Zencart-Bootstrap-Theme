@@ -92,11 +92,12 @@ ul.quick-links
       a, a:hover
         color: $gray-lighter
         text-decoration: none
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) // {}
-      border-width: 1px
-      border-radius: 3px
-      padding: 3px 4px
-      margin: 2px 1px
+    &.logged-in
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) // {}
+        border-width: 1px
+        border-radius: 3px
+        padding: 3px 4px
+        margin: 2px 1px
 
 /* Quick Search */
 div.quick-search

@@ -6035,7 +6035,7 @@ ul.quick-links {
         color: #eeeeee;
         text-decoration: none; }
     @media (min-width: 768px) and (max-width: 991px) {
-      ul.quick-links li {
+      ul.quick-links li.logged-in {
         border-width: 1px;
         border-radius: 3px;
         padding: 3px 4px;
