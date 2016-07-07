@@ -14,12 +14,9 @@
  */
 ?>
 <div class="centerColumn" id="indexDefault">
-<div class='page-header text-center'>
-<h1 id="indexDefaultHeading"><?php echo HEADING_TITLE; ?></h1>
 
-<?php if (SHOW_CUSTOMER_GREETING == 1) { ?>
-<h2 class="greeting"><?php echo zen_customer_greeting(); ?></h2>
-<?php } ?>
+<div class='page-header text-center'>
+  <h1 id="indexDefaultHeading"><?php echo HEADING_TITLE; ?></h1>
 </div> <!-- .page-header -->
 
 <!-- deprecated - to use uncomment this section

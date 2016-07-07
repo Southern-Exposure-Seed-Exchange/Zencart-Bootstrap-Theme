@@ -17,11 +17,7 @@
 
 <?php if ($show_welcome == true) { ?>
 <div class='page-header text-center'>
-<h1 id="indexCategoriesHeading"><?php echo HEADING_TITLE; ?></h1>
-
-<?php if (SHOW_CUSTOMER_GREETING == 1) { ?>
-<h2 class="greeting"><?php echo zen_customer_greeting(); ?></h2>
-<?php } ?>
+    <h1 id="indexCategoriesHeading"><?php echo TEXT_GREETING_ALL; ?></h1>
 </div> <!-- .page-header -->
 
 <?php

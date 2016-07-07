@@ -16,6 +16,8 @@ if (STORE_STATUS == '0') {
   define('TEXT_GREETING_GUEST', 'Welcome to Southern Exposure Seed Exchange');
 }
 
+define('TEXT_GREETING_ALL', 'Heirloom &amp; Organic Seeds from our Cooperatively Run Business');
+
 define('TEXT_GREETING_PERSONAL', 'Hello <span class="greetUser">%s %s of %s</span>!');
 
 define('TEXT_INFORMATION', 'Southern Exposure Seed Exchange is a wonderful source for heirloom seeds and other open-pollinated (non-hybrid) seeds with an emphasis on vegetables, flowers, and herbs that grow well in the Mid-Atlantic region. We support seed saving and traditional seed breeding. Seed savers and breeders are to thank for our rich selection and we will do whatever we can to support our customers and associates to carry on this noble tradition.');
