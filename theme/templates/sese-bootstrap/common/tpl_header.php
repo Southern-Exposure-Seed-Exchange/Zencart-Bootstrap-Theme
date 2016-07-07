@@ -41,7 +41,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
 <!-- Site Header -->
 <div class='container'>
   <div id='site-header' class='row clearfix'>
-    <div class='col-sm-8 col-md-6'>
+    <div class='col-sm-8 col-md-7 col-lg-6'>
       <div class='media'>
         <a href='/'><img id='site-logo' class='pull-left' alt='SESE Logo'
              src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" /></a>
@@ -50,7 +50,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
         </div>
       </div>
     </div>
-    <div class='col-sm-4 col-md-6 hidden-xs'>
+    <div class='col-sm-4 col-md-5 col-lg-6 hidden-xs'>
       <div class='clearfix'>
         <ul class='pull-right text-right quick-links'>
           <?php BootstrapHeader::quick_links(); ?>
