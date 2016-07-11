@@ -23,8 +23,8 @@ if (!isset($flag_disable_footer)) { $flag_disable_footer = false; }
 <?php
 if (!$flag_disable_footer) {
 ?>
+<div id='footer-container' class='container'>
 <footer>
-<div class='container'>
 <?php
   /* Treat the Footer as the Left Sidebar */
   if (!$flag_disable_left) { ?>
@@ -46,8 +46,8 @@ if (!$flag_disable_footer) {
 
   </div>  <!-- .col-sm-12 -->
   </div>  <!-- .row -->
-</div>  <!-- .container -->
 </footer>
+</div>  <!-- .container -->
 <?php
 } // flag_disable_footer
 ?>
