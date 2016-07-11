@@ -44,13 +44,9 @@ if ($listing_split->number_of_rows > 0) {
             zen_trunc_string(stripslashes(zen_get_products_description(
               $listing->fields['products_id'], $_SESSION['languages_id']
             )), PRODUCT_LIST_DESCRIPTION);
-          $products_model = isset($listing->fields['products_model']) ?
-            "<small><i>Model #: {$listing->fields['products_model']}" .
-            "</i></small>\n" : '';
           $lc_text = "<h4 class='itemTitle'><a href='{$product_link}'><b>" .
             "{$listing->fields['products_name']}</b></a>{$icons}</h4>" .
             "<div class='hidden-xs listingDescription'>{$product_description}</div>\n" .
-            "<div class='hidden-xs'>{$products_model}</div>" .
             "<div class='visible-xs'>{$product_image}</div>\n";
           break;
         case 'PRODUCT_LIST_PRICE':
@@ -71,6 +67,11 @@ if ($listing_split->number_of_rows > 0) {
             zen_get_product_is_always_free_shipping($listing->fields['products_id']);
           if ($has_free_shipping) {
             $lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON . "<br />";
+          }
+          if (isset($listing->fields['products_model'])) {
+            $lc_text .=
+              "<div class='text-center'><small class='item-number'><i>Item # {$listing->fields['products_model']}" .
+              "</i></small></div>";
           }
           break;
         case 'PRODUCT_LIST_QUANTITY':
