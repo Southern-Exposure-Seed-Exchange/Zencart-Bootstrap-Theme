@@ -22,7 +22,7 @@
 //================================ Begin of Advanced Search Plus
 if ($found_products_ad == true) {
   if ($found_ezpages) { ?>
-    <p><a href='#infopages'>Information Page Search Results</a> are at bottom of page.</p><?php
+    <p><a href='?<?php echo $_SERVER['QUERY_STRING']; ?>#infopages'>Information Page Search Results</a> are at bottom of page.</p><?php
   } ?>
   <h3>Product Search Results:</h3><?php
   /* Collate and display products from advanced search results */
@@ -32,11 +32,11 @@ if ($found_products_ad == true) {
 }
 
 if ($found_ezpages) {
-  echo '<div name="infopages" id="infopages">';
+  echo '<div id="infopages">';
   require($template->get_template_dir('tpl_modules_advanced_search_ezpages.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_advanced_search_ezpages.php');
   echo "</div>";
 } else {
-  echo '<div name="infopages" id="infopages">'; ?>
+  echo '<div id="infopages">'; ?>
   <h3 id="advSearchResultsDefaultHeading"><?php echo TEXT_DISPLAY_FOUND_EZPAGES; ?></h3> <?php
   echo TEXT_DISPLAY_NOT_FOUND_IN_EZPAGES." <br \>";
   echo "</div>";
