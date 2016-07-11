@@ -66,8 +66,8 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
 </div>
 
 <!-- Site Navigation -->
+<div class='container nav-container'>
 <nav class='navbar navbar-default'>
-  <div class='container'>
     <div class='navbar-header'>
       <!-- Mobile Menu Icon -->
       <button class='navbar-toggle collapsed' type='button' data-toggle='collapse'
@@ -142,8 +142,8 @@ foreach ($root_categories as $root_category) {
 
     <!-- Search Menu -->
     <!-- TODO: Add menu for searching on collapsed screens, should be hidden otherwise -->
-  </div>
 </nav>
+</div>
 
 <div id="headerWrapper">
   <?php if (HEADER_SALES_TEXT != '') { ?>
