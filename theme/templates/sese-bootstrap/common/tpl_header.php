@@ -46,7 +46,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) { ?>
         <a href='/'><img id='site-logo' class='pull-left' alt='SESE Logo'
              src="<?php echo DIR_WS_TEMPLATE . "img/logos/sese.png"; ?>" /></a>
         <div id='site-title' class='media-body'>
-          <h1 class='media-heading'><a href='/'><?php echo TITLE; ?></a></h1>
+          <h1 class='media-heading'><a href='/'><?php echo SITE_TITLE; ?></a></h1>
         </div>
       </div>
     </div>

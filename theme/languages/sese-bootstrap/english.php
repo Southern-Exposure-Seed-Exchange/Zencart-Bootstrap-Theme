@@ -7,8 +7,8 @@
  * @version $Id: english.php 7440 2007-11-17 21:51:35Z drbyte $
  */
 
+define('SITE_TITLE', 'Southern Exposure <br />Seed Exchange');
 // FOLLOWING WERE moved to meta_tags.php
-//define('TITLE', 'Zen Cart!');
 //define('SITE_TAGLINE', 'The Art of E-commerce');
 //define('CUSTOM_KEYWORDS', 'ecommerce, open source, shop, online shopping');
 // END: moved to meta_tags.php
