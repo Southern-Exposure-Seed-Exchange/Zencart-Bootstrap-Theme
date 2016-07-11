@@ -87,7 +87,7 @@
 <?php
   /* Display the Right Sidebar */
   if (!$flag_disable_right) { ?>
-    <div class='col-sm-3'>
+    <div class='col-sm-3' id='sidebar'>
       <ul class='nav nav-pills nav-stacked text-center'>
         <li role="presentation"><a href="/about-us-ezp-18.html">About Us</a></li>
         <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
