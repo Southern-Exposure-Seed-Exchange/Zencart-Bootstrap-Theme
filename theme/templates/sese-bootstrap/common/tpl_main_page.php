@@ -70,7 +70,7 @@
 <?php
   /* Show Breadcrumbs */
   if (DEFINE_BREADCRUMB_STATUS == '1' || (DEFINE_BREADCRUMB_STATUS == '2' && !$this_is_home_page) ) {
-      echo BootstrapBreadcrumbs::render($breadcrumb);
+      echo '<div class="col-sm-12">' . BootstrapBreadcrumbs::render($breadcrumb) . '</div>';
   }
 
   /* Show Upload Messages */
