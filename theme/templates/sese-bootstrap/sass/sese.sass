@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, #category-navbar, legend, 
   font-weight: 600
 
 
+
 /** ZenCart Quirks **/
 /* When dynamically showing or hiding a form field, Zencart overrides any
  * classes on the field with either the `visibleField` or `hiddenField` class
@@ -58,6 +59,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, #category-navbar, legend, 
   margin: 0
 input.visibleField
   @extend .form-control
+
 /* Style the Zencart's Product Sorter & put it next to it's label */
 form[name=sorter_form]
   display: inline-block
@@ -67,6 +69,17 @@ form[name=sorter_form]
 
 
 /** Site Layout **/
+// TODO: Fix showing up on popup pages like Estimate Shipping
+/* Set our background image */
+body
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../images/sese_background.jpg')
+  background-attachment: fixed
+  background-size: contain
+
+/* Set the background color of the body content */
+body > div
+  background: $body-bg
+
 /* Set Logo Height */
 #site-logo
   height: $logo-height - 10px
