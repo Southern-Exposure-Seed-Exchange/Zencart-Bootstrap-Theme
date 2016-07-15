@@ -159,6 +159,11 @@ div.quick-search
     .icon-bar
       background-color: $yellow !important
 
+/* Increase & emphasize the navbar text */
+#category-navbar
+  font-size: 17px
+  font-weight: normal
+
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb
   margin-bottom: 10px
@@ -176,6 +181,10 @@ footer
 
 
 /** Sidebar **/
+/* Increase the font size of the Nav */
+.nav-pills
+  font-size: 17px
+
 /* Add Spacing Below the Nav */
 #sidebar > ul.nav
   margin-bottom: $panel-body-padding
@@ -183,6 +192,11 @@ footer
 #seseproducticonssidebox .media-list
   a
     color: $text-color
+    /* Increase the size of and de-emphasize the labels */
+    h5
+      font-weight: normal
+      font-size: 16px
+    /* Don't show an underline when mousing over the links */
     &:hover, &:active
       text-decoration: none
 
@@ -197,6 +211,9 @@ footer
 #productListing .itemTitle
   /* Reduce space below product title */
   margin-bottom: 5px
+  /* Emphasize the title and make it larger */
+  font-weight: 800
+  font-size: 20px
   /* Turn the green product links brown */
   a
     color: $dark-brown
