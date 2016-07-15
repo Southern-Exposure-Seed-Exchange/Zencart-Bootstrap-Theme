@@ -1,11 +1,7 @@
 @import "variables"
 @import "bootstrap"
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif)
-
-
-/** Text **/
-h1, h2, h3, h4, h5, h6
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text)
+@import url(https://fonts.googleapis.com/css?family=Glass+Antiqua)
 
 
 /** Utility Classes **/
@@ -31,6 +27,25 @@ img.img-center
 /* Add right spacing to keep adjacent buttons from touching */
 .btn.btn-adjacent
   margin-right: 10px
+
+
+/** Fonts **/
+@font-face
+  font-family: 'Poor Richard'
+  font-style: normal
+  font-weight: 400
+  src: local('Poor Richard'), url('/includes/templates/sese-bootstrap/fonts/PoorRichard.ttf') format('truetype')
+
+/* Set the Site Title to the stylized serif font */
+div#site-title h1.media-heading
+  font-family: 'Poor Richard', 'Glass Antiqua', Helvetica, Arial, sans-serif
+  font-weight: normal
+  font-size: 38px
+
+/* Set Header & Nav text to a Serif font
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, #category-navbar, legend, .nav-pills
+  font-family: 'Crimson Text', Georgia, serif
+  font-weight: 600
 
 
 /** ZenCart Quirks **/
