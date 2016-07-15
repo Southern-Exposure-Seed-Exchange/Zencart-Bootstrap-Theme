@@ -186,7 +186,7 @@ class BootstrapShoppingCart
     if ($product['buttonDelete']) {
       $delete_link = zen_href_link(
         FILENAME_SHOPPING_CART, "action=remove_product&product_id={$product['id']}");
-      $content .= "<div><a href='{$delete_link}'>" .
+      $content .= "<div><a class='cart-remove-link' href='{$delete_link}'>" .
         BootstrapUtils::glyphicon('remove', ICON_TRASH_ALT) . "</a></div>";
     }
     if ($product['checkBoxDelete'] ) {
