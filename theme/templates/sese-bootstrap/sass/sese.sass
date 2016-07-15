@@ -106,7 +106,7 @@ body > div
 ul.quick-links
   margin-bottom: 3px
   li
-    background-color: $gray-lighter
+    background-color: $table-bg-accent
     display: inline-block
     border-style: solid
     border-color: $gray-darker
@@ -116,9 +116,9 @@ ul.quick-links
     a
       color: $text-color
     &:hover
-      background-color: $gray
+      background-color: darken($table-bg-accent, 4%)
       a, a:hover
-        color: $gray-lighter
+        color: $text-color
         text-decoration: none
     &.logged-in
       @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) // {}
@@ -138,15 +138,26 @@ div.quick-search
     display: none !important
 
 
-/* Center the Navbar content */
-.navbar .navbar-nav
-  float: none
-  display: inline-block
-  vertical-align: top
+/* Center the Navbar content on tablets/desktops */
+@media  (min-width: $screen-sm-min) // {}
+  .navbar .navbar-nav
+    float: none
+    display: inline-block
+    vertical-align: top
+  .navbar .navbar-collapse
+    text-align: center
 
-.navbar .navbar-collapse
-  text-align: center
-
+/* Modify the navbar color & hover color */
+.navbar-toggle
+  color: $light-pale-tan
+  *
+    color: $light-pale-tan
+  &:hover
+    color: $yellow
+    *
+      color: $yellow
+    .icon-bar
+      background-color: $yellow !important
 
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb
@@ -183,26 +194,28 @@ footer
   margin-top: 10px
   padding-left: 7.5px
 
-/* Reduce space below product title */
 #productListing .itemTitle
+  /* Reduce space below product title */
   margin-bottom: 5px
+  /* Turn the green product links brown */
+  a
+    color: $dark-brown
+    &:hover
+      color: lighten($dark-brown, 10%)
+  /* Resize the organic, heirloom, etc icons in product headers */
+  small img
+    height: 18px
+    margin-left: 0.4em
 
-/* Resize the organic, heirloom, etc icons in product headers */
-#productListing .itemTitle small img
-  height: 18px
-  margin-left: 0.4em
-
-/* Align the product price with the product title */
 #productListing .product-price
+  /* Align the product price with the product title */
   margin-top: 10px
   font-weight: bold
-
-/* Align the product image with the product title */
-#productListing .product-image img
-  margin-top: 10px
-/* Align the quantity and add to cart button with the product description */
-#productListing .product-price
+  /* Align the quantity and add to cart button with the product description */
   margin-bottom: 5px
+  /* Align the product image with the product title */
+  img
+    margin-top: 10px
 
 /* Set maximum dimensions for the product images */
 #productListing .product-image img
@@ -215,6 +228,14 @@ footer
   min-width: 85px
   max-width: 95px
 
+/* De-emphasize the model/item numbers */
+small.item-number
+  font-size: 75%
+  color: lighten($text-color, 15%)
+
+/* Color the Add to Cart text  */
+.productListing-data button
+  color: $table-bg
 
 /** Product Pages **/
 /* Reduce space between left block items */
