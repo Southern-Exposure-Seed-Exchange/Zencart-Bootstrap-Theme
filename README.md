@@ -72,6 +72,7 @@ Some of ZenCart's default functionality has been changed in this theme:
 * Removed previous/listing/next buttons.
 * Removed displaying quantity discounts.
 * Removed displaying product attributes.
+* Removed Tell-a-Friend button.
 
 ### Checkout Pages
 

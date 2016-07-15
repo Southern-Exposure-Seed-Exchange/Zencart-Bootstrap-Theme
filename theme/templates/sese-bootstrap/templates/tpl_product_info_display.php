@@ -47,17 +47,6 @@ echo BootstrapProductInfo::free_shipping(); ?>
 </div>
 </div>
 
-<?php
-/* Tell-a-Friend Button */
-if ($flag_show_product_info_tell_a_friend == 1) {
-  $tell_friend_link = zen_href_link(FILENAME_TELL_A_FRIEND,
-    'products_id=' . $_GET['products_id']);
-  if ($flag_show_product_info_tell_a_friend == 1) {
-    echo "<a href='{$tell_friend_link}' class='btn btn-default btn-block'>" .
-      BUTTON_TELLAFRIEND_ALT . "</a>";
-  }
-} ?>
-
 </div>  <!-- .pull-left -->
 
 <div id="productDescription" class="productGeneral">
