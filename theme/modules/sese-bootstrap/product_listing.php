@@ -186,7 +186,7 @@ class BootstrapProductListing
         $lc_button = "<a href='{$buy_now_link}'>{$buy_now_button}</a>";
       } else {
         $add_to_cart_button = '<span class="input-group-btn">' .
-          '<button class="btn btn-default" type="submit">Add</button></span>';
+          '<button class="btn btn-primary" type="submit">Add</button></span>';
         $lc_button = "<div class='input-group'>" .
           "<input type='text' class='form-control' name='products_id[" .
             "{$product->fields['products_id']}]' value='0' size='4' />" .
