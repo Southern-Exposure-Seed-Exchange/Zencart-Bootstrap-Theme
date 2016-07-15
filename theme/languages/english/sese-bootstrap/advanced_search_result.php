@@ -24,7 +24,7 @@ define('NAVBAR_TITLE_1', 'Advanced Search');
 define('NAVBAR_TITLE_2', 'Search Results');
 
 //define('HEADING_TITLE_1', 'Advanced Search');
-define('HEADING_TITLE', 'Advanced Search');
+define('HEADING_TITLE', '');
 
 define('HEADING_SEARCH_CRITERIA', 'Search Criteria');
 
