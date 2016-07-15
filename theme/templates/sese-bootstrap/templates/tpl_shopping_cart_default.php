@@ -199,7 +199,7 @@ class BootstrapShoppingCart
   /** Render the row of buttons */
   public static function buttons() {
     $back_link = zen_back_link(true);
-    $left_buttons = "<a href='{$back_link}' class='btn btn-default'>" .
+    $left_buttons = "<a href='{$back_link}' class='btn btn-success'>" .
       "&laquo; " . BUTTON_CONTINUE_SHOPPING_ALT . "</a>";
     if (SHOW_SHIPPING_ESTIMATOR_BUTTON == '1') {
       $shipping_link = zen_href_link(FILENAME_POPUP_SHIPPING_ESTIMATOR);
