@@ -16,8 +16,8 @@
 <div class="centerColumn" id="indexCategories">
 
 <?php if ($show_welcome == true) { ?>
-<div class='page-header text-center'>
-    <h1 id="indexCategoriesHeading"><?php echo TEXT_GREETING_ALL; ?></h1>
+<div class='page-header'>
+    <h1 class='h3' id="indexCategoriesHeading"><?php echo TEXT_GREETING_ALL; ?></h1>
 </div> <!-- .page-header -->
 
 <?php
