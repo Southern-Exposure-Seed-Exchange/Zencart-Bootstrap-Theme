@@ -15,11 +15,11 @@
 
   $content .= "<div class='input-group'>";
   $content .= zen_draw_input_field('keyword', '', 'class="form-control"') .
-    '<span class="input-group-btn"><button class="btn btn-default" type="submit">' . HEADER_SEARCH_BUTTON . '</button></span>';
+    '<span class="input-group-btn"><button class="btn btn-primary" type="submit">' . HEADER_SEARCH_BUTTON . '</button></span>';
   $content .= "</div>";
 
   $search_url = zen_href_link(FILENAME_ADVANCED_SEARCH);
-  $content .= "<div class='text-center'>" .
+  $content .= "<div class='text-right'>" .
     "<small><a href='{$search_url}'>Advanced Search</a></small></div>";
 
   $content .= "</form>";
