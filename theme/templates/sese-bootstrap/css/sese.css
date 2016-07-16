@@ -6096,8 +6096,8 @@ div.quick-search .input-group {
     .navbar-toggle:hover .icon-bar {
       background-color: #FFCC44 !important; }
 
-/* Increase & emphasize the navbar text */
-#category-navbar {
+/* Increase the size of & emphasize the navbar text */
+#category-navbar, #category-navbar .dropdown-menu {
   font-size: 17px;
   font-weight: normal; }
 
@@ -6116,6 +6116,47 @@ div.quick-search .input-group {
 footer {
   padding: 0 15px;
   background-color: #f6eee4; }
+
+/* Properly space multi-column Nav dropdown menus */
+.multi-column .row {
+  margin: 0; }
+
+.dropdown-menu.columns-2 {
+  min-width: 400px; }
+  .dropdown-menu.columns-2 .col-sm-6 {
+    padding: 0; }
+
+.dropdown-menu.columns-3 {
+  min-width: 600px; }
+  .dropdown-menu.columns-3 .col-sm-4 {
+    padding: 0; }
+
+/* Style the multi-column Nav dropdown menus like the normal Nav dropdown menus */
+.multi-column-dropdown {
+  list-style: none;
+  padding: 0;
+  font-size: 17px; }
+  .multi-column-dropdown li a {
+    display: block;
+    padding: 3px 25px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal; }
+    .multi-column-dropdown li a:hover, .multi-column-dropdown li a:focus {
+      text-decoration: none;
+      color: white;
+      background-color: #158312; }
+  .multi-column-dropdown .active a, .multi-column-dropdown .active a:hover, .multi-column-dropdown .active a:focus {
+    color: black;
+    text-decoration: none;
+    outline: 0;
+    background-color: #f6eee4; }
+  @media (max-width: 767px) {
+    .multi-column-dropdown {
+      min-width: 240px !important;
+      overflow-x: hidden; } }
 
 /** Sidebar */
 /* Increase the font size of the Nav */

@@ -116,19 +116,35 @@ foreach ($root_categories as $root_category) {
   </li>
 <?php
   } else {
-    /* Dropdown Menu & Link */ ?>
+    /* Dropdown Menu & Link */
+    $children_count = count($root_category['children']);
+    if ($children_count >= 10 && $children_count < 20) {
+      $columns = 2;
+    } else if ($children_count >= 20) {
+      $columns = 3;
+    } else {
+      $columns = false;
+    }
+    $column_width = (int) (12 / $columns);
+    $children_per_column = ceil($children_count / $columns) + 1; ?>
     <li class='dropdown <?php if ($root_category['active']) echo 'active'; ?>'>
     <a href="<?php echo $root_url; ?>" class='dropdown-toggle' data-toggle='dropdown'
        role='button' aria-haspopup='true' aria-expanded='false'>
       <?php echo $root_category['name']; ?> <span class='caret'></span>
     </a>
-    <ul class='dropdown-menu'>
-    <?php foreach ($root_category['children'] as $child) {
-      $subcategory_url = BootstrapUtils::category_url(array($root_category['id'], $child['id'])); ?>
-      <li <?php if ($child['active']) echo 'class="active"'; ?>>
-        <a href="<?php echo $subcategory_url; ?>"><?php echo $child['name']; ?></a>
-      </li>
-    <?php } ?>
+    <ul class='dropdown-menu <?php echo ($columns ? "multi-column columns-{$columns}" : ''); ?>'>
+    <?php echo ($columns ? '<div class="row">' : '');
+      $child_index = 0;
+      foreach ($root_category['children'] as $child) {
+        echo ($columns && ($child_index == 0 || $child_index % $children_per_column  == 0) ? "<div class='col-sm-{$column_width}'><ul class='multi-column-dropdown'>" : '');
+        $subcategory_url = BootstrapUtils::category_url(array($root_category['id'], $child['id'])); ?>
+        <li <?php if ($child['active']) echo 'class="active"'; ?>>
+          <a href="<?php echo $subcategory_url; ?>"><?php echo $child['name']; ?></a>
+          </li><?php
+        echo ($columns && ($child_index == $children_count - 1 || ($child_index + 1) % $children_per_column == 0) ? "</ul></div>" : '');
+        $child_index++;
+      }
+      echo ($columns ? '</div>' : ''); ?>
     </ul>
   </li>
 <?php

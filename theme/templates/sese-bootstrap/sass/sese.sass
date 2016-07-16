@@ -159,10 +159,11 @@ div.quick-search
     .icon-bar
       background-color: $yellow !important
 
-/* Increase & emphasize the navbar text */
+/* Increase the size of & emphasize the navbar text */
 #category-navbar
-  font-size: 17px
-  font-weight: normal
+  &, .dropdown-menu
+    font-size: 17px
+    font-weight: normal
 
 /* Decrease Spacing Below Breadcrumbs */
 .breadcrumb
@@ -178,6 +179,45 @@ div.quick-search
 footer
   padding: 0 15px
   background-color:  $table-bg-accent
+
+/* Properly space multi-column Nav dropdown menus */
+.multi-column .row
+  margin: 0
+.dropdown-menu.columns-2
+  min-width: 400px
+  .col-sm-6
+    padding: 0
+.dropdown-menu.columns-3
+  min-width: 600px
+  .col-sm-4
+    padding: 0
+
+/* Style the multi-column Nav dropdown menus like the normal Nav dropdown menus */
+.multi-column-dropdown
+  list-style: none
+  padding: 0
+  font-size: 17px
+  li a
+    display: block
+    padding: 3px 25px
+    clear: both
+    font-weight: normal
+    line-height: $line-height-base
+    color: $gray-dark
+    white-space: normal
+    &:hover, &:focus
+      text-decoration: none
+      color: $navbar-default-link-active-color
+      background-color: $navbar-default-link-hover-bg
+  .active a
+    &, &:hover, &:focus
+      color: $component-active-color
+      text-decoration: none
+      outline: 0
+      background-color: $component-active-bg
+  @media (max-width: $screen-sm-min - 1) // {}
+    min-width: 240px !important
+    overflow-x: hidden
 
 
 /** Sidebar **/
