@@ -218,6 +218,14 @@ footer
   @media (max-width: $screen-sm-min - 1) // {}
     min-width: 240px !important
     overflow-x: hidden
+    li a
+      color: $navbar-default-link-color
+      &:hover, &:focus
+        color: $navbar-default-link-hover-color
+    .active a
+      &, &:hover, &:focus
+        color: $navbar-default-link-active-color
+        background-color: $navbar-default-link-active-bg
 
 
 /** Sidebar **/

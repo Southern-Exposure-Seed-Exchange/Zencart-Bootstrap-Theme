@@ -6156,7 +6156,14 @@ footer {
   @media (max-width: 767px) {
     .multi-column-dropdown {
       min-width: 240px !important;
-      overflow-x: hidden; } }
+      overflow-x: hidden; }
+      .multi-column-dropdown li a {
+        color: #f8f3ed; }
+        .multi-column-dropdown li a:hover, .multi-column-dropdown li a:focus {
+          color: #FFCC44; }
+      .multi-column-dropdown .active a, .multi-column-dropdown .active a:hover, .multi-column-dropdown .active a:focus {
+        color: white;
+        background-color: #10660e; } }
 
 /** Sidebar */
 /* Increase the font size of the Nav */
