@@ -4,7 +4,7 @@ $text = SUBSCRIBE_SIDEBOX_TEXT;
 $button_text = BootstrapUtils::glyphicon('envelope') . " " .
   SUBSCRIBE_SIDEBOX_BUTTON_TEXT;
 $content = <<<HTML
-<div class='help-block'>{$text}</div>
+<p>{$text}</p>
 <form action="https://sendy.southernexposure.com/subscribe" method="POST" accept-charset="utf-8" target="_blank">
   <input type="hidden" name="list" value="EXGP5iaxXvU4tH7fWWopIQ"/>
   <div class='form-group'>
