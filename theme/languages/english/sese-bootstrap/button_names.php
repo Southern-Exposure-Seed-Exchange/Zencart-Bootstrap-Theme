@@ -82,7 +82,7 @@ define('BUTTON_DELETE_ALT', 'Delete');
 define('BUTTON_DELETE_SMALL_ALT', 'Delete');
 define('BUTTON_DOWNLOAD_ALT', 'Download Now');
 define('BUTTON_EDIT_SMALL_ALT', 'Edit');
-define('BUTTON_IN_CART_ALT', 'Add to Cart');
+define('BUTTON_IN_CART_ALT', 'Add');
 define('BUTTON_LOGIN_ALT', 'Sign In');
 define('BUTTON_NEXT_ALT', 'Next');
 define('BUTTON_PREVIOUS_ALT', 'Previous');
