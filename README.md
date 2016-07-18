@@ -53,7 +53,8 @@ Some of ZenCart's default functionality has been changed in this theme:
   All Products page.
 * New/Featured/Special/Upcoming Product Boxes have been removed from invalid
   Category pages.
-* `Add Products to Cart` buttons moved to each products row.
+* `Add Products to Cart` buttons moved to each products row & always applies
+  only to that product(instead of every product/quantity on the page).
 * Removed filtering by manufacturers.
 * Removed table headings from products table.
 * Moved model number in products table to description column, requires enabling

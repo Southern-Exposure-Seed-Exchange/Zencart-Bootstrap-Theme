@@ -73,6 +73,13 @@ if ($listing_split->number_of_rows > 0) {
               "<div class='text-center'><small class='item-number'><i>Item # {$listing->fields['products_model']}" .
               "</i></small></div>";
           }
+          $form_action = zen_href_link(FILENAME_DEFAULT,
+              zen_get_all_get_params(array('action')) .  'action=multiple_products_add_product');
+          ;
+          $lc_text =
+              zen_draw_form(
+                  'multiple_products_cart_quantity', $form_action, 'post', 'enctype="multipart/form-data"'
+              ) . $lc_text . "</form>" ;
           break;
         case 'PRODUCT_LIST_QUANTITY':
           $lc_text = $listing->fields['products_quantity'];
@@ -104,16 +111,6 @@ if ($listing_split->number_of_rows > 0) {
   $list_box_contents = array(array(array(
     'params' => 'class="productListing-data"', 'text' => TEXT_NO_PRODUCTS)));
   $error_categories = true;
-}
-
-
-$show_form = $how_many > 0 && PRODUCT_LISTING_MULTIPLE_ADD_TO_CART != 0 &&
-  $show_submit == true && $listing_split->number_of_rows > 0;
-if ($show_form) {
-  $form_action = zen_href_link(FILENAME_DEFAULT,
-    zen_get_all_get_params(array('action')) .  'action=multiple_products_add_product');
-  echo zen_draw_form('multiple_products_cart_quantity', $form_action, 'post',
-    'enctype="multipart/form-data"');
 }
 
 
@@ -189,7 +186,7 @@ class BootstrapProductListing
           '<button class="btn btn-primary" type="submit">Add</button></span>';
         $lc_button = "<div class='input-group'>" .
           "<input type='text' class='form-control' name='products_id[" .
-            "{$product->fields['products_id']}]' value='0' size='4' />" .
+            "{$product->fields['products_id']}]' value='1' size='4' />" .
           "{$add_to_cart_button}</div>";
       }
     } elseif (PRODUCT_LIST_PRICE_BUY_NOW == '2' && !$hide_quantity) {

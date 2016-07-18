@@ -63,15 +63,8 @@ echo '<div class="clearfix"><div class="pull-right">' .
   BootstrapAllProducts::render_page_count_links() . '</div><div class="pull-left">';
 require($template->get_template_dir('/tpl_modules_listing_display_order.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_listing_display_order.php');
 echo '</div></div>';
-
-
-if ($listing_split->number_of_rows > 0) {
-  echo zen_draw_form('multiple_products_cart_quantity',
-    zen_href_link(FILENAME_PRODUCTS_ALL, zen_get_all_get_params(array('action')) . 'action=multiple_products_add_product'),
-    'post', 'enctype="multipart/form-data"');
-}
-
 ?>
+
 <br class="clearBoth" />
 
 <?php
