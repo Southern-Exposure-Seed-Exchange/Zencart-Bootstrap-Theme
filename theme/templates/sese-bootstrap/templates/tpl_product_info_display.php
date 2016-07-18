@@ -27,14 +27,15 @@ echo zen_draw_form('cart_quantity', zen_href_link(zen_get_info_page($_GET['produ
 if ($messageStack->size('product_info') > 0) echo $messageStack->output('product_info'); ?>
 
 <div class='clearfix'>
-<div id='product-info-block' class='pull-left col-sm-5 col-md-4 col-lg-3'>
+<div id='product-info-block' class='pull-left col-xs-12 col-sm-4 col-md-5 col-lg-5'>
 <?php /** Display the product's main image */
 if (zen_not_null($products_image)) {
   require($template->get_template_dir('/tpl_modules_main_product_image.php',
     DIR_WS_TEMPLATE, $current_page_base, 'templates') .
     '/tpl_modules_main_product_image.php');
 } ?>
-
+</div>
+<div class='pull-right col-sm-4 col-md-3 col-lg-2'>
 <!-- Price and Cart Panel -->
 <div class='panel panel-default'>
 <div id="productPrices" class="productGeneral panel-body">
