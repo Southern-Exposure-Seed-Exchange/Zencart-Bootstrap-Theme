@@ -26,10 +26,10 @@ if (!$flag_disable_footer) {
 <div id='footer-container' class='container'>
 <footer>
 <?php
-  /* Treat the Footer as the Left Sidebar */
-  if (!$flag_disable_left) { ?>
+  /* Treat the Footer as the Right Sidebar */
+  if (!$flag_disable_right) { ?>
     <div class='row'>
-      <?php require(DIR_WS_MODULES . zen_get_module_directory($left_column_file)); ?>
+      <?php require(DIR_WS_MODULES . zen_get_module_directory($right_column_file)); ?>
     </div>
 <?php } ?>
 

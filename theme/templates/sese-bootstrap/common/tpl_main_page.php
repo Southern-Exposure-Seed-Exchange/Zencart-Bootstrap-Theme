@@ -41,21 +41,21 @@
   if (!isset($flag_disable_left)) { $flag_disable_left = false; }
   if (!isset($flag_disable_right)) { $flag_disable_right = false; }
 
-  // global disable of column_right
-  if (COLUMN_RIGHT_STATUS == 0 or BootstrapCheckout::user_in_checkout()) {
-    $flag_disable_right = true;
+  // global disable of column_left
+  if (COLUMN_LEFT_STATUS == 0 or BootstrapCheckout::user_in_checkout()) {
+    $flag_disable_left = true;
   }
 
-  if ($flag_disable_right) {
+  if ($flag_disable_left) {
     $main_content_class = 'col-sm-offset-1 col-sm-10';
   } else {
-    $main_content_class = 'col-sm-9';
+    $main_content_class = 'col-sm-push-3 col-sm-9 col-lg-push-2 col-lg-10';
   }
 
   $header_template = 'tpl_header.php';
   $footer_template = 'tpl_footer.php';
-  $left_column_file = 'column_left.php';    // Not Used
-  $right_column_file = 'column_right.php';
+  $left_column_file = 'column_left.php';
+  $right_column_file = 'column_right.php';  // Not Used
   $body_id = ($this_is_home_page) ? 'indexHome' : str_replace('_', '', $_GET['main_page']);
 ?>
 <body id="<?php echo $body_id . 'Body'; ?>"<?php if($zv_onload !== '') echo ' onload="' . $zv_onload . '"'; ?>>
@@ -78,16 +78,13 @@
     echo $messageStack->output('upload');
   }
 ?>
-
   <div class='<?php echo $main_content_class; ?>'>
     <?php /* Display the Main Content */ require($body_code); ?>
   </div>
-
-
 <?php
-  /* Display the Right Sidebar */
-  if (!$flag_disable_right) { ?>
-    <div class='col-sm-3' id='sidebar'>
+  /* Display the Left Sidebar */
+  if (!$flag_disable_left) { ?>
+    <div class=' col-sm-pull-9 col-sm-3 col-lg-pull-10 col-lg-2' id='sidebar'>
       <ul class='nav nav-pills nav-stacked text-center'>
         <li role="presentation"><a href="/about-us-ezp-18.html">About Us</a></li>
         <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
@@ -100,9 +97,10 @@
       </ul>
 
 <?php /* Include Sideboxes */
-      require(DIR_WS_MODULES . zen_get_module_directory($right_column_file)); ?>
+      require(DIR_WS_MODULES . zen_get_module_directory($left_column_file)); ?>
     </div>
 <?php } ?>
+
 </div>  <!-- .row -->
 </div>  <!-- .container -->
 

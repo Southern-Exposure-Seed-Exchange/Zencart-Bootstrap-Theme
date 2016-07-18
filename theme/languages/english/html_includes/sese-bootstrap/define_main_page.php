@@ -4,7 +4,7 @@
 </div></strong>
 -->
 <!-- Main Content -->
-<div class='col-md-9 col-md-push-3'>
+<div class='col-md-9'>
   <div class='clearfix'>
     <a href="/catalog-information-ezp-16.html">
       <img class='pull-left' style="width: 140px;" src="/images/home/sese-catalog-cover-2015-home.jpg"
@@ -143,8 +143,8 @@
 
 <hr class='visible-xs visible-sm' />
 
-<!-- Left Column -->
-<div class='col-md-3 col-md-pull-9'>
+<!-- Right Column -->
+<div class='col-md-3'>
   <a href="/gardenplanner">
     <img src="/newsletter/2012-december/sese-garden-planner-screenshots.jpg"
          alt="Southern Exposure Garden Planner" class='img-responsive img-center' />

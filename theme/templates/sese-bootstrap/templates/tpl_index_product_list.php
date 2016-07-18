@@ -69,7 +69,7 @@ require($template->get_template_dir('tpl_modules_product_listing.php', DIR_WS_TE
 
 // Show the Icon Legend
 // TODO: Replace with Text Version
-echo '<div class="hidden-xs col-sm-8 col-sm-push-2 col-sm-offset-2">' . BootstrapIndexProductList::product_icon_legend() . '</div>';
+echo '<div class="hidden-xs col-sm-8 col-sm-offset-2">' . BootstrapIndexProductList::product_icon_legend() . '</div>';
 
 // Handle Invalid Category
 if ($error_categories == true) {
