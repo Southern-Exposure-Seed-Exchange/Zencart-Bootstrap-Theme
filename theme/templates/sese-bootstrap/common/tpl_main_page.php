@@ -87,7 +87,7 @@
     <div class=' col-sm-pull-9 col-sm-3 col-lg-pull-10 col-lg-2' id='sidebar'>
       <ul class='nav nav-pills nav-stacked text-center'>
         <li role="presentation"><a href="/about-us-ezp-18.html">About Us</a></li>
-        <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides & Library</a></li>
+        <li role="presentation"><a href="/growing-guides-library-ezp-41.html">Growing Guides</a></li>
         <li role="presentation"><a href="/retail-stores-ezp-17.html">Retail Stores</a></li>
         <li role="presentation"><a href="/events-ezp-40.html">Events</a></li>
         <li role="presentation"><a href="/faq-ezp-21.html">FAQ</a></li>
