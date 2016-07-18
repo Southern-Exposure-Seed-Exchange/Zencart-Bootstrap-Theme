@@ -290,13 +290,17 @@ footer
 
 /* Ensure the quantity input is visible on all screen sizes but not huge */
 #productListing .productListing-data .input-group
-  min-width: 85px
-  max-width: 95px
+  min-width: 95px
+  max-width: 105px
 
 /* De-emphasize the model/item numbers */
 small.item-number
-  font-size: 75%
+  font-size: 85%
   color: lighten($text-color, 15%)
+
+/* Emphasize the Quantity inputs */
+.productListing-data input.form-control
+  font-weight: bold
 
 /* Color the Add to Cart text  */
 .productListing-data button
