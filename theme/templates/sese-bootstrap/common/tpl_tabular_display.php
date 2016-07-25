@@ -17,14 +17,14 @@ $cell_title = (!isset($cell_title) || empty($cell_title)) ? 'list' : $cell_title
 ?>
 <table id="<?php echo "cat{$cPath}Table"; ?>" class="table table-condensed table-striped">
 <?php
-  for ($row=0; $row < sizeof($list_box_contents); $row++) {
+  for ($row = 1; $row <= sizeof($list_box_contents); $row++) {
     $r_params = "";
     $c_params = "";
     if (isset($list_box_contents[$row]['params'])) {
       $r_params .= ' ' . $list_box_contents[$row]['params'];
     }
     echo "<tr $r_params>";
-    for ($col=0; $col < sizeof($list_box_contents[$row]); $col++) {
+    for ($col = 0; $col < sizeof($list_box_contents[$row]); $col++) {
       $c_params = "";
       $cell_type = ($row == 0) ? 'th' : 'td';
       if (isset($list_box_contents[$row][$col]['params'])) {
