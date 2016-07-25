@@ -1,8 +1,33 @@
 <?php
 /** Set the Content of the SESE Product Icons Sidebox */
+$blank_icon = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=";
 $product_icons = BootstrapUtils::sese_product_icons($template, $current_page_base);
 $content = <<<HTML
 <ul class='media-list'>
+<!-- All -->
+<li class='media'>
+  <a href="index.php?main_page=products_all">
+    <div class='media-left media-middle'>
+      <img class='media-object' src="{$blank_icon}" width="32" height="26" />
+    </div>
+    <div class='media-body'>
+      <h5 class='media-heading'>All Products</h5>
+    </div>
+  </a>
+</li>
+
+<!-- Bulk -->
+<li class='media'>
+  <a href="index.php?main_page=products_all&bulk=1">
+    <div class='media-left media-middle'>
+      <img class='media-object' src="{$blank_icon}" width="32" height="26" />
+    </div>
+    <div class='media-body'>
+      <h5 class='media-heading'>Bulk Products</h5>
+    </div>
+  </a>
+</li>
+
 <!-- Organic -->
 <li class='media'>
   <a href="index.php?main_page=products_all&organic=1">
