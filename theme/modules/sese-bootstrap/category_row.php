@@ -35,7 +35,7 @@ if ($num_categories > 0) {
     $category_image = zen_image(
       DIR_WS_IMAGES . $categories->fields['categories_image'],
       $categories->fields['categories_name'],
-      SUBCATEGORY_IMAGE_WIDTH, SUBCATEGORY_IMAGE_HEIGHT);
+      0, 0, 'class="img-responsive img-center"');
 
     $list_box_contents[$row][$col] = array(
       'params' => "class='" . BootstrapUtils::$thumbnail_grid_classes . "'",
