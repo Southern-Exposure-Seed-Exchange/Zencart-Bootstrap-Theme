@@ -584,7 +584,7 @@ define('SITE_TITLE', 'Southern Exposure <br />Seed Exchange');
   define('TEXT_INFO_SORT_BY_PRODUCTS_NAME_DESC', 'Product Name - desc');
   define('TEXT_INFO_SORT_BY_PRODUCTS_PRICE', 'Price - low to high');
   define('TEXT_INFO_SORT_BY_PRODUCTS_PRICE_DESC', 'Price - high to low');
-  define('TEXT_INFO_SORT_BY_PRODUCTS_MODEL', 'Catalog #');
+  define('TEXT_INFO_SORT_BY_PRODUCTS_MODEL', 'Item #');
   define('TEXT_INFO_SORT_BY_PRODUCTS_DATE_DESC', 'Date Added - New to Old');
   define('TEXT_INFO_SORT_BY_PRODUCTS_DATE', 'Date Added - Old to New');
   define('TEXT_INFO_SORT_BY_PRODUCTS_SORT_ORDER', 'Default Display');
