@@ -13,7 +13,7 @@
  */
 require(DIR_WS_MODULES . zen_get_module_directory('category_row.php'));
 
-if ($_GET['main_page'] == 'index') { echo '<div class="col-md-9">'; }
+if ($_GET['main_page'] == 'index' && $_GET['cPath'] == '') { echo '<div class="col-md-9">'; }
 require($template->get_template_dir('tpl_columnar_display.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_columnar_display.php');
-if ($_GET['main_page'] == 'index') { echo '</div>'; }
+if ($_GET['main_page'] == 'index' && $_GET['cPath'] == '') { echo '</div>'; }
 ?>
