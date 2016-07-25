@@ -11,8 +11,8 @@
 require(DIR_WS_MODULES . zen_get_module_directory(FILENAME_MAIN_PRODUCT_IMAGE));
 
 $image_path = DIR_WS_IMAGES . $products_image;
-$thumbnail = zen_image($products_image_medium, addslashes($products_name),
-  LARGE_IMAGE_WIDTH, 0, 'class="img-responsive img-center"');
+$thumbnail = zen_image($products_image_large, addslashes($products_name),
+  0, 0, 'class="img-responsive img-center"');
 ?>
 <div id="productMainImage" class="text-center">
   <a href="<?php echo $image_path; ?>" data-lightbox="product_main_image"
