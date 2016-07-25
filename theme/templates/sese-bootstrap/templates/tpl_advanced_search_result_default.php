@@ -25,6 +25,12 @@ if ($found_products_ad == true) {
     <p><a href='?<?php echo $_SERVER['QUERY_STRING']; ?>#infopages'>Information Page Search Results</a> are at bottom of page.</p><?php
   } ?>
   <h3>Product Search Results:</h3><?php
+  if (isset($disp_order_default)) {
+    echo '<div class="clearfix"><div class="pull-right">' .
+      BootstrapUtils::render_page_count_links() . '</div><div class="pull-left">';
+    require($template->get_template_dir('/tpl_modules_listing_display_order.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_listing_display_order.php');
+    echo '</div></div>';
+  }
   /* Collate and display products from advanced search results */
   require($template->get_template_dir('tpl_modules_product_listing.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_product_listing.php');
 } else {

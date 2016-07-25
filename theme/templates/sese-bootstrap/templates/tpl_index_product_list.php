@@ -33,34 +33,16 @@
 // Render the Category's Description
 if ($current_categories_description != '') {
 ?>
-  <div id="indexProductListCatDescription" class="content"><?php echo $current_categories_description;  ?></div>
-<?php } ?>
+  <div id="indexProductListCatDescription" class="content"><?php echo $current_categories_description;  ?></div><?php
+}
 
-<?php /*
-  // TODO: Replace alpha filter with all products sort
-  $check_for_alpha = $listing_sql;
-  $check_for_alpha = $db->Execute($check_for_alpha);
-
-  if ($do_filter_list || ($check_for_alpha->RecordCount() > 0 && PRODUCT_LIST_ALPHA_SORTER == 'true')) {
-  $form = zen_draw_form('filter', zen_href_link(FILENAME_DEFAULT), 'get') . '<label class="inputLabel">' .TEXT_SHOW . '</label>';
-  echo $form;
-  echo zen_draw_hidden_field('main_page', FILENAME_DEFAULT);
-  echo zen_hide_session_id();
-  if (!$getoption_set) {
-    echo zen_draw_hidden_field('cPath', $cPath);
-  }
-  if (isset($_GET['typefilter']) && $_GET['typefilter'] != '') echo zen_draw_hidden_field('typefilter', $_GET['typefilter']);
-  echo zen_draw_hidden_field('sort', $_GET['sort']);
-  if ($do_filter_list) {
-    echo zen_draw_pull_down_menu('filter_id', $options, (isset($_GET['filter_id']) ? $_GET['filter_id'] : ''), 'onchange="this.form.submit()"');
-  }
-  require(DIR_WS_MODULES . zen_get_module_directory(FILENAME_PRODUCT_LISTING_ALPHA_SORTER));
-?>
-</form>
-<?php
-  }
-  // TODO: END alpha filter code */
-
+// Render the Sort Dropdown
+if (isset($disp_order_default)) {
+  echo '<div class="clearfix"><div class="pull-right">' .
+      BootstrapUtils::render_page_count_links() . '</div><div class="pull-left">';
+  require($template->get_template_dir('/tpl_modules_listing_display_order.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_listing_display_order.php');
+  echo '</div></div>';
+}
 
 /**
  * require the code for listing products

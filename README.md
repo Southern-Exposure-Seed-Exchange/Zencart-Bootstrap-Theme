@@ -82,3 +82,7 @@ Some of ZenCart's default functionality has been changed in this theme:
 ### Account Pages
 
 * Removed email format preference input on the Account Edit Page.
+
+### Search Results Page
+
+* Add Sort Dropdown from All Products Page.

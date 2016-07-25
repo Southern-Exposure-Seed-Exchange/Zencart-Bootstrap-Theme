@@ -72,5 +72,23 @@ class BootstrapUtils
     return zen_back_link() . "<span class='pull-left btn btn-default'>" .
       BUTTON_BACK_ALT . "</span></a>";
   }
+
+  /** Return HTML containing links to modify the number of products per page */
+  public static function render_page_count_links() {
+    $link = "<a href='.?{$_SERVER['QUERY_STRING']}&";
+
+    $paging_links = array();
+    foreach (array(10, 25, 50, 75, 100) as $page_count) {
+      if (!array_key_exists('numitems', $_GET) || $_GET['numitems'] != $page_count) {
+        $paging_text = $link . "numitems={$page_count}'>{$page_count}</a>";
+      } else {
+        $paging_text = "<b>{$page_count}</b>";
+      }
+      $paging_links[] = $paging_text;
+    }
+
+    return "<strong>Products per page:</strong>&nbsp;" .
+           join('&nbsp;|&nbsp;', $paging_links);
+  }
 }
 ?>

@@ -60,7 +60,7 @@
 
 <?php
 echo '<div class="clearfix"><div class="pull-right">' .
-  BootstrapAllProducts::render_page_count_links() . '</div><div class="pull-left">';
+  BootstrapUtils::render_page_count_links() . '</div><div class="pull-left">';
 require($template->get_template_dir('/tpl_modules_listing_display_order.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_listing_display_order.php');
 echo '</div></div>';
 ?>
@@ -77,37 +77,3 @@ require($template->get_template_dir('tpl_modules_product_listing.php', DIR_WS_TE
 </form>
 
 </div>
-
-
-<?php
-
-class BootstrapAllProducts
-{
-  /** Return HTML containing links to modify the number of products per page */
-  public static function render_page_count_links() {
-    $link = "<a href='.?main_page=products_all&";
-    foreach (array('organic', 'heirloom', 'southern', 'eco', 'bulk') as $type) {
-      if ($_GET[$type] == 1) {
-        $link .= "{$type}=1&";
-      }
-    }
-    if ($_GET['disp_order'] > 0) {
-      $link .= "disp_order={$_GET['disp_order']}&";
-    }
-
-    $paging_links = array();
-    foreach (array(10, 25, 50, 75, 100) as $page_count) {
-      if (!array_key_exists('numitems', $_GET) || $_GET['numitems'] != $page_count) {
-        $paging_text = $link . "numitems={$page_count}'>{$page_count}</a>";
-      } else {
-        $paging_text = "<b>{$page_count}</b>";
-      }
-      $paging_links[] = $paging_text;
-    }
-
-    return "<strong>Products per page:</strong>&nbsp;" .
-           join('&nbsp;|&nbsp;', $paging_links);
-  }
-}
-
-?>
