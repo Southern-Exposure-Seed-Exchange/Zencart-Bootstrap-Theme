@@ -10,7 +10,7 @@
  */
 
   if ($title_link) {
-    $title = '<a href="' . zen_href_link($title_link) . '">' . $title . BOX_HEADING_LINKS . '</a>';
+    $title = '<a href="' . zen_href_link($title_link) . '">' . $title . '</a>';
   }
   $panel_id = str_replace('_', '-', $box_id );
   $heading_id = $panel_id . 'Heading';

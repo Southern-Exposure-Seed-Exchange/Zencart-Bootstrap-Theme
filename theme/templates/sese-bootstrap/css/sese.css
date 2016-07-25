@@ -6121,6 +6121,10 @@ footer {
   padding: 0 15px;
   background-color: #f6eee4; }
 
+/* Don't color the Contact Us sidebox heading link */
+h3#contactussideboxHeading a, h3#contactussideboxHeading a:hover {
+  color: #4a2604; }
+
 /* Properly space multi-column Nav dropdown menus */
 .multi-column .row {
   margin: 0; }
