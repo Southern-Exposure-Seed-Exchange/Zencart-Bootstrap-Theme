@@ -8,7 +8,7 @@ build:
 	scss --sass --precision 10 --sourcemap=inline --update ${SASS_DIR}:${CSS_DIR}
 
 dist:
-	scss --sass --precision 10 --sourcemap=none -t compressed --update ${SASS_DIR}:${CSS_DIR}
+	scss --sass --precision 10 --sourcemap=none -t compressed ${SASS_DIR}/sese.sass ${CSS_DIR}/sese.css
 
 # Installation
 install:
