@@ -131,9 +131,9 @@
 <div class='col-md-3'>
 
   <!-- Catalog -->
-  <a href="http://www.southernexposure.com/catalog-information-ezp-16.html">
+  <p><a href="http://www.southernexposure.com/catalog-information-ezp-16.html">
     <img class='img-responsive' src="/images/catalog-2016-cover-80kb.jpg" alt="Southern Exposure Catalog Seeds 2015" />
-  </a>
+  </a></p>
   <p>
     <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>
     You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2016-for-web.pdf" target="_blank">online as a PDF</a>.
