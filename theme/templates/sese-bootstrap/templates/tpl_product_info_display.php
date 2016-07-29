@@ -197,9 +197,12 @@ HTML;
         'text' => $products_quantity . TEXT_PRODUCT_QUANTITY,
       ),
     );
-    $no_details = empty(array_filter(
-      $details, function($x) { return $x['display']; }));
-    if ($no_details) { return ''; }
+    foreach ($details as $k => $v) {
+      if (!array_key_exists($k, 'display') || $k['display'] == '') {
+        unset($details[$k]);
+      }
+    }
+    if (empty($details)) { return ''; }
 
     $content = '<ul class="list-unstyled">';
     foreach ($details as $detail) {
