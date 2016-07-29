@@ -19,7 +19,7 @@ main() {
         SITE_FOLDER="$INCLUDES_DIR/$FOLDER_TO_LINK/$THEME_DIR_NAME"
         THEME_FOLDER="$PWD/theme/$FOLDER_TO_LINK/$THEME_DIR_NAME"
         if [ ! -e $SITE_FOLDER ]; then
-            ln -s "$THEME_FOLDER" "$SITE_FOLDER"
+            ln -f -s "$THEME_FOLDER" "$SITE_FOLDER"
         fi
     done
 
@@ -28,7 +28,7 @@ main() {
         FILE_NAME=$(basename $THEME_FILE)
         SITE_FILE="$INCLUDES_DIR/functions/extra_functions/$FILE_NAME"
         if [ ! -e $SITE_FILE ]; then
-            ln -s "$THEME_FILE" "$SITE_FILE"
+            ln -f -s "$THEME_FILE" "$SITE_FILE"
         fi
     done
 
@@ -37,7 +37,7 @@ main() {
         FILE_NAME=$(basename $THEME_FILE)
         SITE_FILE="$INCLUDES_DIR/classes/$FILE_NAME"
         if [ ! -e $SITE_FILE ]; then
-            ln -s "$THEME_FILE" "$SITE_FILE"
+            ln -f -s "$THEME_FILE" "$SITE_FILE"
         fi
     done
 
@@ -45,7 +45,7 @@ main() {
     AUTOLOADER_FILE_NAME='config.sese_bootstrap.php'
     THEME_FILE="$INCLUDES_DIR/auto_loaders/$AUTOLOADER_FILE_NAME"
     if [ ! -e $THEME_FILE ]; then
-      ln -s "$PWD/theme/auto_loaders/$AUTOLOADER_FILE_NAME" "$THEME_FILE"
+      ln -f -s "$PWD/theme/auto_loaders/$AUTOLOADER_FILE_NAME" "$THEME_FILE"
     fi
 }
 
