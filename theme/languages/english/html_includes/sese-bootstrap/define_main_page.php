@@ -10,18 +10,18 @@
 
 <!-- Main Content -->
 <div class='col-md-9'>
-
+We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
   <!-- Summer/Fall Items -->
   <h3>Don't forget to order for summer and fall planting!</h3>
   <p class='text-center'>
     <a href="/chesnok-red-hardneck-garlic-8-oz-p-248.html">
-      <img style="margin: 3px; height: 120px;" alt="Chesnok Red Hardneck Garlic" src="/images/mivagraphics/veg/garlic-hardneck-chesnokred.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Chesnok Red Hardneck Garlic" src="/images/mivagraphics/veg/garlic-hardneck-chesnokred.jpg" />
     </a>
     <a href="/inchelium-red-softneck-garlic-8-oz-p-1180.html">
-      <img style="margin: 3px; height: 120px;" alt="Inchelium Red Garlic" src="/images/veg/garlic-inchelium-red.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Inchelium Red Garlic" src="/images/veg/garlic-inchelium-red.jpg" />
     </a>
     <a href="/italian-softneck-garlic-8-oz-p-51.html">
-      <img style="margin: 3px; height: 120px;" alt="Italian Softneck Garlic" src="/images/garlic-italiansoftneck.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Italian Softneck Garlic" src="/images/garlic-italiansoftneck.jpg" />
     </a>
   </p>
   <p>
@@ -40,13 +40,13 @@
   </p>
   <p class='text-center'>
     <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=tatsoi+rapa">
-      <img style="margin: 3px; height: 120px;" alt="Tatsoi Brassica Rapa" src="/images/veg/tatsoi-mustard.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Tatsoi Brassica Rapa" src="/images/veg/tatsoi-mustard.jpg" />
     </a>
     <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=silverbeet">
-      <img style="margin: 3px; height: 120px;" alt="Rainbow Chard" src="/images/veg/rainbow-chard.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Rainbow Chard" src="/images/veg/rainbow-chard.jpg" />
     </a>
     <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=sword+leaf">
-      <img style="margin: 3px; height: 120px;" alt="Sword Leaf lettuce" src="/images/veg/sword-leaf-lettuce.jpg" />
+      <img style="margin: 3px; height: 140px;" alt="Sword Leaf lettuce" src="/images/veg/sword-leaf-lettuce.jpg" />
     </a>
   </p>
 
@@ -57,7 +57,9 @@
     <img class='img-responsive img-center' src="https://www.southernexposure.com/images/home/hhf-2015-speakers.jpg" />
     <p>Taste 100+ tomatoes, peppers and melons, join us for the Old Timey Seed Swap, and choose from 80+ workshops and demonstrations.</p>
     <p><strong>General Admission is Saturday, September 10, with pre- and post-festival events <em>Friday–Sunday</em></strong></p>
-    <p><strong><span style="color:#4a4a4a; text-align:center; font-size:16px;"><a style="color:#007700;" href="http://heritageharvestfestival.com/">www.heritageharvestfestival.com</a></span></strong></p>
+    <p><strong><span style="color:#4a4a4a; font-size:16px;"><a style="color:#007700;" href="http://heritageharvestfestival.com/">
+      www.heritageharvestfestival.com
+    </a></span></strong></p>
   </div>
 
   <hr />
