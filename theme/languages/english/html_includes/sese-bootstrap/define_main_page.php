@@ -10,7 +10,10 @@
 
 <!-- Main Content -->
 <div class='col-md-9'>
-We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
+  <!-- New Site -->
+  <div class="alert alert-info" role="alert">
+  We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
+  </div>
   <!-- Summer/Fall Items -->
   <h3>Don't forget to order for summer and fall planting!</h3>
   <p class='text-center'>
@@ -183,14 +186,6 @@ We’ve updated the look of our website.  Please <a href="/contact_us.html">cont
 
   <hr />
 
-  <!-- Plant a Row -->
-  <h4 class='text-center'>Plant A Row for the Hungry</h4>
-  <p><a href="/plant-a-row-ezp-164.html">
-    Read about our project, and how to start your own <span class='glyphicon glyphicon-menu-right'></span>
-  </a></p>
-
-  <hr />
-
   <!-- Events -->
   <h4 class='text-center'>Events</h4>
   <p>We  host seed swaps, tastings, and workshops on heirloom gardening, year-round edible gardening, and more! </p>
@@ -199,14 +194,6 @@ We’ve updated the look of our website.  Please <a href="/contact_us.html">cont
     class='img-responsive img-center' alt="our tomato tasting at a Mother
     Earth News Fair" src="/images/info/pa-mother-earth-news.jpg" /></a>
   <hr />
-
-  <h4 class='text-center'>Anti-GMO Lawsuit</h4>
-  <p>We came together with over 80 plaintiffs to ask the courts to keep
-  Monsanto from suing us if their frankengenes contaminate our seed crops! Read
-  about <a href="/our-nongmo-policy-ezp-15.html">
-    the lawsuit, our partial victory, and our anti-GMO policy <span class='glyphicon glyphicon-menu-right'></span>
-  </a></p>
-
 
 </div>
 
