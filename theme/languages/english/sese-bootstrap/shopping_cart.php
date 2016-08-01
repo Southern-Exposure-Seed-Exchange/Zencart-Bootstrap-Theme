@@ -13,7 +13,7 @@ define('HEADING_TITLE_EMPTY', 'Your Shopping Cart');
 define('TEXT_INFORMATION', '');
 define('TABLE_HEADING_REMOVE', 'Remove');
 define('TABLE_HEADING_QUANTITY', 'Qty.');
-define('TABLE_HEADING_MODEL', 'Model');
+define('TABLE_HEADING_MODEL', 'Item');
 define('TABLE_HEADING_PRICE','Item Price');
 define('TABLE_HEADING_IMAGE', '');
 define('TEXT_UPDATE_QUANTITY', 'Update');
