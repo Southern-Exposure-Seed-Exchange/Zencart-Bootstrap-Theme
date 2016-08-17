@@ -41,7 +41,7 @@ echo zen_draw_form('checkout_address', zen_href_link(FILENAME_CHECKOUT_PAYMENT_A
 
   echo zen_draw_hidden_field('action', 'submit');
   echo BootstrapCheckout::render_continue_checkout(
-    $process ? zen_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL') : false) ;
+    $process ? zen_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL') : false, true) ;
 ?>
 </form>
 </div>

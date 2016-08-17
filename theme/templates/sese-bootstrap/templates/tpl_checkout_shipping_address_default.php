@@ -42,7 +42,7 @@ echo zen_draw_form(
   }
 
   echo BootstrapCheckout::render_continue_checkout(
-    $process ? zen_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') : false) ;
+    $process ? zen_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL') : false, true) ;
 ?>
 
 </form>
