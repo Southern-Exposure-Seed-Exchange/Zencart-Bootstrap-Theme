@@ -54,7 +54,7 @@ if (zen_count_customer_orders() > 0) { ?>
       } ?>
     </tbody>
   </table>
-  <small class='pull-right'><a class="btn btn-xs btn-link"
+  <small class='pull-right'><a class="btn btn-default"
       href='<?php echo zen_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL'); ?>'>
     <?php echo OVERVIEW_SHOW_ALL_ORDERS; ?></a></small>
   </div><?php
