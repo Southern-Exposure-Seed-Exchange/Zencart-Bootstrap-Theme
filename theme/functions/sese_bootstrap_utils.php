@@ -79,10 +79,11 @@ class BootstrapUtils
 
     $paging_links = array();
     foreach (array(10, 25, 50, 75, 100) as $page_count) {
-      if (!array_key_exists('numitems', $_GET) || $_GET['numitems'] != $page_count) {
-        $paging_text = $link . "numitems={$page_count}'>{$page_count}</a>";
-      } else {
+      if ((array_key_exists('numitems', $_GET) && $_GET['numitems'] == $page_count) ||
+          (!array_key_exists('numitems', $_GET) && MAX_DISPLAY_RESULTS_CATEGORIES == $page_count)) {
         $paging_text = "<b>{$page_count}</b>";
+      } else {
+        $paging_text = $link . "numitems={$page_count}'>{$page_count}</a>";
       }
       $paging_links[] = $paging_text;
     }
