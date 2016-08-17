@@ -150,7 +150,7 @@ if (sizeof($selection) > 0) {
 <fieldset>
   <legend><?php echo TABLE_HEADING_COMMENTS; ?></legend>
   <div class='form-group'>
-    <?php echo zen_draw_textarea_field('comments', '45', '3', '', 'class="form-control"'); ?>
+    <?php echo zen_draw_textarea_field('comments', '45', '3', '~*~*#', 'class="form-control"'); ?>
   </div>
 </fieldset>
 

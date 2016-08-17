@@ -110,7 +110,7 @@
     <legend><?php echo TABLE_HEADING_COMMENTS; ?></legend>
     <p><?php echo TEXT_PRE_COMMENT_FIELD; ?></p>
     <div class='form-group'>
-      <?php echo zen_draw_textarea_field('comments', '45', '3', '', 'class="form-control"'); ?>
+      <?php echo zen_draw_textarea_field('comments', '45', '3', '~*~*#', 'class="form-control"'); ?>
     </div>
   </fieldset>
 
