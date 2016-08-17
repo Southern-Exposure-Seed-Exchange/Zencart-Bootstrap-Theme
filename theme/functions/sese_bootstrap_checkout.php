@@ -68,10 +68,10 @@ class BootstrapCheckout
       "<input type='hidden' name='action' value='submit' />" : '';
     return <<<HTML
       <div class='clearfix'>
-        <div class="pull-right">
+        <p class="pull-right">
           {$action_field}
           <button type='submit' class='btn btn-primary'>{$button_text}</button>
-        </div>
+        </p>
         <p class="pull-left"><strong>{$help_title}</strong> {$help_text}<br />{$back_link}</p>
       </div>
 HTML;
