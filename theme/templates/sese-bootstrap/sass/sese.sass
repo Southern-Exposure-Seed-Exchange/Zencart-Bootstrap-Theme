@@ -67,6 +67,18 @@ form[name=sorter_form]
   #disp-order-sorter
     @extend .form-control
 
+/* Style Message Classes Used by ZenCart */
+.messageStackError, .messageStackSuccess, .messageStackWarning, .messageStackCaution
+  @extend .alert
+  & > img
+    font-weight: bold
+.messageStackError
+  @extend .alert-danger
+.messageStackSuccess
+  @extend .alert-success
+.messageStackCaution, .messageStackWarning
+  @extend .alert-warning
+
 
 /** Site Layout **/
 // TODO: Fix showing up on popup pages like Estimate Shipping
