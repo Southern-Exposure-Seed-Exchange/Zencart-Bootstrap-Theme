@@ -72,17 +72,11 @@ if (zen_count_customer_orders() > 0) { ?>
       <?php echo MY_ACCOUNT_PASSWORD; ?></a></li>
   </ul><?php
 
-  if (SHOW_NEWSLETTER_UNSUBSCRIBE_LINK != 'false') { ?>
+  if (CUSTOMERS_PRODUCTS_NOTIFICATION_STATUS == '1') { ?>
     <h4><?php echo EMAIL_NOTIFICATIONS_TITLE; ?></h4>
-    <ul id="myAccountNotify" class="list"><?php
-      if (SHOW_NEWSLETTER_UNSUBSCRIBE_LINK == 'true') { ?>
-        <li><a href='<?php echo zen_href_link(FILENAME_ACCOUNT_NEWSLETTERS, '', 'SSL'); ?>'>
-          <?php echo EMAIL_NOTIFICATIONS_NEWSLETTERS; ?></a></li><?php
-      }
-      if (CUSTOMERS_PRODUCTS_NOTIFICATION_STATUS == '1') { ?>
-        <li><a href='<?php echo zen_href_link(FILENAME_ACCOUNT_NOTIFICATIONS, '', 'SSL'); ?>'>
-          <?php echo EMAIL_NOTIFICATIONS_PRODUCTS; ?></a></li><?php
-      } ?>
+    <ul id="myAccountNotify" class="list">
+      <li><a href='<?php echo zen_href_link(FILENAME_ACCOUNT_NOTIFICATIONS, '', 'SSL'); ?>'>
+        <?php echo EMAIL_NOTIFICATIONS_PRODUCTS; ?></a></li>
     </ul><?php
   } ?>
 </div><?php

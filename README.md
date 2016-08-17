@@ -82,6 +82,7 @@ Some of ZenCart's default functionality has been changed in this theme:
 ### Account Pages
 
 * Removed email format preference input on the Account Edit Page.
+* Removed newsletter unsubscribe link on the My Account Page.
 
 ### Search Results Page
 
