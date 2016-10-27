@@ -129,7 +129,7 @@ if ($_GET['action'] == 'send' && !$error) {
 
 <p class='clearfix'>
   <button type='submit' class='btn btn-primary pull-right'>
-    <?php echo BUTTON_SEND_ALT; ?>
+    <?php echo BUTTON_REVIEW_ALT; ?>
   </button>
   <button type='button' class='btn btn-default pull-left'>
     <?php echo zen_back_link() . BUTTON_BACK_ALT . '</a>'; ?>
