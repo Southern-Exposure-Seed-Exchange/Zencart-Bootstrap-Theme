@@ -152,6 +152,9 @@ foreach ($root_categories as $root_category) {
 <?php
 } ?>
         <!-- Mobile-only Nav Links -->
+        <li class='visible-xs'><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'about-us-ezp-18.html">'; ?>About Us</a></li>
+        <li class='visible-xs'><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'growing-guides-library-ezp-41.html">'; ?>Growing Guides</a></li>
+        <li class='visible-xs'><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'retail-stores-ezp-17.html">'; ?>Retail Stores</a></li>
         <?php BootstrapHeader::quick_links("visible-xs"); ?>
       </ul>
     </div>
