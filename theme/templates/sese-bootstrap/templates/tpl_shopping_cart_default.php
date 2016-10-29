@@ -148,7 +148,7 @@ class BootstrapShoppingCart
         $product['quantityField']);
       $content = $product['quantityField'] . $product['showMinUnits'];
     }
-    if ($product['buttonUpdate'] !== '') {
+    if ($product['buttonUpdate'] !== '' && SHOW_SHOPPING_CART_UPDATE != 2) {
       $product['buttonUpdate'] =
         "<button type='submit' class='btn btn-xs btn-default'>" .
         TEXT_UPDATE_QUANTITY .  "</button>" .
