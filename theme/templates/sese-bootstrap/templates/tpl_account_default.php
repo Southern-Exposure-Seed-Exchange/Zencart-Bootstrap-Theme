@@ -29,7 +29,6 @@ if (zen_count_customer_orders() > 0) { ?>
       <th scope="col"><?php echo TABLE_HEADING_DATE; ?></th>
       <th scope="col"><?php echo TABLE_HEADING_ORDER_NUMBER; ?></th>
       <th scope="col"><?php echo TABLE_HEADING_SHIPPED_TO; ?></th>
-      <th scope="col"><?php echo TABLE_HEADING_STATUS; ?></th>
       <th scope="col" class='text-right'><?php echo TABLE_HEADING_TOTAL; ?></th>
       <th scope="col" class='text-center'><?php echo TABLE_HEADING_VIEW; ?></th>
     </tr></thead>
@@ -41,7 +40,6 @@ if (zen_count_customer_orders() > 0) { ?>
           <td><address>
             <?php echo zen_output_string_protected($orders['order_name']) . '<br />' . $orders['order_country']; ?>
           </address></td>
-          <td><?php echo $orders['orders_status_name']; ?></td>
           <td class='text-right'><?php echo $orders['order_total']; ?></td>
           <td class='text-center'>
             <a href='<?php echo zen_href_link(FILENAME_ACCOUNT_HISTORY_INFO,
