@@ -14,7 +14,10 @@
 <label for="disp-order-sorter"><?php echo TEXT_INFO_SORT_BY; ?></label>
 <?php
   echo zen_draw_form('sorter_form', zen_href_link($_GET['main_page']), 'get');
-  $hidden_fields = array('main_page', 'cPath', 'organic', 'heirloom', 'southern', 'eco', 'bulk', 'numitems');
+  $hidden_fields = array('main_page', 'cPath', 'organic', 'heirloom',
+      'southern', 'eco', 'bulk', 'numitems', 'keyword', 'ecological',
+      'midatlantic', 'search_in_description', 'pfrom', 'pto', 'categories_id',
+      'inc_subcat');
   foreach ($hidden_fields as $field) {
     if (isset($_GET[$field])) { echo zen_draw_hidden_field($field, $_GET[$field]); }
   }
