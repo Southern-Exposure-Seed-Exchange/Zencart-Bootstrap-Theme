@@ -59,7 +59,7 @@
     }
     else {
 ?>
-    <tr class="row-<?php echo $alt_table_row; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model']) . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $items[$i]['qty'] . '" size="5" />'; ?></td></tr>
+    <tr class="row-<?php echo $alt_table_row; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model'], $i == 1 ? 'autofocus="autofocus"' : '') . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $items[$i]['qty'] . '" size="5" />'; ?></td></tr>
 
 <?php
     }
