@@ -74,11 +74,10 @@
     <p>&nbsp;</p>
     <h2>Instructions:</h2>
     <ul style="font-size:16px">
-  <li>Press <code>Tab</code> to move between cells.</li>
-  <li>To move  the items into your shopping cart,  press <code>Enter</code> or click <code>Add to Cart</code> at the bottom of the page. You will be able to review the items and quantities once they have been moved to your shopping cart.</li>
-  <li>5-digit catalog numbers can be found at the end of each item description. A letter at the end of a catalog number indicates a bulk size. Enter the letter if you would like to purchase the bulk size.</li>
-  <li>To use the Quick Order form multiple times in one order,  simply return to this page and use the form to add aditional items to your shopping cart. You can also add additional items by browsing the store's individual products.</li>
-</ul>
+        <li>Press <code>Tab</code> to move between cells.</li>
+        <li>To move the items into your shopping cart, press <code>Enter</code> or click <code>Add to Cart</code> at the bottom of the page. You will be able to review the items and quantities once they have been moved to your shopping cart.</li>
+        <li>5-digit catalog numbers can be found at the end of each item description. A letter at the end of a catalog number indicates a bulk size. Enter the letter if you would like to purchase the bulk size.</li>
+    </ul>
     </td>
   </tr>
 </table>
