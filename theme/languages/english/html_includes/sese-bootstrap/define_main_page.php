@@ -14,6 +14,9 @@
   <div class="alert alert-info" role="alert">
   We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
   </div>
+
+  <hr />
+
   <!-- Summer/Fall Items -->
   <h3>Don't forget to order for summer and fall planting!</h3>
   <p class='text-center'>
@@ -38,7 +41,7 @@
     <a href="/vegetables-carrots-c-3_10.html">carrots</a>,
     <a href="/vegetables-radishes-c-3_47.html">radishes</a> and other crops for
     summer and fall planting. Check out our
-    <a href="/growing-guides/fall-winter-quick-guide.pdf">Fall and Winter Quick Reference PDF</a>
+    <a href="/fall-&-winter-quick-reference-ezp-204.html">Fall and Winter Quick Reference page</a>
     for recommended last planting dates and particularly cold-resistant varieties.
   </p>
   <p class='text-center'>
@@ -55,19 +58,7 @@
 
   <hr />
 
-  <!-- HHF -->
-  <div class='text-center'>
-    <img class='img-responsive img-center' src="https://www.southernexposure.com/images/home/hhf-2015-speakers.jpg" />
-    <p>Taste 100+ tomatoes, peppers and melons, join us for the Old Timey Seed Swap, and choose from 80+ workshops and demonstrations.</p>
-    <p><strong>General Admission is Saturday, September 10, with pre- and post-festival events <em>Friday–Sunday</em></strong></p>
-    <p><strong><span style="color:#4a4a4a; font-size:16px;"><a style="color:#007700;" href="http://heritageharvestfestival.com/">
-      www.heritageharvestfestival.com
-    </a></span></strong></p>
-  </div>
-
-  <hr />
-
-  <!-- Books -->
+    <!-- Books -->
   <div class='media'>
     <div class='media-body'>
       <h4 class='media-heading'>Local Authors with New Books to Nurture the Gardener, Farmer & Seedsperson</h4>
@@ -145,7 +136,7 @@
   </p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
-    the listings at the left to fill your cart or
+    the listings above to fill your cart or
     <a href="http://www.southernexposure.com/index.php?main_page=quick_order">
       Quick Order by Item Number</a>.
     If you need to mail in your order instead, you can print our
