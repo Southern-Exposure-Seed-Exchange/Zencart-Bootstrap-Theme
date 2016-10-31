@@ -79,7 +79,7 @@ if (sizeof($selection) > 0) {
           <div class='form-group'>
             <label class="control-label col-sm-4"<?php echo ($selection[$i]['fields'][$j]['tag']) ? ' for="'.$selection[$i]['fields'][$j]['tag'].'"': ''; ?>><?php
               echo $selection[$i]['fields'][$j]['title']; ?></label>
-            <div class='col-sm-8 credit-selection-input'><?php
+            <div class='col-sm-3 credit-selection-input'><?php
               echo $selection[$i]['fields'][$j]['field']; ?>
             </div>
           </div><?php
@@ -136,7 +136,7 @@ if (sizeof($selection) > 0) {
           <div class='form-group'>
             <label <?php echo (isset($selection[$i]['fields'][$j]['tag']) ? 'for="'.$selection[$i]['fields'][$j]['tag'] . '" ' : ''); ?>class="control-label col-sm-4"><?php
               echo $selection[$i]['fields'][$j]['title']; ?></label>
-            <div class='col-sm-8'>
+            <div class='col-sm-4'>
               <?php echo $selection[$i]['fields'][$j]['field']; ?>
             </div>
           </div><?php
