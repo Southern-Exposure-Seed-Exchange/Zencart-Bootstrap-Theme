@@ -182,7 +182,7 @@ HTML;
   public static function details_list() {
     global $flag_show_product_info_model, $products_model;
     global $flag_show_product_info_weight, $products_weight;
-    global $flag_show_product_info_quantity;
+    global $flag_show_product_info_quantity, $products_quantity;
     $details = array(
       array(
         'display' => $flag_show_product_info_model == 1 && $products_model != '',
@@ -198,7 +198,7 @@ HTML;
       ),
     );
     foreach ($details as $k => $v) {
-      if (!array_key_exists($k, 'display') || $k['display'] == '') {
+      if (!$v['display'] || $v['text'] == '') {
         unset($details[$k]);
       }
     }
@@ -206,7 +206,7 @@ HTML;
 
     $content = '<ul class="list-unstyled">';
     foreach ($details as $detail) {
-      if ($detail['display']) { $content .= "<li>{$detail['text']}</li>\n"; }
+      $content .= "<li>{$detail['text']}</li>\n";
     }
     return $content . '</ul>';
   }
