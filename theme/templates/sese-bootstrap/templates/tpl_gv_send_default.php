@@ -82,7 +82,10 @@ if ($_GET['action'] == 'send' && !$error) {
   <button type='submit' class='btn btn-primary pull-right'>
     <?php echo BUTTON_CONFIRM_SEND_ALT; ?>
   </button>
-  <input type='image' class='btn btn-default pull-left' name='edit' value='Edit' />
+  <input type='submit' class='btn btn-default pull-left' name='edit' value='Edit' />
+  <!-- These hidden fields are required because ZenCart expects the Edit button
+       to have a type of 'image' instead of 'submit'. -->
+  <input type='hidden' name='edit.x' /><input type='hidden' name='edit.y' />
 </p>
 
 </form>
