@@ -75,7 +75,10 @@ class BootstrapUtils
 
   /** Return HTML containing links to modify the number of products per page */
   public static function render_page_count_links() {
-    $link = "<a href='.?{$_SERVER['QUERY_STRING']}&";
+    $get_vars = $_GET;
+    if (array_key_exists('numitems', $get_vars)) { unset($get_vars['numitems']); }
+    $query_string = http_build_query($get_vars);
+    $link = "<a href='.?{$query_string}&";
 
     $paging_links = array();
     foreach (array(10, 25, 50, 75, 100) as $page_count) {
