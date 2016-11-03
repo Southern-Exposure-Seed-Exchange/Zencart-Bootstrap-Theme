@@ -41,7 +41,7 @@
     }
 
     if($quick_order_errors[$i]) {
-      echo '<tr><td class="qo_error" colspan="2">' . $quick_order_errors[$i] . '</td></tr>' . "\n";
+      echo '<tr class="danger"><td colspan="2">' . $quick_order_errors[$i] . '</td></tr>' . "\n";
     }
 
     if(isset($alternate_skus[$i])){
@@ -51,15 +51,17 @@
       }
       echo '</td></tr>';
     }
+    $qty_value = $items[$i]['qty'] == '' ? '1' : $items[$i]['qty'];
+    $row_class = $quick_order_errors[$i] ? ' danger' : '';
     if ($product_list_result !== false && isset($product_list_models[$array_index]) && $product_list_models[$array_index] != '') {
 ?>
-    <tr class="row-<?php echo $alt_table_row; ?>"><td class="column-1"><?php echo '<input type="hidden" name="model_' . $i . '" value="' . $product_list_models[$array_index] . '" />' . $product_list_array[$product_list_models[$array_index]] . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $items[$i]['qty'] . '" size="5" />'; ?></td></tr>
+    <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo '<input type="hidden" name="model_' . $i . '" value="' . $product_list_models[$array_index] . '" />' . $product_list_array[$product_list_models[$array_index]] . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr>
 
 <?php
     }
     else {
 ?>
-    <tr class="row-<?php echo $alt_table_row; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model'], $i == 1 ? 'autofocus="autofocus"' : '') . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $items[$i]['qty'] . '" size="5" />'; ?></td></tr>
+    <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model'], $i == 1 ? 'autofocus="autofocus"' : '') . '</td><td class="column-2"><input type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr>
 
 <?php
     }
@@ -74,9 +76,9 @@
     <p>&nbsp;</p>
     <h2>Instructions:</h2>
     <ul style="font-size:16px">
+        <li>5-digit item numbers can be found at the end of each item description. A letter at the end of a item number indicates a bulk size. Enter the letter if you would like to purchase the bulk size.</li>
         <li>Press <code>Tab</code> to move between cells.</li>
         <li>To move the items into your shopping cart, press <code>Enter</code> or click <code>Add to Cart</code> at the bottom of the page. You will be able to review the items and quantities once they have been moved to your shopping cart.</li>
-        <li>5-digit catalog numbers can be found at the end of each item description. A letter at the end of a catalog number indicates a bulk size. Enter the letter if you would like to purchase the bulk size.</li>
     </ul>
     </td>
   </tr>
