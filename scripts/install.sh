@@ -49,7 +49,7 @@ main() {
     fi
 
     # Set Correct Permissions on HTML Includes
-    chmod g+w -R "$INCLUDES_DIR/lanuages/english/html_includes/$THEME_DIR_NAME"
+    chmod g+w -R "$INCLUDES_DIR/languages/english/html_includes/$THEME_DIR_NAME"
 }
 
 if [[ $# -ne 1 ]]; then
