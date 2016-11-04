@@ -47,6 +47,9 @@ main() {
     if [ ! -e $THEME_FILE ]; then
       ln -f -s "$PWD/theme/auto_loaders/$AUTOLOADER_FILE_NAME" "$THEME_FILE"
     fi
+
+    # Set Correct Permissions on HTML Includes
+    chmod g+w -R "$INCLUDES_DIR/lanuages/english/html_includes/$THEME_DIR_NAME"
 }
 
 if [[ $# -ne 1 ]]; then
