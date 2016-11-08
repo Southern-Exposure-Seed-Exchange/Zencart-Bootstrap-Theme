@@ -17,6 +17,8 @@ define('TEXT_QO_MODEL', '');
 define('TEXT_QO_QTY', 'Quantity');
 define('TEXT_QO_NAME_MODEL', 'Item Number');
 
+define('TEXT_QO_FORM_ERRORS', "We found some issues in your Quick Order Form. The items have not yet been added to your cart, please fix the highlighted errors below.");
+
 define('ERROR_AT_LEAST_ONE_INPUT', 'Please enter an Item number and quantity to add to shopping cart.');
 define('ERROR_QUANTITY_MUST_BE_INTEGER', 'Quantity must be a numerical integer value.');
 define('ERROR_NOT_VALID_MODEL_NUMBER', 'Invalid Item number: %s');
