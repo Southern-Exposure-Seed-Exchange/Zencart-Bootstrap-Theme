@@ -18,15 +18,15 @@
   <hr />
 
   <!-- Summer/Fall Items -->
-  <h3>Don't forget to order for summer and fall planting!</h3>
+  <h3>Don't forget to order for fall planting!</h3>
   <p class='text-center'>
     <a href="/chesnok-red-hardneck-garlic-8-oz-p-248.html">
       <img style="margin: 3px; height: 140px;" alt="Chesnok Red Hardneck Garlic" src="/images/mivagraphics/veg/garlic-hardneck-chesnokred.jpg" />
     </a>
-    <a href="/inchelium-red-softneck-garlic-8-oz-p-1180.html">
-      <img style="margin: 3px; height: 140px;" alt="Inchelium Red Garlic" src="/images/veg/garlic-inchelium-red.jpg" />
+    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Pregnant+onion">
+      <img style="margin: 3px; height: 140px;" alt="Yellow Potato Onion" src="/images/veg/yellow-potato-onions.jpg" />
     </a>
-    <a href="/italian-softneck-garlic-8-oz-p-51.html">
+    <a href= "/italian-softneck-garlic-8-oz-p-1974.html">
       <img style="margin: 3px; height: 140px;" alt="Italian Softneck Garlic" src="/images/garlic-italiansoftneck.jpg" />
     </a>
   </p>
@@ -128,11 +128,11 @@
 
   <!-- Catalog -->
   <p><a href="http://www.southernexposure.com/catalog-information-ezp-16.html">
-    <img class='img-responsive' src="/images/catalog-2016-cover-80kb.jpg" alt="Southern Exposure Catalog Seeds 2015" />
+    <img class='img-responsive' src="/images/2017%20catalog%20cover%20small.jpg" alt="Southern Exposure Catalog Seeds 2015" />
   </a></p>
   <p>
-    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>
-    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2016-for-web.pdf" target="_blank">online as a PDF</a>.
+    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available for pre-order.
+    You can also view our 2016 catalog <a href="http://www.southernexposure.com/catalog/sese-catalog-2016-for-web.pdf" target="_blank">online as a PDF</a>.
   </p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
