@@ -143,11 +143,6 @@
     <a href="http://www.southernexposure.com/catalog/2016-order-form-southern-exposure.pdf">
       mail-in order form</a>.
   </p>
-
-  <a href="http://dynalog.catalogs.com/g489/southern-exposure-seed-exchange?merchantID=379">
-    <img class='img-responsive img-center' src="/images/home/mobile-friendly-flipbook-button.png">
-  </a>
-
   <hr />
 
   <!-- Garden Planner -->
