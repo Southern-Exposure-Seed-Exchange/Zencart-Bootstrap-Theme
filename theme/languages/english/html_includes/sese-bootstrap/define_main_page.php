@@ -10,12 +10,50 @@
 
 <!-- Main Content -->
 <div class='col-md-9'>
+
   <!-- New Site -->
   <div class="alert alert-info" role="alert">
   We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
   </div>
 
-  <hr />
+  <!-- Carousel -->
+  <div id="homepage-carousel" class="carousel slide lazy" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <!-- When adding extra slides, add an indicator here as well -->
+      <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homepage-carousel" data-slide-to="1"></li>
+      <li data-target="#homepage-carousel" data-slide-to="2"></li>
+      <li data-target="#homepage-carousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Slides -->
+    <div class="carousel-inner" role="listbox">
+      <!-- To add another slide, replicate the div/a/img tags at the end of this element.
+           To modify a slide, replace the link & img alt/src/data-src attributes.
+        -->
+      <div class="item active">
+        <a href="/?main_page=advanced_search_result&search_in_description=1&keyword=pregnant+onion">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/yellow_potato_onions_sunset_hill.jpg" alt="Yellow Potato Onions on Sunset Hill" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="/our-seed-growers-ezp-138.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_family_farm.jpg" alt="The Moyer Family Farm" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="/vegetables-tomatoes-c-3_57.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/elan_and_tomatoes.jpg" alt="Elan with Tomatoes" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="/other-seedsaving-supplies-c-236_238.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/seed_cleaning_screens.jpg" alt="Screens for Seed Cleaning" />
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Summer/Fall Items -->
   <h3>Don't forget to order for fall planting!</h3>

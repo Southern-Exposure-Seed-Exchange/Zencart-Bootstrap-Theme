@@ -47,6 +47,7 @@ if ($robots_page_exclusion || $current_page_base == 'down_for_maintenance' ||
 <script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/jquery.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/lightbox.min.js" ?>"></script>
+<script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/sese.js" ?>"></script>
 <?php
 /* Override the page_directory if we are on the Retail Stores EZ-Page */
 if ($current_page_base == 'page' && isset($ezpage_id) && (int)$ezpage_id == 17) {
