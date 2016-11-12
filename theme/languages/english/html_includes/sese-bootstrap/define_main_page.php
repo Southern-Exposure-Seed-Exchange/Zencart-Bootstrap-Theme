@@ -128,7 +128,7 @@
 
   <!-- Catalog -->
   <p><a href="http://www.southernexposure.com/catalog-information-ezp-16.html">
-    <img class='img-responsive' src="/images/2017%20catalog%20cover%20small.jpg" alt="Southern Exposure Catalog Seeds 2015" />
+    <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog Seeds 2015" />
   </a></p>
   <p>
     <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available for pre-order.
@@ -155,7 +155,7 @@
     Our simple, powerful online tool helps manage your garden throughout the
     season and from year to year. You can order SESE seeds directly from the
     planner.
-    <a href="/gardenplanner">Try our Garden Planner Tool free for one month
+    <a href="/gardenplanner">Try our Garden Planner Tool free for one week
       <span class='glyphicon glyphicon-menu-right'></span></a>
   </p>
 
