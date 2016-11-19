@@ -59,8 +59,6 @@ if ($_GET['action'] == 'send' && !$error) {
 <?php echo BootstrapGVSend::balance_section(); ?>
 <hr />
 
-<form action="<?php echo zen_href_link(FILENAME_GV_SEND, 'action=process', 'SSL', false); ?>" method="post">
-
 <div id="gvSendDefaultMainMessage" class="content"><?php echo sprintf(MAIN_MESSAGE, $currencies->format($_POST['amount'], false), $_POST['to_name'], $_POST['email']); ?></div>
 
 <p id="gvSendDefaultMessageSecondary" class="content"><?php echo sprintf(SECONDARY_MESSAGE, $_POST['to_name'], $currencies->format($_POST['amount'], false), $send_name); ?></p>
@@ -78,17 +76,22 @@ if ($_GET['action'] == 'send' && !$error) {
 ?>
 
 <br />
-<p class='clearfix'>
-  <button type='submit' class='btn btn-primary pull-right'>
+<div class='clearfix'>
+  <!-- Use 2 forms so we can add hidden fields when users hit Edit -->
+  <form action="<?php echo zen_href_link(FILENAME_GV_SEND, 'action=process', 'SSL', false); ?>" method="post">
+    <?php echo zen_draw_hidden_field('to_name', stripslashes($_POST['to_name'])) . zen_draw_hidden_field('email', $_POST['email']) . zen_draw_hidden_field('amount', $gv_amount) . zen_draw_hidden_field('message', stripslashes($_POST['message'])); ?>
+    <button type='submit' class='btn btn-primary pull-right'>
     <?php echo BUTTON_CONFIRM_SEND_ALT; ?>
   </button>
-  <input type='submit' class='btn btn-default pull-left' name='edit' value='Edit' />
-  <!-- These hidden fields are required because ZenCart expects the Edit button
-       to have a type of 'image' instead of 'submit'. -->
-  <input type='hidden' name='edit.x' /><input type='hidden' name='edit.y' />
-</p>
+  </form>
+  <!-- The Edit form requires 2 extra hiden fields as Zencart expects this to be an image input -->
+  <form action="<?php echo zen_href_link(FILENAME_GV_SEND, 'action=process', 'SSL', false); ?>" method="post">
+    <?php echo zen_draw_hidden_field('to_name', stripslashes($_POST['to_name'])) . zen_draw_hidden_field('email', $_POST['email']) . zen_draw_hidden_field('amount', $gv_amount) . zen_draw_hidden_field('message', stripslashes($_POST['message'])); ?>
+    <input type='hidden' name='edit.x' /><input type='hidden' name='edit.y' />
+    <input type='submit' class='btn btn-default pull-left' name='edit' value='Edit' alt="Edit"/>
+  </form>
+</div>
 
-</form>
 <br class="clearBoth" />
 
 <div class="advisory"><?php echo EMAIL_ADVISORY_INCLUDED_WARNING . '<br />' . str_replace('-----', '', EMAIL_ADVISORY); ?></div>
