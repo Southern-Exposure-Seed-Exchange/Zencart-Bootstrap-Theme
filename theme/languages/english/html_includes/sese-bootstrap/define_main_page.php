@@ -11,10 +11,11 @@
 <!-- Main Content -->
 <div class='col-md-9'>
 
-  <!-- New Site -->
+  <!-- New Site
   <div class="alert alert-info" role="alert">
   We’ve updated the look of our website.  Please <a href="/contact_us.html">contact us</a> if you have trouble finding anything.
   </div>
+-->
 
   <!-- Carousel -->
   <div id="homepage-carousel" class="carousel slide lazy" data-ride="carousel">
@@ -32,13 +33,13 @@
            To modify a slide, replace the link & img alt/src/data-src attributes.
         -->
       <div class="item active">
-        <a href="/?main_page=advanced_search_result&search_in_description=1&keyword=pregnant+onion">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/yellow_potato_onions_sunset_hill.jpg" alt="Yellow Potato Onions on Sunset Hill" />
+        <a href="/index.php?main_page=advanced_search_result&keyword=sale%21&search_in_description=1&inc_subcat=0&disp_order=2">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/ypo_sale.jpg" alt="Yellow Potato Onions on Sunset Hill" />
         </a>
       </div>
       <div class="item">
-        <a href="/our-seed-growers-ezp-138.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_family_farm.jpg" alt="The Moyer Family Farm" />
+        <a href="/free-2017-catalog-and-garden-guide-p-1970.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/2017_catalog_w_pepper_page.jpg" alt="Request our 2017 catalog" />
         </a>
       </div>
       <div class="item">
@@ -47,8 +48,8 @@
         </a>
       </div>
       <div class="item">
-        <a href="/other-seedsaving-supplies-c-236_238.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/seed_cleaning_screens.jpg" alt="Screens for Seed Cleaning" />
+        <a href="/our-seed-growers-ezp-138.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm.jpg" alt="The Moyer Family Farm" />
         </a>
       </div>
     </div>
