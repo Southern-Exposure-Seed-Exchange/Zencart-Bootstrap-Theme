@@ -25,21 +25,16 @@
       <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
       <li data-target="#homepage-carousel" data-slide-to="1"></li>
       <li data-target="#homepage-carousel" data-slide-to="2"></li>
-      <li data-target="#homepage-carousel" data-slide-to="3"></li>
     </ol>
     <!-- Slides -->
     <div class="carousel-inner" role="listbox">
       <!-- To add another slide, replicate the div/a/img tags at the end of this element.
            To modify a slide, replace the link & img alt/src/data-src attributes.
+           When removing the first slide, change the data-src attribute to src and set the active class on the next div.
         -->
       <div class="item active">
-        <a href="/index.php?main_page=advanced_search_result&keyword=sale%21&search_in_description=1&inc_subcat=0&disp_order=2">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/ypo_sale.jpg" alt="Yellow Potato Onions on Sunset Hill" />
-        </a>
-      </div>
-      <div class="item">
         <a href="/free-2017-catalog-and-garden-guide-p-1970.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/2017_catalog_w_pepper_page.jpg" alt="Request our 2017 catalog" />
+          <img src="/includes/templates/sese-bootstrap/img/carousel/2017_catalog_w_pepper_page.jpg" alt="Request our 2017 catalog" />
         </a>
       </div>
       <div class="item">
@@ -48,8 +43,8 @@
         </a>
       </div>
       <div class="item">
-        <a href="/our-seed-growers-ezp-138.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm.jpg" alt="The Moyer Family Farm" />
+        <a href="/other-seedsaving-supplies-c-236_238.html?disp_order=6">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/screens-for-seed-cleaning sm.jpg" alt="Screens" />
         </a>
       </div>
     </div>
@@ -166,12 +161,12 @@
 <div class='col-md-3'>
 
   <!-- Catalog -->
-  <p><a href="http://www.southernexposure.com/catalog-information-ezp-16.html">
-    <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog Seeds 2015" />
+  <p><a href="/request-a-catalog-c-215.html">
+    <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog" />
   </a></p>
   <p>
     <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available for pre-order.
-    You can also view our 2016 catalog <a href="http://www.southernexposure.com/catalog/sese-catalog-2016-for-web.pdf" target="_blank">online as a PDF</a>.
+    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a>.
   </p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
