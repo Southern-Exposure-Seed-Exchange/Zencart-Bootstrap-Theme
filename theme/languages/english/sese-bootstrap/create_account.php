@@ -11,7 +11,7 @@ define('NAVBAR_TITLE', 'Create an Account');
 
 define('HEADING_TITLE', 'My Account Information');
 
-define('TEXT_ORIGIN_LOGIN', '<strong class="note">NOTE:</strong> If you already have an account with us, please login at the <a href="%s">login page</a>.');
+define('TEXT_ORIGIN_LOGIN', '<strong class="note">NOTE:</strong> If you already have an account with us, please <a href="%s">login</a> instead.');
 
 
 
