@@ -43,53 +43,28 @@
         </a>
       </div>
       <div class="item">
-        <a href="/other-seedsaving-supplies-c-236_238.html?disp_order=6">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/screens-for-seed-cleaning sm.jpg" alt="Screens" />
+        <a href="/our-seed-growers-ezp-138.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm.jpg" alt="On the Moyer Family Farm" />
         </a>
       </div>
     </div>
   </div>
 
-
-  <!-- Summer/Fall Items -->
-  <h3>Don't forget to order for fall planting!</h3>
+<!-- Featured Products -->
+  <h3>New Varieties for 2017</h3>
   <p class='text-center'>
-    <a href="/chesnok-red-hardneck-garlic-8-oz-p-248.html">
-      <img style="margin: 3px; height: 140px;" alt="Chesnok Red Hardneck Garlic" src="/images/mivagraphics/veg/garlic-hardneck-chesnokred.jpg" />
+    <a href="/tankuro-edamame-soybean-28-g-p-1988.html">
+      <img style="margin: 3px; height: 120px;" alt="Tankuro Edamame" src="/images/veg/tankuro-edamame-small.jpg" />
     </a>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Pregnant+onion">
-      <img style="margin: 3px; height: 140px;" alt="Yellow Potato Onion" src="/images/veg/yellow-potato-onions.jpg" />
+    <a href="/shows-okra-4-g-p-1998.html">
+      <img style="margin: 3px; height: 120px;" alt="Shows Okra" src="/images/veg/shows-okra-small.jpg" />
     </a>
-    <a href= "/italian-softneck-garlic-8-oz-p-1974.html">
-      <img style="margin: 3px; height: 140px;" alt="Italian Softneck Garlic" src="/images/garlic-italiansoftneck.jpg" />
+    <a href= "/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html">
+      <img style="margin: 3px; height: 120px;" alt="Donald Todd Half-Runner Bean" src="/images/veg/donald-todd-half-runner.jpg" />
     </a>
   </p>
   <p>
-    <a href="/garlic-c-25.html">Garlic</a>,
-    <a href="/perennial-onions-c-120.html">perennial onions</a>,
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=panax">ginseng</a>,
-    and <a href="/goldenseal-10-rhizomes-p-986.html">goldenseal</a> ship in fall
-    for fall planting. Also, don't forget to order
-    <a href="/vegetables-lettuce-c-3_34.html">lettuce</a>,
-    <a href="/vegetables-greens-c-3_30.html">greens</a>,
-    <a href="/vegetables-carrots-c-3_10.html">carrots</a>,
-    <a href="/vegetables-radishes-c-3_47.html">radishes</a> and other crops for
-    summer and fall planting. Check out our
-    <a href="/fall-&-winter-quick-reference-ezp-204.html">Fall and Winter Quick Reference page</a>
-    for recommended last planting dates and particularly cold-resistant varieties.
-  </p>
-  <p class='text-center'>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=tatsoi+rapa">
-      <img style="margin: 3px; height: 140px;" alt="Tatsoi Brassica Rapa" src="/images/veg/tatsoi-mustard.jpg" />
-    </a>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=silverbeet">
-      <img style="margin: 3px; height: 140px;" alt="Rainbow Chard" src="/images/veg/rainbow-chard.jpg" />
-    </a>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=sword+leaf">
-      <img style="margin: 3px; height: 140px;" alt="Sword Leaf lettuce" src="/images/veg/sword-leaf-lettuce.jpg" />
-    </a>
-  </p>
-
+  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">Tankuro edamame</a> doubles as a black dry bean. <a href="http://www.southernexposure.com/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="http://www.southernexposure.com/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants. More varieties will become available over the next few days when we receive their organic certification paperwork.</p>  
   <hr />
 
     <!-- Books -->
@@ -165,8 +140,8 @@
     <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog" />
   </a></p>
   <p>
-    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available for pre-order.
-    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a>.
+    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available!
+    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a> We'll update prices, organic statuses, and new varietiy listings on Tuesday, Dec. 6th.
   </p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
@@ -219,3 +194,4 @@
 
 
 </div>      <!-- .row -->
+
