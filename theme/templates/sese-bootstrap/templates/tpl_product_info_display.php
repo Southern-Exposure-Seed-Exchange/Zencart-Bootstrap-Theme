@@ -12,10 +12,13 @@
  * @version $Id: tpl_product_info_display.php 5369 2006-12-23 10:55:52Z drbyte $
  */
 ?>
-<div class="centerColumn clearfix" id="productGeneral">
+<div class="centerColumn clearfix" id="productGeneral" itemscope itemtype="http://schema.org/Product">
 
 <div class='page-header'>
-<h1><?php echo $products_name . BootstrapProductInfo::sese_icons(); ?></h1>
+<h1 itemprop="name"><?php echo $products_name . BootstrapProductInfo::sese_icons(); ?></h1>
+<meta itemprop="itemCondition" itemType="http://schema.org/NewCondition" />
+<meta itemprop="model" content="<?php echo $products_model; ?>" />
+<meta itemprop="sku" content="<?php echo $products_model; ?>" />
 </div>
 
 <?php
@@ -38,7 +41,8 @@ if (zen_not_null($products_image)) {
 <div class='pull-right col-sm-4 col-md-3 col-lg-2'>
 <!-- Price and Cart Panel -->
 <div class='panel panel-default'>
-<div id="productPrices" class="productGeneral panel-body">
+<div id="productPrices" class="productGeneral panel-body" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+  <meta itemprop="priceCurrency" content="USD" />
 <?php
 echo BootstrapProductInfo::price();
 if (CUSTOMERS_APPROVAL != 3 or TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM != '') {
@@ -50,7 +54,7 @@ echo BootstrapProductInfo::free_shipping(); ?>
 
 </div>  <!-- .pull-left -->
 
-<div id="productDescription" class="productGeneral">
+<div id="productDescription" class="productGeneral" itemprop="description">
 <?php if ($products_description != '') {
   echo stripslashes($products_description);
   echo BootstrapProductInfo::details_list();
@@ -118,9 +122,9 @@ class BootstrapProductInfo
         $flag_show_product_info_starting_at == 1) {
       $base_price_text = TEXT_BASE_PRICE;
     }
-    $display_price = zen_get_products_display_price((int)$_GET['products_id']);
+    $display_price = str_replace('$', '', zen_get_products_display_price((int)$_GET['products_id']));
     return '<h4 id="product-price" class="text-center">' .
-      $one_time_text . $base_price_text . $display_price . '</h4>';
+      $one_time_text . $base_price_text . " $<span itemprop='price'>" . $display_price . '</span></h4>';
   }
 
   /* Render the Add to Cart button and Quantity input */
@@ -186,7 +190,7 @@ HTML;
     $details = array(
       array(
         'display' => $flag_show_product_info_model == 1 && $products_model != '',
-        'text' => TEXT_PRODUCT_MODEL . $products_model,
+        'text' => TEXT_PRODUCT_MODEL . "<span itemprop='mpn'>" . $products_model . "</span>",
       ),
       array(
         'display' => $flag_show_product_info_weight == 1 && $products_weight != 0,

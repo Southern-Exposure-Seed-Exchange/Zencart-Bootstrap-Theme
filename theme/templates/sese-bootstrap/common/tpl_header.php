@@ -159,8 +159,6 @@ foreach ($root_categories as $root_category) {
       </ul>
     </div>
 
-    <!-- Search Menu -->
-    <!-- TODO: Add menu for searching on collapsed screens, should be hidden otherwise -->
 </nav>
 </div>
 

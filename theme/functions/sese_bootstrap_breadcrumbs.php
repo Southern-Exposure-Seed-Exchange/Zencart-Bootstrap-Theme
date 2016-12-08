@@ -18,16 +18,18 @@ class BootstrapBreadcrumbs
     }
     $breadcrumbs->_trail = $filtered_breadcrumbs;
 
-    $content = "<ol class='breadcrumb'>\n";
+    $content = "<ol class='breadcrumb' vocab='http://schema.org' typeof='BreadcrumbList'>\n";
     $crumb_length = count($breadcrumbs->_trail);
     foreach ($breadcrumbs->_trail as $index => $breadcrumb) {
       $is_last_crumb = $index == $crumb_length - 1;
       if ($is_last_crumb) {
-        $content .= "<li class='active'>{$breadcrumb['title']}</li>";
+        $content .= "<li class='active' property='itemListElement' typeof='ListItem'>{$breadcrumb['title']}";
       } else {
-        $content .= "<li><a href='{$breadcrumb['link']}'>" .
-          "{$breadcrumb['title']}</a></li>";
+        $content .= "<li property='itemListElement' typeof='ListItem'><a href='{$breadcrumb['link']}' property='item' typeof='WebPage'>" .
+          "{$breadcrumb['title']}</a>";
       }
+      $index1 = $index + 1;
+      $content .= "<meta property='position' content='{$index1}' /></li>";
     }
     $content .= '</ol>';
     return $content;

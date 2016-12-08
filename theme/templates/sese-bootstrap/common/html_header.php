@@ -16,8 +16,8 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
 ?>
 <!DOCTYPE html>
 <html <?php echo HTML_PARAMS; ?>>
-<head>
-<title><?php echo META_TAG_TITLE; ?></title>
+<head itemscope itemtype="http://schema.org/WebSite">
+<title itemprop="name"><?php echo META_TAG_TITLE; ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>" />
 <meta name="keywords" content="<?php echo META_TAG_KEYWORDS; ?>" />
 <meta name="description" content="<?php echo META_TAG_DESCRIPTION; ?>" />
@@ -38,7 +38,7 @@ if ($robots_page_exclusion || $current_page_base == 'down_for_maintenance' ||
 
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER . DIR_WS_HTTPS_CATALOG : HTTP_SERVER . DIR_WS_CATALOG ); ?>" />
 <?php if (isset($canonicalLink) && $canonicalLink != '') { ?>
-  <link rel="canonical" href="<?php echo $canonicalLink; ?>" />
+  <link itemprop="url" rel="canonical" href="<?php echo $canonicalLink; ?>" />
 <?php } ?>
 
 <link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/lightbox.min.css" ?>" />

@@ -27,12 +27,14 @@ if ($listing_split->number_of_rows > 0) {
   while (!$listing->EOF) {
     $rows++;
     $cur_row = sizeof($list_box_contents) - 1;
+    $list_box_contents[$rows]['params'] = "itemscope itemtype='http://schema.org/Product'";
+
 
     $product_link = BootstrapProductListing::product_link($listing);
     $product_image =
       "<a href='{$product_link}'>" .  zen_image(
         DIR_WS_IMAGES . $listing->fields['products_image'],
-        $listing->fields['products_name'], 0, 0, 'class="img-responsive img-center listingProductImage"') .
+        $listing->fields['products_name'], 0, 0, 'class="img-responsive img-center listingProductImage" itemprop="image"') .
       '</a>';
     for ($col=0, $n=sizeof($column_list); $col < $n; $col++) {
       $lc_class = $lc_text = '';
@@ -44,14 +46,15 @@ if ($listing_split->number_of_rows > 0) {
             zen_trunc_string(stripslashes(zen_get_products_description(
               $listing->fields['products_id'], $_SESSION['languages_id']
             )), PRODUCT_LIST_DESCRIPTION);
-          $lc_text = "<h4 class='itemTitle'><a href='{$product_link}'><b>" .
+          $lc_text = "<h4 class='itemTitle' itemprop='name'><a itemprop='url' href='{$product_link}'><b>" .
             "{$listing->fields['products_name']}</b></a>{$icons}</h4>" .
-            "<div class='hidden-xs listingDescription'>{$product_description}</div>\n" .
+            "<div class='hidden-xs listingDescription' itemprop='description'>{$product_description}</div>\n" .
             "<div class='visible-xs'>{$product_image}</div>\n";
           break;
         case 'PRODUCT_LIST_PRICE':
-          $lc_price = "<div class='text-center product-price'><b>" .
-            zen_get_products_display_price($listing->fields['products_id']) .
+          $lc_price = "<div class='text-center product-price' itemscope itemprop='offers' itemtype='http://schema.org/Offer'><b>" .
+            '<meta itemprop="priceCurrency" content="USD" />' .
+            '$<span itemprop="price">' . str_replace('$', '', zen_get_products_display_price($listing->fields['products_id'])) . "</span>" .
             "</b></div>\n";
           $lc_text =  $lc_price;
           $the_button = BootstrapProductListing::product_cart_button(
@@ -70,7 +73,7 @@ if ($listing_split->number_of_rows > 0) {
           }
           if (isset($listing->fields['products_model'])) {
             $lc_text .=
-              "<div class='text-center'><small class='item-number'><i>Item # {$listing->fields['products_model']}" .
+              "<div class='text-center'><small class='item-number'><i>Item # <span itemprop='mpn'>{$listing->fields['products_model']}</span>" .
               "</i></small></div>";
           }
           $form_action = zen_href_link(FILENAME_DEFAULT,

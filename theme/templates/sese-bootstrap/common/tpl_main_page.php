@@ -58,7 +58,7 @@
   $right_column_file = 'column_right.php';  // Not Used
   $body_id = ($this_is_home_page) ? 'indexHome' : str_replace('_', '', $_GET['main_page']);
 ?>
-<body id="<?php echo $body_id . 'Body'; ?>"<?php if($zv_onload !== '') echo ' onload="' . $zv_onload . '"'; ?>>
+<body id="<?php echo $body_id . 'Body'; ?>"<?php if($zv_onload !== '') echo ' onload="' . $zv_onload . '"'; ?> itemscope itemtype="http://schema.org/WebPage">
 
 <?php
   /* Display the Nav Menu / Page Header */
@@ -70,7 +70,7 @@
 <?php
   /* Show Breadcrumbs */
   if (DEFINE_BREADCRUMB_STATUS == '1' || (DEFINE_BREADCRUMB_STATUS == '2' && !$this_is_home_page) ) {
-      echo '<div class="col-sm-12 hidden-xs">' . BootstrapBreadcrumbs::render($breadcrumb) . '</div>';
+      echo '<div class="col-sm-12 hidden-xs" itemprop="breadcrumb">' . BootstrapBreadcrumbs::render($breadcrumb) . '</div>';
   }
 
   /* Show Upload Messages */

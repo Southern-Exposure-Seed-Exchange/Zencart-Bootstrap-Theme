@@ -50,7 +50,6 @@ if (isset($disp_order_default)) {
 require($template->get_template_dir('tpl_modules_product_listing.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_product_listing.php');
 
 // Show the Icon Legend
-// TODO: Replace with Text Version
 echo '<div class="hidden-xs col-sm-8 col-sm-offset-2">' . BootstrapIndexProductList::product_icon_legend() . '</div>';
 
 // Handle Invalid Category
