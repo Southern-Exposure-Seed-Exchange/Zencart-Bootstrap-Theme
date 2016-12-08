@@ -52,9 +52,15 @@ if ($listing_split->number_of_rows > 0) {
             "<div class='visible-xs'>{$product_image}</div>\n";
           break;
         case 'PRODUCT_LIST_PRICE':
+          $display_price = zen_get_products_display_price($listing->fields['products_id']);
+          if ($display_price) {
+            $display_price = "$<span itemprop='price'>" .
+              str_replace('$', '', $display_price) . "</span>";
+          } else {
+            $display_price = "<meta itemprop='price' content='0.00' />";
+          }
           $lc_price = "<div class='text-center product-price' itemscope itemprop='offers' itemtype='http://schema.org/Offer'><b>" .
-            '<meta itemprop="priceCurrency" content="USD" />' .
-            '$<span itemprop="price">' . str_replace('$', '', zen_get_products_display_price($listing->fields['products_id'])) . "</span>" .
+            '<meta itemprop="priceCurrency" content="USD" />' .  $display_price .
             "</b></div>\n";
           $lc_text =  $lc_price;
           $the_button = BootstrapProductListing::product_cart_button(
