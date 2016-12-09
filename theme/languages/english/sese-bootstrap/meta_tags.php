@@ -14,11 +14,11 @@ define('TITLE', 'Southern Exposure Seed Exchange');
 define('SITE_TAGLINE', 'Saving the Past for the Future');
 
 // Custom Keywords
-define('CUSTOM_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, heirloom tomato seeds, seed saving, save seeds, vegetable garden layout, companion planting chart, native gardens, wild flower seeds, flower seed packets, organic vegetable seeds, Asian vegetable seeds, hot pepper seeds, non hybrid seeds, survival seeds, starting tomato seeds indoors, heritage seeds, growing zones in north America, window flower boxes, garden hand tool, hand garden tools, greenhouse seed, best vegetable garden, best flowers for garden, best flowers for cutting garden, heirloom flower seeds, perennial flower seeds, perennial seeds, indeterminate tomatoes, heirloom tomato seeds, garlic growing, flower garden seeds, potato seeds, design your own garden, designing a garden, staking tomato plants, tomatoes early, cherry tomato seeds, canning fresh tomatoes, canning tomatoes how to, transplanting tomatoes, mulch types, types of mulch, coffee grounds for plants, herb garden design, indoor herb gardening, how to grow tomatoes from seed, zinnia seeds, tomato disease identification, tomatoes diseases, tomato diseases, tomato pests, tomatoes diseases, tomato worms, pruning tomatoes, watering tomatoes');
+define('CUSTOM_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, seed saving, vegetable garden layout, companion planting chart, native gardens, wild flower seeds, vegetable seeds, Asian vegetable seeds, hot pepper seeds, non hybrid seeds, survival seeds, starting tomato seeds indoors, heritage seeds, growing zones in north America, window flower boxes, garden hand tool, greenhouse seed, best vegetable garden, best flowers for garden, best flowers for cutting garden, heirloom flower seeds, perennial flower seeds, perennial seeds, indeterminate tomatoes, heirloom tomato seeds, garlic growing, flower garden seeds, potato seeds, design your own garden, staking tomato plants, tomatoes early, cherry tomato seeds, canning fresh tomatoes, canning tomatoes how to, transplanting tomatoes, mulch types, types of mulch, coffee grounds for plants, herb garden design, indoor herb gardening, how to grow tomatoes from seed, zinnia seeds, tomato disease identification, tomatoes diseases, tomato diseases, tomato pests, tomatoes diseases, tomato worms, pruning tomatoes, watering tomatoes');
 
 // Home Page Only:
-  define('HOME_PAGE_META_DESCRIPTION', 'Heirloom & Organic Garden Seeds from our Cooperatively Run Business.');
-  define('HOME_PAGE_META_KEYWORDS', 'seeds, heirloom seeds, organic, organic seeds, heirloom tomatoes, heirloom tomato seeds, seed saving, save seeds, vegetable garden layout, companion planting chart, native gardens, wild flower seeds, flower seed packets, organic vegetable seeds, Asian vegetable seeds, hot pepper seeds, non hybrid seeds, survival seeds, starting tomato seeds indoors, heritage seeds, growing zones in north America, window flower boxes, garden hand tool, hand garden tools, greenhouse seed, best vegetable garden, best flowers for garden, best flowers for cutting garden, heirloom flower seeds, perennial flower seeds, perennial seeds, indeterminate tomatoes, heirloom tomato seeds, garlic growing, flower garden seeds, potato seeds, design your own garden, designing a garden, staking tomato plants, tomatoes early, cherry tomato seeds, canning fresh tomatoes, canning tomatoes how to, transplanting tomatoes, mulch types, types of mulch, coffee grounds for plants, herb garden design, indoor herb gardening, how to grow tomatoes from seed, zinnia seeds, tomato disease identification, tomatoes diseases, tomato diseases, tomato pests, tomatoes diseases, tomato worms, pruning tomatoes, watering tomatoes');
+  define('HOME_PAGE_META_DESCRIPTION', 'Our Cooperatively-Run Business Offers over 700 Varieties of Heirloom & Organic Garden Seeds.');
+  define('HOME_PAGE_META_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, seed saving, vegetable garden layout, companion planting chart, native gardens, wild flower seeds, vegetable seeds, Asian vegetable seeds, hot pepper seeds, non hybrid seeds, survival seeds, starting tomato seeds indoors, heritage seeds, growing zones in north America, window flower boxes, garden hand tool, hand garden tools, greenhouse seed, best vegetable garden, best flowers for garden, best flowers for cutting garden, heirloom flower seeds, perennial flower seeds, perennial seeds, indeterminate tomatoes, heirloom tomato seeds, garlic growing, flower garden seeds, potato seeds, design your own garden, designing a garden, staking tomato plants, tomatoes early, cherry tomato seeds, canning fresh tomatoes, canning tomatoes how to, transplanting tomatoes, mulch types, types of mulch, coffee grounds for plants, herb garden design, indoor herb gardening, how to grow tomatoes from seed, zinnia seeds, tomato disease identification, tomato pests, tomatoes diseases, tomato worms, pruning tomatoes, watering tomatoes');
 
   // NOTE: If HOME_PAGE_TITLE is left blank (default) then TITLE and SITE_TAGLINE will be used instead.
   define('HOME_PAGE_TITLE', ''); // usually best left blank
@@ -47,7 +47,7 @@ define('CUSTOM_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, hei
   define('PRIMARY_SECTION', ' : ');
 
 // Define Secondary Section Output
-  define('SECONDARY_SECTION', ' - ');
+  define('SECONDARY_SECTION', ' ');
 
 // Define Tertiary Section Output
   define('TERTIARY_SECTION', ', ');
@@ -64,4 +64,11 @@ define('CUSTOM_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, hei
 // There is usually NO need to enable this unless you need to specify a path and/or a different filename
 //  define('FAVICON','favicon.ico');
 
+// EZ-PAGE OVERRIDES
+  define('META_TAG_KEYWORDS_EZPAGE_15', 'Our commitment to seed biodiversity means we have a strict non-GMO policy, preferring open-pollinated varieties.');
+  define('META_TAG_KEYWORDS_EZPAGE_18', 'We are a worker-owned cooperative offering over 700 varieties of organic, heirloom, & ecologically-grown vegetable, flower, herb, grain, and cover crop seeds.');
+  define('META_TAG_KEYWORDS_EZPAGE_21', 'Common questions about organic & heirloom seeds, seed-saving, and orders.');
+  define('META_TAG_KEYWORDS_EZPAGE_40', 'We give workshops and presentations on seed saving, heirloom gardening, and seed growing as a farm enterprise, host seed swaps and variety tastings, & distribute seed saving resources.');
+  define('META_TAG_KEYWORDS_EZPAGE_41', 'Check out our library of seed-saving and growing guides for vegetables, herbs, flowers, and seasonals.');
+  define('META_TAG_KEYWORDS_EZPAGE_138', 'We work with Certified Organic, Certified Naturally Grown, and ecologically-oriented farmers through the mid-Atlantic region and beyond.');
 ?>
