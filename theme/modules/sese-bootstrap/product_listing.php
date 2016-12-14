@@ -79,7 +79,7 @@ if ($listing_split->number_of_rows > 0) {
           }
           if (isset($listing->fields['products_model'])) {
             $lc_text .=
-              "<div class='text-center'><small class='item-number'><i>Item # <span itemprop='mpn'>{$listing->fields['products_model']}</span>" .
+              "<div class='text-center'><small class='item-number'><i>Item # <span itemprop='model'>{$listing->fields['products_model']}</span>" .
               "</i></small></div>";
           }
           $form_action = zen_href_link(FILENAME_DEFAULT,
