@@ -64,7 +64,7 @@
     </a>
   </p>
   <p>
-  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">Tankuro edamame</a> doubles as a black dry bean. <a href="http://www.southernexposure.com/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="http://www.southernexposure.com/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants. More varieties will become available over the next few days when we receive their organic certification paperwork.</p>  
+  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">Tankuro edamame</a> doubles as a black dry bean. <a href="http://www.southernexposure.com/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="http://www.southernexposure.com/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants. More varieties will become available around the end of December when we receive their organic certification paperwork.</p>  
   <hr />
 
     <!-- Books -->
