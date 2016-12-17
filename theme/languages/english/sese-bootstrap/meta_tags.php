@@ -65,10 +65,10 @@ define('CUSTOM_KEYWORDS', 'heirloom seeds, organic seeds, heirloom tomatoes, see
 //  define('FAVICON','favicon.ico');
 
 // EZ-PAGE OVERRIDES
-  define('META_TAG_KEYWORDS_EZPAGE_15', 'Our commitment to seed biodiversity means we have a strict non-GMO policy, preferring open-pollinated varieties.');
-  define('META_TAG_KEYWORDS_EZPAGE_18', 'We are a worker-owned cooperative offering over 700 varieties of organic, heirloom, & ecologically-grown vegetable, flower, herb, grain, and cover crop seeds.');
-  define('META_TAG_KEYWORDS_EZPAGE_21', 'Common questions about organic & heirloom seeds, seed-saving, and orders.');
-  define('META_TAG_KEYWORDS_EZPAGE_40', 'We give workshops and presentations on seed saving, heirloom gardening, and seed growing as a farm enterprise, host seed swaps and variety tastings, & distribute seed saving resources.');
-  define('META_TAG_KEYWORDS_EZPAGE_41', 'Check out our library of seed-saving and growing guides for vegetables, herbs, flowers, and seasonals.');
-  define('META_TAG_KEYWORDS_EZPAGE_138', 'We work with Certified Organic, Certified Naturally Grown, and ecologically-oriented farmers through the mid-Atlantic region and beyond.');
+  define('META_TAG_DESCRIPTION_EZPAGE_15', 'Our commitment to seed biodiversity means we have a strict non-GMO policy, preferring open-pollinated varieties.');
+  define('META_TAG_DESCRIPTION_EZPAGE_18', 'We are a worker-owned cooperative offering over 700 varieties of organic, heirloom, & ecologically-grown vegetable, flower, herb, grain, and cover crop seeds.');
+  define('META_TAG_DESCRIPTION_EZPAGE_21', 'Common questions about organic & heirloom seeds, seed-saving, and orders.');
+  define('META_TAG_DESCRIPTION_EZPAGE_40', 'We give workshops and presentations on seed saving, heirloom gardening, and seed growing as a farm enterprise, host seed swaps and variety tastings, & distribute seed saving resources.');
+  define('META_TAG_DESCRIPTION_EZPAGE_41', 'Check out our library of seed-saving and growing guides for vegetables, herbs, flowers, and seasonals.');
+  define('META_TAG_DESCRIPTION_EZPAGE_138', 'We work with Certified Organic, Certified Naturally Grown, and ecologically-oriented farmers through the mid-Atlantic region and beyond.');
 ?>
