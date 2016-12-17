@@ -37,8 +37,8 @@ define('EMAIL_GV_LINK', ' Or, you may redeem it now by following this link: ' . 
 
 define('EMAIL_GV_LINK_OTHER','Once you have added the ' . TEXT_GV_NAME . ' to your account, you may use the ' . TEXT_GV_NAME . ' for yourself, or send it to a friend!' . "\n\n");
 
-define('EMAIL_TEXT', "<ul><li>Check out faster</li>\n<li>Keep products in your cart as long as you like</li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=address_book'>Store multiple addresses</a></li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=account_history'>View your order history</a></li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=account_password'>Change your password</a></li>");
-define('EMAIL_CONTACT', 'If you have questions, you can email us at <a href="mailto:' . STORE_OWNER_EMAIL_ADDRESS . '">'. STORE_OWNER_EMAIL_ADDRESS ." </a>, or call us at 540-894-9480.\n\n");
+define('EMAIL_TEXT', "<ul><li>Check out faster</li>\n<li>Keep products in your cart as long as you like</li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=address_book'>Store multiple addresses</a></li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=account_history'>View your order history</a></li>\n<li><a href='https://www.southernexposure.com/index.php?main_page=account_password'>Change your password</a></li>\n\n");
+define('EMAIL_CONTACT', 'If you have questions, you can email us at <a href="mailto:' . STORE_OWNER_EMAIL_ADDRESS . '">'. STORE_OWNER_EMAIL_ADDRESS . "</a>, or call us at 540-894-9480.\n\n");
 define('EMAIL_GV_CLOSURE', "\n" . 'Sincerely,' . "\n\n" . STORE_OWNER . "\n\n". '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'.HTTP_SERVER . DIR_WS_CATALOG ."</a>\n\n");
 
 // email disclaimer - this disclaimer is separate from all other email disclaimers
