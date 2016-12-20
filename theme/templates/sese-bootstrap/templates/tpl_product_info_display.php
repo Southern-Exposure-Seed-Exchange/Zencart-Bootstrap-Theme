@@ -65,11 +65,6 @@ echo BootstrapProductInfo::free_shipping(); ?>
 
 
 <?php
-/** Display the Product's additional images */
-require($template->get_template_dir('/tpl_modules_additional_images.php',
-  DIR_WS_TEMPLATE, $current_page_base,'templates') .
-  '/tpl_modules_additional_images.php');
-
 /** Display the Category Name & Description */
 echo BootstrapProductInfo::category();
 
