@@ -18,6 +18,7 @@ $logo = HTTP_SERVER . '/' . DIR_WS_TEMPLATE . "/img/logos/sese.png";
 $facebook = "https://www.facebook.com/pages/Southern-Exposure-Seed-Exchange/353814746253/";
 $twitter = "https://twitter.com/se_seedexchange/";
 $instagram = "https://www.instagram.com/southernexposure/";
+$google_plus = "https://plus.google.com/107794281415580072161";
 
 $content = <<<HTML
 <address vocab="http://schema.org/" typeof="Organization">
@@ -26,6 +27,7 @@ $content = <<<HTML
   <meta property="sameAs" content="${facebook}" />
   <meta property="sameAs" content="${twitter}" />
   <meta property="sameAs" content="${instagram}" />
+  <meta property="sameAs" content="${google_plus}" />
   <strong property="name">${name}</strong><br />
   <span property="address" typeof="PostalAddress">
     <span property="streetAddress">${address1}</span><br />
