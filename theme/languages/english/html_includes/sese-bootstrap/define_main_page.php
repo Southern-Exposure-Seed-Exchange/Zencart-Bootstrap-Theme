@@ -44,7 +44,7 @@
       </div>
       <div class="item">
         <a href="/our-seed-growers-ezp-138.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm.jpg" alt="On the Moyer Family Farm" />
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm_goose.jpg" alt="On the Moyer Family Farm" />
         </a>
       </div>
     </div>
@@ -141,8 +141,7 @@
   </a></p>
   <p>
     <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available!
-    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a> We'll update prices, organic statuses, and new varietiy listings on Tuesday, Dec. 6th.
-  </p>
+    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a></p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
     the listings above to fill your cart or
