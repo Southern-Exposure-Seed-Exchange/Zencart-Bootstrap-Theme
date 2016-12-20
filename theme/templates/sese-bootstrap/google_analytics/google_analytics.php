@@ -245,8 +245,8 @@ echo "</script>";
 
 If (GOOGLE_CONVERSION_ACTIVE == "Yes") { // Adwords Conversion Tracking is enabled and should be tracked
 echo '<!-- Google Code for purchase Conversion Page -->
-<script language="JavaScript" type="text/javascript">
-<!--
+<script type="text/javascript">
+/* <![CDATA[ */
 var google_conversion_id = ' . GOOGLE_CONVERSION_IDNUM . ';
 var google_conversion_language = "' . GOOGLE_CONVERSION_LANG . '";
 var google_conversion_format = "1";
@@ -260,12 +260,12 @@ if ($google_analytics['ot_total'] != "") { // Order total is not blank. Used to 
 } else { 
 	echo '
 	if (1.0) {
-		var google_conversion_value = 1.0;
+		var google_conversion_value = 0;
 	}
 	';
 } // End if
-echo 'var google_conversion_label = "purchase";
-//-->
+echo 'var google_conversion_label = "kcwTCIODVhC1oZ7_Aw";
+/* ]]> */
 </script>
 <script language="JavaScript" src="' . $google_conversion_url . '">
 </script>
