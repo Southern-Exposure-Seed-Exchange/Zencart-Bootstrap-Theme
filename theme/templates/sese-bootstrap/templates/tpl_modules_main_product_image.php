@@ -11,12 +11,12 @@
 require(DIR_WS_MODULES . zen_get_module_directory(FILENAME_MAIN_PRODUCT_IMAGE));
 
 $thumbnail = zen_image($products_image_medium, addslashes($products_name),
-  0, 0, 'class="img-responsive img-center" itemprop="image"');
+  0, 0, 'class="img-responsive img-center" itemprop="thumbnailUrl"');
 ?>
-<div id="productMainImage" class="text-center">
+<div id="productMainImage" class="text-center" itemscope itemtype="http://schema.org/ImageObject" itemprop="image">
   <a href="<?php echo $products_image_large; ?>" data-lightbox="product_main_image"
-     data-title="<?php echo $products_name; ?>" class='thumbnail'>
-     <meta property="image" content="<?php echo $products_image_large ?>" typeof="URL" />
+     data-title="<?php echo $products_name; ?>" class='thumbnail' itemprop="contentUrl">
+     <meta property="representativeOfPage" content="True" />
     <?php echo $thumbnail; ?>
     <small><?php echo TEXT_CLICK_TO_ENLARGE; ?></small>
   </a>

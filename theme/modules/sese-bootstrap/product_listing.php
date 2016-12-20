@@ -32,10 +32,11 @@ if ($listing_split->number_of_rows > 0) {
 
     $product_link = BootstrapProductListing::product_link($listing);
     $product_image =
-      "<a href='{$product_link}'>" .  zen_image(
+      "<span itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>" .
+        "<a href='{$product_link}' itemprop='url'>" .  zen_image(
         DIR_WS_IMAGES . $listing->fields['products_image'],
-        $listing->fields['products_name'], 0, 0, 'class="img-responsive img-center listingProductImage" itemprop="image"') .
-      '</a>';
+        $listing->fields['products_name'], 0, 0, 'class="img-responsive img-center listingProductImage" itemprop="thumbnailUrl"') .
+      '</a></span>';
     for ($col=0, $n=sizeof($column_list); $col < $n; $col++) {
       $lc_class = $lc_text = '';
       switch ($column_list[$col]) {
