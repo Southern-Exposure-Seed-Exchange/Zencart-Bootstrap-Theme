@@ -22,12 +22,12 @@ $google_plus = "https://plus.google.com/107794281415580072161";
 
 $content = <<<HTML
 <address vocab="http://schema.org/" typeof="Organization">
-  <meta property="url" content="${website}" />
-  <meta property="logo" content="${logo}" />
-  <meta property="sameAs" content="${facebook}" />
-  <meta property="sameAs" content="${twitter}" />
-  <meta property="sameAs" content="${instagram}" />
-  <meta property="sameAs" content="${google_plus}" />
+  <link property="url" href="${website}" />
+  <link property="logo" href="${logo}" />
+  <link rel="me" property="sameAs" href="${facebook}" />
+  <link rel="me" property="sameAs" href="${twitter}" />
+  <link rel="me" property="sameAs" href="${instagram}" />
+  <link rel="me" property="sameAs" href="${google_plus}" />
   <strong property="name">${name}</strong><br />
   <span property="address" typeof="PostalAddress">
     <span property="streetAddress">${address1}</span><br />
