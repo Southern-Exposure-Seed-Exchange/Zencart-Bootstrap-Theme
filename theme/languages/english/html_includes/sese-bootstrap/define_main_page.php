@@ -135,6 +135,43 @@
 <!-- Right Column -->
 <div class='col-md-3'>
 
+  <!-- Garden Planner -->
+  <a href="/gardenplanner">
+    <img src="/newsletter/2012-december/sese-garden-planner-screenshots.jpg"
+         alt="Southern Exposure Garden Planner" class='img-responsive img-center' />
+  </a>
+  <h4 class='text-center'><a href="/gardenplanner">Try Our Garden Planner</a></h4>
+  <p>
+    Our simple, powerful online tool helps manage your garden throughout the
+    season and from year to year. You can order SESE seeds directly from the
+    planner.
+    <a href="/gardenplanner">Try our Garden Planner Tool free for one week
+      <span class='glyphicon glyphicon-menu-right'></span></a>
+  </p>
+
+  <hr />
+  
+  <!-- Mobile-friendly flipbook -->
+  <a href="http://dynalog.catalogs.com/catalogs/11684">
+    <img src="images/home/mobile-friendly-flipbook-button-2017.png"
+         alt="Southern Exposure Mobile-Friendly Flipbook" class='img-responsive img-center' />
+	</a>
+
+  <hr />
+  
+
+  <!-- Virginia Mix -->
+  <a href="/virginia-heritage-seed-collection-p-1314.html">
+    <img  src="/images/veg/virginia-heritage-seed-sampler.jpg" alt="Virginia Heritage Seed Sampler" class='img-responsive img-center'/>
+  </a>
+
+  <p>We <strong>donate 30% of sales</strong> of <a href="/virginia-heritage-seed-collection-p-1314.html">Virginia Heritage Seed Collection</a>
+    and <a href="/rainbow-starters-mix-p-1413.html">Rainbow Starters Mix</a> to the <a href="http://www.pecva.org/anx/index.cfm">Piedmont Environmental Council</a>
+    and Buy Fresh, Buy Local.</p>
+
+  <hr />
+
+
   <!-- Catalog -->
   <p><a href="/request-a-catalog-c-215.html">
     <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog" />
@@ -153,32 +190,6 @@
   </p>
   <hr />
 
-  <!-- Garden Planner -->
-  <a href="/gardenplanner">
-    <img src="/newsletter/2012-december/sese-garden-planner-screenshots.jpg"
-         alt="Southern Exposure Garden Planner" class='img-responsive img-center' />
-  </a>
-  <h4 class='text-center'><a href="/gardenplanner">Try Our Garden Planner</a></h4>
-  <p>
-    Our simple, powerful online tool helps manage your garden throughout the
-    season and from year to year. You can order SESE seeds directly from the
-    planner.
-    <a href="/gardenplanner">Try our Garden Planner Tool free for one week
-      <span class='glyphicon glyphicon-menu-right'></span></a>
-  </p>
-
-  <hr />
-
-  <!-- Virginia Mix -->
-  <a href="/virginia-heritage-seed-collection-p-1314.html">
-    <img  src="/images/veg/virginia-heritage-seed-sampler.jpg" alt="Virginia Heritage Seed Sampler" class='img-responsive img-center'/>
-  </a>
-
-  <p>We <strong>donate 30% of sales</strong> of <a href="/virginia-heritage-seed-collection-p-1314.html">Virginia Heritage Seed Collection</a>
-    and <a href="/rainbow-starters-mix-p-1413.html">Rainbow Starters Mix</a> to the <a href="http://www.pecva.org/anx/index.cfm">Piedmont Environmental Council</a>
-    and Buy Fresh, Buy Local.</p>
-
-  <hr />
 
   <!-- Events -->
   <h4 class='text-center'>Events</h4>
