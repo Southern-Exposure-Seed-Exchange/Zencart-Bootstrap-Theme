@@ -24,10 +24,10 @@ $content = <<<HTML
 <address vocab="http://schema.org/" typeof="Organization">
   <link property="url" href="${website}" />
   <link property="logo" href="${logo}" />
-  <link rel="me" property="sameAs" href="${facebook}" />
-  <link rel="me" property="sameAs" href="${twitter}" />
-  <link rel="me" property="sameAs" href="${instagram}" />
-  <link rel="me" property="sameAs" href="${google_plus}" />
+  <link property="sameAs" href="${facebook}" />
+  <link property="sameAs" href="${twitter}" />
+  <link property="sameAs" href="${instagram}" />
+  <link property="sameAs" href="${google_plus}" />
   <strong property="name">${name}</strong><br />
   <span property="address" typeof="PostalAddress">
     <span property="streetAddress">${address1}</span><br />
@@ -38,7 +38,7 @@ $content = <<<HTML
     <span property="postalCode">${zip}</span><br />
   </span>
   <a href="mailto:${email}?subject=${email_subject}" property="email" content="${email}">${email}</a><br />
-  <abbr title="Phone">P:</abbr> <span property="telephone">${phone}</span><br />
+  <abbr title="Phone">P:</abbr> <span vocab="http://schema.org" typeof="ContactPoint" property="contactPoint"><meta property="contactType" content="customer support" /><meta property="telephone" content="+1 ${phone}" />${phone}</span><br />
   <abbr title="Fax">F:</abbr> <span property="faxNumber">${fax}</span><br />
 </address>
 HTML;
