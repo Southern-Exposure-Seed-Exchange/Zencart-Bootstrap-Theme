@@ -16,7 +16,7 @@
   $content .= zen_draw_hidden_field('search_in_description', '1') . zen_hide_session_id();
 
   $content .= "<div class='input-group'>";
-  $content .= zen_draw_input_field('keyword', '', 'class="form-control" itemprop="query-input" required') .
+  $content .= zen_draw_input_field('keyword', '', 'class="form-control" type="text" itemprop="query-input" required') .
     '<span class="input-group-btn"><button class="btn btn-primary" type="submit">' . HEADER_SEARCH_BUTTON . '</button></span>';
   $content .= "</div>";
 
