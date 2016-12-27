@@ -49,6 +49,7 @@ if ($listing_split->number_of_rows > 0) {
             )), PRODUCT_LIST_DESCRIPTION);
           $lc_text = "<h4 class='itemTitle' itemprop='name'><a itemprop='url' href='{$product_link}'><b>" .
             "{$listing->fields['products_name']}</b></a>{$icons}</h4>" .
+            "<link itemprop='itemCondition' href='http://schema.org/NewCondition' />" .
             "<div class='hidden-xs listingDescription' itemprop='description'>{$product_description}</div>\n" .
             "<div class='visible-xs'>{$product_image}</div>\n";
           break;
@@ -60,9 +61,11 @@ if ($listing_split->number_of_rows > 0) {
           } else {
             $display_price = "<meta itemprop='price' content='0.00' />";
           }
-          $lc_price = "<div class='text-center product-price' itemscope itemprop='offers' itemtype='http://schema.org/Offer'><b>" .
-            '<meta itemprop="priceCurrency" content="USD" />' .  $display_price .
-            "</b></div>\n";
+          $lc_price = "<div class='text-center product-price' itemscope itemprop='offers' itemtype='http://schema.org/Offer'>" .
+            '<meta itemprop="priceCurrency" content="USD" />' .
+            "<link itemprop='availability' href='http://schema.org/" .
+              ($listing->fields['products_quantity'] > 0 ? "InStock" : "OutOfStock") . "' />" .
+            "<b>" . $display_price . "</b></div>\n";
           $lc_text =  $lc_price;
           $the_button = BootstrapProductListing::product_cart_button(
             $listing, $product_link);

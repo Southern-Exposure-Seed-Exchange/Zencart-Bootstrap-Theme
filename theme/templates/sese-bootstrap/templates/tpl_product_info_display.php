@@ -16,7 +16,7 @@
 
 <div class='page-header'>
 <h1 itemprop="name"><?php echo $products_name . BootstrapProductInfo::sese_icons(); ?></h1>
-<meta itemprop="itemCondition" itemType="http://schema.org/NewCondition" />
+<link itemprop="itemCondition" href="http://schema.org/NewCondition" />
 <meta itemprop="model" content="<?php echo $products_model; ?>" />
 <meta itemprop="sku" content="<?php echo $products_model; ?>" />
 </div>
@@ -42,8 +42,14 @@ if (zen_not_null($products_image)) {
 <!-- Price and Cart Panel -->
 <div class='panel panel-default'>
 <div id="productPrices" class="productGeneral panel-body" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+  <link itemprop="itemCondition" href="http://schema.org/NewCondition" />
   <meta itemprop="priceCurrency" content="USD" />
 <?php
+if ($products_quantity > 0) {
+  echo "<link itemprop='availability' href='http://schema.org/InStock' />";
+} else {
+  echo "<link itemprop='availability' href='http://schema.org/OutOfStock' />";
+}
 echo BootstrapProductInfo::price();
 if (CUSTOMERS_APPROVAL != 3 or TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM != '') {
   echo BootstrapProductInfo::add_to_cart();
