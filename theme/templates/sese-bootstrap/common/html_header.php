@@ -44,6 +44,15 @@ if ($robots_page_exclusion || $current_page_base == 'down_for_maintenance' ||
 <link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/lightbox.min.css" ?>" />
 <link rel="stylesheet" href="<?php echo DIR_WS_TEMPLATE . "css/sese.css" ?>" />
 
+<!-- Favicons using realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7kngOalP4w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=7kngOalP4w" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=7kngOalP4w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=7kngOalP4w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=7kngOalP4w" color="#03a600">
+<link rel="shortcut icon" href="/favicon.ico?v=7kngOalP4w">
+<meta name="theme-color" content="#ffffff">
+
 <script type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/jquery.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/bootstrap.min.js" ?>"></script>
 <script async type="text/javascript" src="<?php echo DIR_WS_TEMPLATE . "js/lightbox.min.js" ?>"></script>
