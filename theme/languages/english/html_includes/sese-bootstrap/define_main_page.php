@@ -43,8 +43,8 @@
         </a>
       </div>
       <div class="item">
-        <a href="/our-seed-growers-ezp-138.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm_goose.jpg" alt="On the Moyer Family Farm" />
+        <a href="/events-ezp-40.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/hhf-herb-and-gourd-display.jpg" alt="Heritage Harvest Festival at Monticello" />
         </a>
       </div>
     </div>
@@ -64,7 +64,21 @@
     </a>
   </p>
   <p>
-  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">Tankuro edamame</a> doubles as a black dry bean. <a href="http://www.southernexposure.com/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="http://www.southernexposure.com/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants. More varieties will become available around the end of December when we receive their organic certification paperwork.</p>  
+  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">Tankuro edamame</a> doubles as a black dry bean. <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
+
+  <p class='text-center'>
+    <a href="/truhartnr-sweet-pepper-03-g-p-1997.html">
+      <img style="margin: 3px; height: 120px;" alt="TruHart-NR peppers" src="/images/medium/sweet-pepper-truhart_MED.jpg" />
+    </a>
+    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf">
+      <img style="margin: 3px; height: 120px;" alt="Carolina Broadleaf mustard" src="/images/medium/mustard-greens-carolina-broadleaf_MED.jpg" />
+    </a>
+    <a href= "/african-marigold-crackerjack-mix-05-g-p-1965.html">
+      <img style="margin: 3px; height: 120px;" alt="Crackerjack Marigold" src="/images/medium/crackerjack-marigold_MED.jpg" />
+    </a>
+  </p>
+  <p>
+  South Carolina researchers bred two of our new varieties for disease resistance: <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">TruHart-NR peppers</a> for resistance to nematodes and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf" target="_blank">Carolina Broadleaf mustard</a> for resistance to bacterial blight.
   <hr />
 
     <!-- Books -->
@@ -152,7 +166,7 @@
   <hr />
   
   <!-- Mobile-friendly flipbook -->
-  <a href="http://dynalog.catalogs.com/catalogs/11684">
+  <a href="http://dynalog.catalogs.com/g489/southern-exposure-seed-exchange?merchantID=379">
     <img src="images/home/mobile-friendly-flipbook-button-2017.png"
          alt="Southern Exposure Mobile-Friendly Flipbook" class='img-responsive img-center' />
 	</a>
@@ -190,15 +204,6 @@
   </p>
   <hr />
 
-
-  <!-- Events -->
-  <h4 class='text-center'>Events</h4>
-  <p>We  host seed swaps, tastings, and workshops on heirloom gardening, year-round edible gardening, and more! </p>
-  <p><a href="/events-ezp-40.html">Check out upcoming events <span class='glyphicon glyphicon-menu-right'></span></a></p>
-    <a href="/events-ezp-40.html"><img
-    class='img-responsive img-center' alt="our tomato tasting at a Mother
-    Earth News Fair" src="/images/info/pa-mother-earth-news.jpg" /></a>
-  <hr />
 
 </div>
 
