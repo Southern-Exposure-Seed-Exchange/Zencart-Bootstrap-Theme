@@ -14,7 +14,7 @@
 
 <?php if ($messageStack->size('password_forgotten') > 0) echo $messageStack->output('password_forgotten'); ?>
 
-<fieldset>    
+<fieldset>
 <legend><?php echo HEADING_TITLE; ?></legend>
 
 <p id="passwordForgottenMainContent" class="content"><?php echo TEXT_MAIN; ?></p>
@@ -29,8 +29,8 @@
 </fieldset>
 
 <p class='clearfix'>
-  <div class="pull-right"><input type="submit" name="submit" class="btn btn-primary" value="<?php echo BUTTON_SUBMIT_ALT; ?>" /></div> 
-  <div class="pull-left"><?php echo zen_back_link() . "<span class='btn btn-default'>" . BUTTON_BACK_ALT . '</span></a>'; ?></div>
+  <span class="pull-right"><input type="submit" name="submit" class="btn btn-primary" value="<?php echo BUTTON_SUBMIT_ALT; ?>" /></span>
+  <span class="pull-left"><?php echo zen_back_link() . "<span class='btn btn-default'>" . BUTTON_BACK_ALT . '</span></a>'; ?></span>
 </p>
 
 </form>
