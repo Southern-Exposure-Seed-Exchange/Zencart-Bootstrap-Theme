@@ -136,7 +136,7 @@ if (sizeof($selection) > 0) {
           <div class='form-group'>
             <label <?php echo (isset($selection[$i]['fields'][$j]['tag']) ? 'for="'.$selection[$i]['fields'][$j]['tag'] . '" ' : ''); ?>class="control-label col-sm-4"><?php
               echo $selection[$i]['fields'][$j]['title']; ?></label>
-            <div class='col-sm-4'>
+            <div class='col-sm-5'>
               <?php echo $selection[$i]['fields'][$j]['field']; ?>
             </div>
           </div><?php
