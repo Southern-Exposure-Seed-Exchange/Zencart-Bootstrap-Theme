@@ -26,22 +26,21 @@ if (sizeof($quick_order_errors) > 0) {
 <?php echo zen_draw_form('quick_order', zen_href_link(FILENAME_QUICK_ORDER, '', 'NONSSL', false), 'get') . zen_hide_session_id(); ?>
 <table>
 <tr>
-<td>
-  <?php
+<td><?php
   if ($messageStack->size('quick_order') > 0) {
-?>
-  <?php echo $messageStack->output('quick_order'); ?><br />
-<?php
+    echo $messageStack->output('quick_order'); ?><br /><?php
   }
-?>
-<?php echo zen_draw_hidden_field('main_page', FILENAME_QUICK_ORDER); ?>
-<?php echo zen_draw_hidden_field('action', 'add_products'); ?>
-<table id="quick-order" class='table table-condensed table-striped'>
-<tr class="table-header"><th><?php echo TEXT_QO_NAME_MODEL; ?></th><th><?php echo TEXT_QO_QTY; ?></th></tr>
-<?php
 
-  // display rows for all the pre-selected model numbers and the set number of  extra rows
-  for($i = 1, $array_index = 0, $c = $qo_products_count + (int)QO_INPUT_ROWS; $i <= $c; $i++, $array_index++) {
+  echo zen_draw_hidden_field('main_page', FILENAME_QUICK_ORDER);
+  echo zen_draw_hidden_field('action', 'add_products');
+
+  echo BootstrapQuickOrder::table_start();
+
+  $c = $qo_products_count + (int)QO_INPUT_ROWS;
+  if ($c % 2 == 1) { $c += 1; }
+
+  // display rows for all the pre-selected model numbers and the set number of extra rows
+  for($i = 1, $array_index = 0; $i <= $c; $i++, $array_index++) {
     if ($alt_table_row === 1) {
       $alt_table_row = 2;
     }
@@ -62,22 +61,35 @@ if (sizeof($quick_order_errors) > 0) {
     }
     $qty_value = $items[$i]['qty'] == '' ? '1' : $items[$i]['qty'];
     $row_class = $quick_order_errors[$i] ? ' danger' : '';
-    if ($product_list_result !== false && isset($product_list_models[$array_index]) && $product_list_models[$array_index] != '') {
-?>
-    <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo '<input class="form-control" type="hidden" name="model_' . $i . '" value="' . $product_list_models[$array_index] . '" />' . $product_list_array[$product_list_models[$array_index]] . '</td><td class="column-2"><input class="form-control" type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr>
-
-<?php
-    }
-    else {
-?>
-    <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model'], $i == 1 ? 'autofocus="autofocus" class="form-control"' : 'class="form-control"') . '</td><td class="column-2"><input class="form-control" type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr>
-
-<?php
+    if ($product_list_result !== false && isset($product_list_models[$array_index]) && $product_list_models[$array_index] != '') { ?>
+      <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo '<input class="form-control" type="hidden" name="model_' . $i . '" value="' . $product_list_models[$array_index] . '" />' . $product_list_array[$product_list_models[$array_index]] . '</td><td class="column-2"><input class="form-control" type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr><?php
+    } else { ?>
+      <tr class="row-<?php echo $alt_table_row . $row_class; ?>"><td class="column-1"><?php echo TEXT_QO_MODEL . ' ' . zen_draw_input_field('model_' . $i, $items[$i]['model'], $i == 1 ? 'autofocus="autofocus" class="form-control"' : 'class="form-control"') . '</td><td class="column-2"><input class="form-control" type="text" name="qty_' . $i . '" value="' . $qty_value . '" size="5" />'; ?></td></tr><?php
     }
 
-  } ?>
-</table>
+    if ($i == round($c / 2)) {
+      echo BootstrapQuickOrder::table_end() . "</td><td>" . BootstrapQuickOrder::table_start();
+    }
+
+  }
+
+  echo BootstrapQuickOrder::table_end();
+?>
 
 </td></tr></table>
 <p><button class="btn btn-primary" type="submit">Add to Cart</button></p>
 </form>
+
+<?php
+class BootstrapQuickOrder
+{
+  public static function table_start() {
+    return "<table class='table table-condensed table-striped'>\n<tr class='table-header'>" .
+      "<th>" . TEXT_QO_NAME_MODEL . "</th><th>" . TEXT_QO_QTY . "</th></tr>";
+  }
+  public static function table_end() {
+    return "</table>";
+  }
+
+}
+?>

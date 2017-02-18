@@ -9,7 +9,7 @@
 */
 
 // how many empty model input fields shall we display?
-define('QO_INPUT_ROWS', 15);
+define('QO_INPUT_ROWS', 14);
 
 // require that product models must be case-sensitive? if so, set this to true (boolean)
 define('QO_MODELS_MUST_BE_CASE_SENSITIVE', false);
