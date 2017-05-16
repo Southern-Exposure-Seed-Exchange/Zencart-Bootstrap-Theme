@@ -33,18 +33,18 @@
            When removing the first slide, change the data-src attribute to src and set the active class on the next div.
         -->
       <div class="item active">
-        <a href="/free-2017-catalog-and-garden-guide-p-1970.html">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/2017_catalog_w_pepper_page.jpg" alt="Request our 2017 catalog" />
+        <a href="/vegetables-sweet-potatoes-c-3_229.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/sweet-potatoes.jpg" alt="Don't forget to order Sweet Potatoes" />
         </a>
       </div>
       <div class="item">
-        <a href="/vegetables-tomatoes-c-3_57.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/elan_and_tomatoes.jpg" alt="Elan with Tomatoes" />
+        <a href="/our-seed-growers-ezp-138.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm_goose.jpg" alt="Our Seed Grower Network" />
         </a>
       </div>
       <div class="item">
-        <a href="/events-ezp-40.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/hhf-herb-and-gourd-display.jpg" alt="Heritage Harvest Festival at Monticello" />
+        <a href="/vegetable-gardening-in-the-southeast-the-timber-press-guide-to-p-1722.html">
+          <img data-src="/includes/templates/sese-bootstrap/img/carousel/iras-book-w-tomato-staking.jpg" alt="Vegetable Gardening in the Southeast" />
         </a>
       </div>
     </div>
@@ -113,7 +113,7 @@ src="/images/medium/peanut-schronces-deep-black_MED.jpg" />
     </a>
   </p>
   <p>
-  We love <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=oxheart+carrot">Oxheart carrots</a> for how well they grow even in clay soils, <a href="http://www.southernexposure.com/index.php?main_page=advanced_search_result&search_in_description=1&keyword=top+mark+netted">Top Mark muskmelons</a> for their resistance to downy mildew, and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Floriani">Floriani Red Flint corn</a> for the tasty polenta we make from it. Our new crop of <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">Schronce's Deep Black</a> peanuts just passed its germination test.</p>
+  We love <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=oxheart+carrot">Oxheart carrots</a> for how well they grow even in clay soils, <a href="http://www.southernexposure.com/index.php?main_page=advanced_search_result&search_in_description=1&keyword=top+mark+netted">Top Mark muskmelons</a> for their resistance to downy mildew, and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Floriani">Floriani Red Flint corn</a> for the tasty polenta we make from it. Our new crop of <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">Schronce's Deep Black</a> peanuts recently passed its germination test.</p>
   <hr />
 
     <!-- Books -->
