@@ -51,3 +51,9 @@ if (!$flag_disable_footer) {
 <?php
 } // flag_disable_footer
 ?>
+
+
+<!-- Criteo Tracking Code -->
+<?php require($template->get_template_dir('criteo.php', DIR_WS_TEMPLATE,
+      $current_page_base, 'criteo') . '/criteo.php');
+?>
