@@ -77,7 +77,7 @@
         window.criteo_q.push(
             { event: "setAccount", account: 40290 },
             { event: "setEmail", email: "<?php echo $customers_email_address; ?>" },
-            { event: "setSiteType", deviceType },
+            { event: "setSiteType", type: deviceType },
             <?php if ($is_homepage) { ?>
                 { event: "viewHome" }
             <?php } else if ($is_listing) { ?>
