@@ -53,18 +53,18 @@
 <!-- Featured Products -->
   <h3>New Varieties for 2017</h3>
   <p class='text-center'>
-    <a href="/shows-okra-4-g-p-1998.html">
-      <img style="margin: 3px; height: 120px;" alt="Shows Okra" src="/images/veg/shows-okra-small.jpg" />
-    </a>
     <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">
       <img style="margin: 3px; height: 120px;" alt="Sunn Hemp" src="/images/medium/sunn-hemp_MED.jpg" />
     </a>
-    <a href= "/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html">
-      <img style="margin: 3px; height: 120px;" alt="Donald Todd Half-Runner Bean" src="/images/veg/donald-todd-half-runner.jpg" />
+    <a href="/shows-okra-4-g-p-1998.html">
+      <img style="margin: 3px; height: 120px;" alt="Shows Okra" src="/images/veg/shows-okra-small.jpg" />
+    </a>
+<a href= "/african-marigold-crackerjack-mix-05-g-p-1965.html">
+      <img style="margin: 3px; height: 120px;" alt="Crackerjack Marigold" src="/images/medium/crackerjack-marigold_MED.jpg" />
     </a>
   </p>
   <p>
-  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">Sunn Hemp</a>, a fast-growing leguminous summer cover crop, thrives in heat, tolerates drought, suppresses nematodes, pulls nutrients from deep in the subsoil. <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
+  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">Sunn Hemp</a>, a fast-growing leguminous summer cover crop, thrives in heat, tolerates drought, suppresses nematodes, and pulls nutrients from deep in the subsoil.  Marigolds including <a href="/african-marigold-crackerjack-mix-05-g-p-1965.html">Crackerjack</a> will also suppress nematodes while attracting pollinators. Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
 
   <p class='text-center'>
     <a href="/truhartnr-sweet-pepper-03-g-p-1997.html">
@@ -73,12 +73,12 @@
     <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf">
       <img style="margin: 3px; height: 120px;" alt="Carolina Broadleaf mustard" src="/images/medium/mustard-greens-carolina-broadleaf_MED.jpg" />
     </a>
-    <a href= "/african-marigold-crackerjack-mix-05-g-p-1965.html">
-      <img style="margin: 3px; height: 120px;" alt="Crackerjack Marigold" src="/images/medium/crackerjack-marigold_MED.jpg" />
+        <a href= "/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html">
+      <img style="margin: 3px; height: 120px;" alt="Donald Todd Half-Runner Bean" src="/images/veg/donald-todd-half-runner.jpg" />
     </a>
   </p>
   <p>
-  South Carolina researchers bred two of our new varieties for disease resistance: <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">TruHart-NR peppers</a> for resistance to nematodes and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf" target="_blank">Carolina Broadleaf mustard</a> for resistance to bacterial blight.
+  <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. South Carolina researchers bred two of our new varieties for disease resistance: <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">TruHart-NR peppers</a> for resistance to nematodes and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf" target="_blank">Carolina Broadleaf mustard</a> for resistance to bacterial blight.
   <hr />
 
 <h3>Returning varieties</h3>
