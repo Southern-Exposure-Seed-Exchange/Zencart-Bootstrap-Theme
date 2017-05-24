@@ -72,7 +72,7 @@
     }
 
     // Push Data to Criteo if logged in & appropriate page
-    if ($is_homepage || $is_listing || $is_cart || $is_success) { ?>
+    if ($is_homepage || $is_listing || $is_product || $is_cart || $is_success) { ?>
         window.criteo_q = window.criteo_q || [];
         window.criteo_q.push(
             { event: "setAccount", account: 40290 },
