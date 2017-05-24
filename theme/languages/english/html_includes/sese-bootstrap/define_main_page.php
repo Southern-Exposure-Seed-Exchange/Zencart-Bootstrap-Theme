@@ -56,15 +56,15 @@
     <a href="/shows-okra-4-g-p-1998.html">
       <img style="margin: 3px; height: 120px;" alt="Shows Okra" src="/images/veg/shows-okra-small.jpg" />
     </a>
-    <a href="/geranium-kiss-tomato-008-g-p-2003.html">
-      <img style="margin: 3px; height: 120px;" alt="Geranium Kiss tomato" src="/images/medium/tomato-geranium-kiss_MED.jpg" />
+    <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">
+      <img style="margin: 3px; height: 120px;" alt="Sunn Hemp" src="/images/medium/sunn-hemp_MED.jpg" />
     </a>
     <a href= "/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html">
       <img style="margin: 3px; height: 120px;" alt="Donald Todd Half-Runner Bean" src="/images/veg/donald-todd-half-runner.jpg" />
     </a>
   </p>
   <p>
-  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Stocky <a href="/geranium-kiss-tomato-008-g-p-2003.html" target="_blank">Geranium Kiss tomato</a> bears massive clusters of small fruits.  Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
+  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">Sunn Hemp</a>, a fast-growing leguminous summer cover crop, thrives in heat, tolerates drought, suppresses nematodes, pulls nutrients from deep in the subsoil. <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
 
   <p class='text-center'>
     <a href="/truhartnr-sweet-pepper-03-g-p-1997.html">
