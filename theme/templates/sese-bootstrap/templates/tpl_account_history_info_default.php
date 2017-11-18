@@ -30,7 +30,7 @@ Mineral, VA 23117<br/>
   <a href="mailto:gardens@southernexposure.com?subject=SESE Order <?php echo $_GET[order_id]; ?>">
     gardens@southernexposure.com</a><br/>
 <abbrev title="Phone">P:</abbrev> 540-894-9480<br/>
-<abbrev title="Fax">F:</abbrev> 540-894-9481
+<abbrev title="Fax">F:</abbrev> 540-266-1021
 </address>
 
 <table class='table table-condensed table-striped'
