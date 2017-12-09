@@ -23,8 +23,6 @@
     <ol class="carousel-indicators">
       <!-- When adding extra slides, add an indicator here as well -->
       <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#homepage-carousel" data-slide-to="1"></li>
-      <li data-target="#homepage-carousel" data-slide-to="2"></li>
     </ol>
     <!-- Slides -->
     <div class="carousel-inner" role="listbox">
@@ -33,149 +31,67 @@
            When removing the first slide, change the data-src attribute to src and set the active class on the next div.
         -->
       <div class="item active">
-        <a href="/vegetables-sweet-potatoes-c-3_229.html">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/sweet-potatoes.jpg" alt="Don't forget to order Sweet Potatoes" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="/our-seed-growers-ezp-138.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/moyer_farm_goose.jpg" alt="Our Seed Grower Network" />
-        </a>
-      </div>
-      <div class="item">
-        <a href="/vegetable-gardening-in-the-southeast-the-timber-press-guide-to-p-1722.html">
-          <img data-src="/includes/templates/sese-bootstrap/img/carousel/iras-book-w-tomato-staking.jpg" alt="Vegetable Gardening in the Southeast" />
+        <a href="http://www.southernexposure.com/free-2018-catalog-and-garden-guide-p-2052.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/2018-catalog-w-pepper-page.jpg" alt="Request our 2008 catalog" />
         </a>
       </div>
     </div>
   </div>
 
 <!-- Featured Products -->
-  <h3>New Varieties for 2017</h3>
-  <p class='text-center'>
-    <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">
-      <img style="margin: 3px; height: 120px;" alt="Sunn Hemp" src="/images/medium/sunn-hemp_MED.jpg" />
-    </a>
-    <a href="/shows-okra-4-g-p-1998.html">
-      <img style="margin: 3px; height: 120px;" alt="Shows Okra" src="/images/veg/shows-okra-small.jpg" />
-    </a>
-<a href= "/african-marigold-crackerjack-mix-05-g-p-1965.html">
-      <img style="margin: 3px; height: 120px;" alt="Crackerjack Marigold" src="/images/medium/crackerjack-marigold_MED.jpg" />
-    </a>
-  </p>
-  <p>
-  For 2017 we're adding 20 varieties to our listings, as well as 3 books. <a href="/sunn-hemp-cover-crop-14-lb-p-2008.html">Sunn Hemp</a>, a fast-growing leguminous summer cover crop, thrives in heat, tolerates drought, suppresses nematodes, and pulls nutrients from deep in the subsoil.  Marigolds including <a href="/african-marigold-crackerjack-mix-05-g-p-1965.html">Crackerjack</a> will also suppress nematodes while attracting pollinators. Family heirloom <a href="/shows-okra-4-g-p-1998.html" target="_blank">Shows Okra</a> produces well on semi-dwarf plants.</p>  
-
-  <p class='text-center'>
-    <a href="/truhartnr-sweet-pepper-03-g-p-1997.html">
-      <img style="margin: 3px; height: 120px;" alt="TruHart-NR peppers" src="/images/medium/sweet-pepper-truhart_MED.jpg" />
-    </a>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf">
-      <img style="margin: 3px; height: 120px;" alt="Carolina Broadleaf mustard" src="/images/medium/mustard-greens-carolina-broadleaf_MED.jpg" />
-    </a>
-        <a href= "/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html">
-      <img style="margin: 3px; height: 120px;" alt="Donald Todd Half-Runner Bean" src="/images/veg/donald-todd-half-runner.jpg" />
-    </a>
-  </p>
-  <p>
-  <a href="/donald-todd-half-runner-pole-snap-bean-28-g-p-1962.html" target="_blank">Donald Todd Half Runner beans</a> have tender pods like old-time half-runner beans. South Carolina researchers bred two of our new varieties for disease resistance: <a href="http://www.southernexposure.com/tankuro-edamame-soybean-28-g-p-1988.html" target="_blank">TruHart-NR peppers</a> for resistance to nematodes and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=broadleaf" target="_blank">Carolina Broadleaf mustard</a> for resistance to bacterial blight.
-  <hr />
-
-<h3>Returning varieties</h3>
-  <p class='text-center'>
-    <a href="/alabama-blue-collards-2-g-p-1803.html">
-      <img style="margin: 3px; height: 120px;" alt="Alabama Blue collards" src="/images/medium/alabama-blue-collards_MED.jpg" />
-    </a>
-    <a href="/ashe-county-pimento-sweet-pepper-03-g-p-66.html">
-      <img style="margin: 3px; height: 120px;" alt="Ashe County Pimento pepper" src="/images/medium/sweet-pepper-ashe-county-pimiento_MED.jpg" />
-    </a>
-    <a href= "/roselle-thai-red-06-g-p-181.html">
-      <img style="margin: 3px; height: 120px;" alt="Thai Red Roselle"
-src="/images/medium/roselle_MED.jpg" />
-    </a>
-  </p>
-  <p>
-  <a href="/alabama-blue-collards-2-g-p-1803.html">Alabama Blue collards</a>, <a href="/lacinato-rainbow-mix-kale-15-g-p-1361.html">Lacinato Rainbow kale</a>, and <a href="/ashe-county-pimento-sweet-pepper-03-g-p-66.html">Ashe County Pimento peppers</a> are back this year. Our Hawai'i-grown seed for <a href= "/roselle-thai-red-06-g-p-181.html">Thai Red Roselle</a> has just passed it's germination test.  Here in Virginia, we get good harvests of roselle pods for tea, but have trouble getting its seed to mature.</p>
-  <hr />
-
 
 <h3>Featured Bulk sizes</h3>
   <p class='text-center'>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Floriani">
-      <img style="margin: 3px; height: 120px;" alt="Floriani Flint corn" src="http://www.southernexposure.com/images/medium/floriani-flint-corn_MED.jpg" />
-    </a>
-        <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">
+    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=butterbush">
+      <img style="margin: 3px; height: 120px;" alt="Burpee's Butterbush squash" src="/images/large/squash-butterbush_LRG.jpg" /></a>
+        <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Schronce%27s">
       <img style="margin: 3px; height: 120px;" alt="Schronce's Deep Black peanut"
 src="/images/medium/peanut-schronces-deep-black_MED.jpg" />
     </a>
-<a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=oxheart+carrot">
-      <img style="margin: 3px; height: 120px;" alt="Oxheart carrot" src="/images/medium/oxheart-carrots_MED.JPG" />
+<a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Daymon">
+      <img style="margin: 3px; height: 120px;" alt="Kentucky Rainbow corn" src="/images/medium/dent-corn-ky-rainbow_MED.JPG" />
     </a>
   </p>
   <p>
-  We love <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=oxheart+carrot">Oxheart carrots</a> for how well they grow even in clay soils, <a href="http://www.southernexposure.com/index.php?main_page=advanced_search_result&search_in_description=1&keyword=top+mark+netted">Top Mark muskmelons</a> for their resistance to downy mildew, and <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Floriani">Floriani Red Flint corn</a> for the tasty polenta we make from it. Our new crop of <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">Schronce's Deep Black</a> peanuts recently passed its germination test.</p>
+  Space-saving <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Butterbush">Burpee's Butterbush squash</a> also tastes great. 
+ Gordon Schronce has been selcting <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">Scronce's Deep Black peanut</a> since 1980 for size and dark skins. <a href="/salamander-springs-farm-ezp-208.html">Susana Lein</a> has been selecting <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Daymon">Kentucky Rainbow corn</a> since 2001.</p>
   <hr />
 
+<h3>Returning varieties for 2018</h3>
+  <p class='text-center'>
+    <a href="/grandma-nellies-yellow-mushroom-bean-pole-snap-bean-28-g-p-1203.html">
+      <img style="margin: 3px; height: 120px;" alt="Grandma Nellie's Yellow Mushroom bean" src="/images/medium/grandma-nellies-bean_MED.jpg" />
+    </a>
+    <a href="/purple-dragon-carrots-1-g-p-898.html">
+      <img style="margin: 3px; height: 120px;" alt="Purple Dragon carrot" src="/images/medium/purple-dragon_MED.jpg" />
+    </a>
+    <a href= "/dr-carolyn-tomato-008-g-p-344.html">
+      <img style="margin: 3px; height: 120px;" alt="Dr. Carolyn tomato"
+src="/images/medium/tomato-dr-carolyn_MED.jpg" />
+    </a>
+  </p>
+  <p>
+  <a href="/grandma-nellies-yellow-mushroom-bean-pole-snap-bean-28-g-p-1203.html">Grandma Nellie's Yellow Mushroom bean</a>, <a href="/purple-dragon-carrots-1-g-p-898.html">Purple Dragon carrots</a>, and <a href="/dr-carolyn-tomato-008-g-p-344.html">Dr. Carolyn tomato</a> are back this year.
+  <hr />
+
+
     <!-- Books -->
-  <div class='media'>
-    <div class='media-body'>
-      <h4 class='media-heading'>Local Authors with New Books to Nurture the Gardener, Farmer & Seedsperson</h4>
-      <a href="http://www.southernexposure.com/vegetable-gardening-in-the-southeast-the-timber-press-guide-to-p-1722.html">
-        <em>The Timber Press Guide to Vegetable Gardening in the Southeast</em></a>,
-      by Southern Exposure’s own gardening expert Ira Wallace, gives home
-      gardeners the regionally specific information needed to succeed in our hot,
-      humid climate. It features what to plant, when to plant it, and when to
-      harvest, based on our climate, weather, and other info.
-    </div>
-    <div class='media-right'>
-      <a href="/vegetable-gardening-in-the-southeast-the-timber-press-guide-to-p-1722.html">
-        <img class='media-object' style="width:100px" alt="Timber Press Guide to Vegetable Gardening in the Southeast" src="/images/dvd/books-gardeninginthesoutheast.jpg">
-      </a>
-    </div>
-  </div>
-  <div class='media'>
-    <div class='media-left'>
-      <a href="http://www.southernexposure.com/epic-tomatoes-how-to-select-and-grow-the-best-varieties-book-p-1797.html">
-        <img class='media-object' src="/images/dvd/books-epictomatoes.jpg" alt="Epic Tomatoes" style="width:100px;" />
-      </a>
-    </div>
-    <div class='media-body'>
-      <a href="http://www.southernexposure.com/epic-tomatoes-how-to-select-and-grow-the-best-varieties-book-p-1797.html">
-        Epic Tomatoes: How to Select and Grow the Best Varieties of All Time</a>:
-      Craig Lehoullier  has grown thousands of tomato varieties, most of them
-      in hot and humid North Carolina, and here he shares his hard-won wisdom
-      on how to grow great tasting tomatoes.
-    </div>
-  </div>
-  <div class='media'>
-    <div class='media-body'>
-      <a href="http://www.southernexposure.com/edible-landscaping-with-a-permaculture-twist-book-p-1823.html">
-        Edible Landscaping with a Permaculture Twist</a> Transforming an
-      ordinary yard into an edible oasis. More than 200 color photos and
-      illustrations show how permaculture principals scale from small urban
-      mini-gardens to suburban yards, commercial landscapes or small farms.
-    </div>
-    <div class='media-right'>
-      <a href="http://www.southernexposure.com/edible-landscaping-with-a-permaculture-twist-book-p-1823.html">
-        <img class="media-object" src="/images/dvd/books-ediblelandscapingwpermaculture.jpg" alt="Edible Landscaping with a Permaculture Twist" style="width:100px; border:1px solid #666;" />
-      </a>
-    </div>
-  </div>
-  <div class='media'>
-    <div class='media-left'>
-      <a href="http://www.southernexposure.com/sustainable-market-farming-book-p-1676.html">
-        <img class='media-object' src="/images/dvd/book-sustainable-market-farming.jpg" alt="Veg Gardening in the Southeast" style="width:100px; border:1px solid #666;" />
-      </a>
-    </div>
-    <div class='media-body'>
-      Our neighbor Pam Dawling’s
-      <em><a href="http://www.southernexposure.com/sustainable-market-farming-book-p-1676.html">
-        Sustainable Market Farming</a></em> provides invaluable expertise that
-      is especially useful to those in the Southeast and mid-Atlantic, who
-      can benefit from her many years growing in our bio-region.
-    </div>
-  </div>
-  <p style='margin-top:15px' class='text-center'><a href="http://www.southernexposure.com/books-dvds-c-14.html">Check out all the great books in the SESE library.</a></p>
+<h3>New Books</h3>
+  <p class='text-center'>
+    <a href="http://www.southernexposure.com/collards-a-southern-tradition-from-seed-to-table-p-1982.html">
+      <img style="margin: 3px; height: 180px;" alt="Collards book" src="/images/dvd/books-collardsasoutherntradition.jpeg" />
+    </a>
+        <a href= "http://www.southernexposure.com/planet-whizbang-idea-book-for-gardeners-the-p-1981.html">
+      <img style="margin: 3px; height: 180px;" alt="Planet Whizbang"
+src="/images/medium/book-planet-whizbang_MED.jpg" />
+    </a>
+<a href="http://www.southernexposure.com/southern-provisions-the-creation-revival-of-a-cuisine-p-2011.html">
+      <img style="margin: 3px; height: 180px;" alt="Southern Provisions" src="/images/medium/book-southern-provisions_MED.jpg" />
+    </a>
+  </p>
+  <p>
+  We added 3 books to our selection for 2017. <a href="http://www.southernexposure.com/collards-a-southern-tradition-from-seed-to-table-p-1982.html"><u>Collards: A Southern Tradition from Seed to Table</u></a> inspired the Heirloom Collard Project. <a href="http://www.southernexposure.com/planet-whizbang-idea-book-for-gardeners-the-p-1981.html"><u>The Planet Whizbang Idea Book for Gardeners</u></a> is full of DIY projects for frugal gardeners. <a href="http://www.southernexposure.com/southern-provisions-the-creation-revival-of-a-cuisine-p-2011.html"><u>Southern Provisions: the Creation and Revival of a Cuisine</u></a> tells the stories of folks working to revive Southern cuisine.  </p>
+  <hr />
 
 </div>
 
@@ -220,14 +136,24 @@ src="/images/medium/peanut-schronces-deep-black_MED.jpg" />
 
   <hr />
 
+<!-- Seed Racks -->
+  <a href="/retail-stores-ezp-17.html">
+    <img src="/images/home/seedrack-section.jpg"
+         alt="Seed Rack" class='img-responsive img-center' />
+  </a>
+    Dozens of stores have Southern Exposure seed racks.
+    <a href="/retail-stores-ezp-17.html"> View the map
+      <span class='glyphicon glyphicon-menu-right'></span></a>
+
+  <hr />
 
   <!-- Catalog -->
   <p><a href="/request-a-catalog-c-215.html">
-    <img class='img-responsive' src="/images/SESE-catalog-2017-cover-v1.jpg" alt="Southern Exposure Catalog" />
+    <img class='img-responsive' src="/images/medium/sese-cover-2018-web_MED.jpg" alt="Southern Exposure Catalog" />
   </a></p>
   <p>
-    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2017 catalog is available!
-    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2017-for-web.pdf" target="_blank">online as a PDF</a></p>
+    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2018 catalog is available for pre-order!
+    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2018-for-web.pdf" target="_blank">online as a PDF</a></p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
     the listings above to fill your cart or
@@ -244,4 +170,3 @@ src="/images/medium/peanut-schronces-deep-black_MED.jpg" />
 
 
 </div>      <!-- .row -->
-
