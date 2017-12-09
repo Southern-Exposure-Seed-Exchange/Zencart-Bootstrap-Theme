@@ -50,7 +50,7 @@
     <label><?php echo zen_draw_checkbox_field('organic', 1) . ' <img src="images/icons/organic-certified.png" height="13px" width="16px"> Organic'; ?></label><br />
     <label><?php echo zen_draw_checkbox_field('heirloom', 1) . ' <img src="images/icons/heirloom.png" height="20px" width="16px"> Heirloom'; ?></label><br />
     <label><?php echo zen_draw_checkbox_field('midatlantic', 1) . ' <img src="images/icons/southern.png" height="16px" width="16px"> Mid-Atlantic'; ?></label><br />
-    <label><?php echo zen_draw_checkbox_field('ecological', 1) . ' <img src="images/icons/eco.png" height="17px" width="16px"> Ecologically Grown'; ?></label>
+    <label><?php echo zen_draw_checkbox_field('small-growers', 1) . ' <img src="images/icons/small-growers.png" height="17px" width="16px"> From Small Farms'; ?></label>
 </fieldset>
 <br />
 <fieldset>

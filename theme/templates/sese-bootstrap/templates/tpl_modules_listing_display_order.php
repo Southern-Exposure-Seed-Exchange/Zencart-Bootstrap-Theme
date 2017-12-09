@@ -15,7 +15,7 @@
 <?php
   echo zen_draw_form('sorter_form', zen_href_link($_GET['main_page']), 'get');
   $hidden_fields = array('main_page', 'cPath', 'organic', 'heirloom',
-      'southern', 'eco', 'bulk', 'numitems', 'keyword', 'ecological',
+      'southern', 'small-grower', 'bulk', 'numitems', 'keyword', 'ecological',
       'midatlantic', 'search_in_description', 'pfrom', 'pto', 'categories_id',
       'inc_subcat');
   foreach ($hidden_fields as $field) {

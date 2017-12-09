@@ -29,10 +29,10 @@ class BootstrapUtils
         array('title' => 'Especially well-suited to the Southeast',
               'description' => 'Varieties well-suited to the Mid-Atlantic and further South',
               'image' => "$template_image_folder/southeast.png"),
-      'eco' =>
-        array('title' => 'Ecologically Grown',
-              'description' => 'Grown by small ecological farmers',
-              'image' => "$template_image_folder/ecologically-grown.png"),
+      'small-grower' =>
+        array('title' => 'From Small Farms',
+              'description' => 'Seed From Small Farms in our Seed Grower Network',
+              'image' => "$template_image_folder/small-growers.png"),
     );
     return $icons;
   }

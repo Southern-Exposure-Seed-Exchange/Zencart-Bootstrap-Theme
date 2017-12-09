@@ -28,15 +28,19 @@
     $restrict .= " AND i.is_southern = 1";
     $ttitle .= 'Southern ';
   }
-  if ($_GET['eco'] == 1) {
+  if ($_GET['small-grower'] == 1) {
     $restrict .= " AND i.is_eco = 1";
-    $ttitle .= 'Eco ';
   }
   if ($_GET['bulk'] == 1) {
     $restrict .= " AND char_length(p.products_model) = 6 AND left(p.products_model, 1) < 8";
     $ttitle .= 'Bulk ';
   }
-  $title = 'All ' . $ttitle . 'Products';
+
+  if ($_GET['small-grower'] == 1) {
+    $title = 'All Seeds from Small Farms in our Grower Network';
+  } else {
+    $title = 'All ' . $ttitle . 'Products';
+  }
 
   $list_box_contents = array();
   $listing_sql = "SELECT p.products_type, p.products_id, pd.products_name, p.products_image, p.products_price, p.products_tax_class_id,

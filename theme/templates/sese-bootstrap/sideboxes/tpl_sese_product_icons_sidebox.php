@@ -69,13 +69,13 @@ $content = <<<HTML
 
 <!-- Eco -->
 <li class='media'>
-  <a href="index.php?main_page=products_all&eco=1">
+  <a href="index.php?main_page=products_all&small-grower=1">
     <div class='media-left media-middle'>
-      <img class='media-object' src="{$product_icons['eco']['image']}"
-           alt="{$product_icons['eco']['title']}" />
+      <img class='media-object' src="{$product_icons['small-grower']['image']}"
+           alt="{$product_icons['small-grower']['title']}" />
     </div>
     <div class='media-body'>
-      <h5 class='media-heading'>{$product_icons['eco']['title']}</h5>
+      <h5 class='media-heading'>{$product_icons['small-grower']['title']}</h5>
     </div>
   </a>
 </li>

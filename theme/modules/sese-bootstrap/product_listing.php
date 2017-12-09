@@ -146,8 +146,8 @@ class BootstrapProductListing
         "title='{$product_icons['southeast']['title']}' />";
     }
     if ($product->fields['is_eco'] == 1) {
-      $icons .= "<img src='{$product_icons['eco']['image']}' " .
-        "title='{$product_icons['eco']['title']}' />";
+      $icons .= "<img src='{$product_icons['small-grower']['image']}' " .
+        "title='{$product_icons['small-grower']['title']}' />";
     }
     if ($icons !== '') {
       $icons = '<small class="vmiddle">' . $icons . '</small>';
