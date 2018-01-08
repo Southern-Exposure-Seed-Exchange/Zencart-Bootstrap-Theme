@@ -94,6 +94,7 @@
         <li role="presentation"><a href="/links-ezp-24.html">Links</a></li>
         <li role="presentation"><a href="/blog/" target="_blank">Blog</a></li>
         <li role="presentation"><a href="/contact_us.html">Contact Us</a></li>
+        <li role="presentation"><a href="/seeds-for-schools-ezp-219.html">Seeds for Schools</a></li>
       </ul>
 
 <?php /* Include Sideboxes */
