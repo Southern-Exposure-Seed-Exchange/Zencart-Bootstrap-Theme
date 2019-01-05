@@ -78,7 +78,77 @@ if (sizeof($quick_order_errors) > 0) {
 
 </td></tr></table>
 <p><button class="btn btn-primary" type="submit">Add to Cart</button></p>
+
+<!-- Modal to confirm addition of SKUs whose descriptions we accidentally swapped -->
+<div id="qoModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Catalog Correction</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          In our 2019 print catalog, we mixed up the variety descriptions of
+          Mountaineer Pride tomato and Mountaineer Delight tomato. We're sorry
+          about the hassle but want to be sure you get the tomato variety you
+          actually want. Both were released in 2017 by professors at WVU and
+          have good resistance to diseases including Septoria Leaf Spot. The
+          descriptions on our website are correct.
+        </p>
+        <p>Key differences are:<br/>
+          <b>Mountaineer Pride, #49262</b>: 80 days. Medium slicers, good
+          flavor. Firmer skins make this a good variety for market growers.
+          <br />
+          <b>Mountaineer Delight, #49264</b>: 77 days. Larger beefsteak,
+          sweeter flavor than the original West Virginia 63 tomato.
+        </p>
+        <p>
+          Please confirm that you'd like to add the entered items to your cart,
+          or press Cancel to return to the Quick Order form.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button id='qo_modal_submit' type="submit" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 </form>
+
+<script>
+/* Our 2019 catalogs have the descriptions for 2 SKUs switched, so we want to
+ * pop up a confirmation modal if a customer has entered one of these two SKUs.
+ * If the modal's OK button is pressed, submit the form.
+ */
+jQuery(document).ready(function() {
+    var $form = jQuery('form[name="quick_order"]');
+    // When anything in the form is click, save the event target as data on the
+    // form. We will use this to determine if the normal submit or modal submit
+    // has been clicked.
+    $form.click(function(e) {
+        $(this).data('clicked', $(e.target));
+    });
+
+    // On submission, check if any of the SKUs were entered, showing the modal
+    // if so & submitting the form otherwise.
+    $form.submit(function(e) {
+        var skus = [49262, 49264];
+        var $skuInputs = jQuery('form .column-1 input');
+        var skuMatch = $skuInputs.is(function(i, el) {
+            return skus.indexOf(jQuery(el).val()) === -1;
+        });
+        var isModalSubmission = $form.data('clicked').is('[id="qo_modal_submit"]');
+        if (skuMatch && !isModalSubmission) {
+            jQuery('#qoModal').modal('show');
+            return false;
+        } else {
+            return true;
+        }
+    });
+});
+</script>
 
 <?php
 class BootstrapQuickOrder
