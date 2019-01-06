@@ -44,14 +44,23 @@ if ($listing_split->number_of_rows > 0) {
           $lc_class = 'product-name';
           $icons = BootstrapProductListing::product_icon_html($sese_icons, $listing);
           $product_description =
+            "<span class='hidden-xs'>" .
             zen_trunc_string(stripslashes(zen_get_products_description(
               $listing->fields['products_id'], $_SESSION['languages_id']
-            )), PRODUCT_LIST_DESCRIPTION);
+            )), PRODUCT_LIST_DESCRIPTION)
+            . "</span>".
+            "<span class='visible-xs'>" .
+            zen_trunc_string(stripslashes(zen_get_products_description(
+              $listing->fields['products_id'], $_SESSION['languages_id']
+            )), 100)
+            . "</span>"
+            ;
           $lc_text = "<h4 class='itemTitle' itemprop='name'><a itemprop='url' href='{$product_link}'><b>" .
             "{$listing->fields['products_name']}</b></a>{$icons}</h4>" .
             "<link itemprop='itemCondition' href='http://schema.org/NewCondition' />" .
-            "<div class='hidden-xs listingDescription' itemprop='description'>{$product_description}</div>\n" .
-            "<div class='visible-xs'>{$product_image}</div>\n";
+            "<div class='visible-xs'>{$product_image}</div>\n" .
+            "<div class='listingDescription' itemprop='description'>{$product_description}</div>\n"
+            ;
           break;
         case 'PRODUCT_LIST_PRICE':
           $display_price = zen_get_products_display_price($listing->fields['products_id']);
