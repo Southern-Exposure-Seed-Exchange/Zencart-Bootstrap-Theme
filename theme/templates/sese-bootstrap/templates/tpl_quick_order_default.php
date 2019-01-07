@@ -134,10 +134,11 @@ jQuery(document).ready(function() {
     // On submission, check if any of the SKUs were entered, showing the modal
     // if so & submitting the form otherwise.
     $form.submit(function(e) {
-        var skus = [49262, 49264];
+        var skus = ["49262", "49264"];
         var $skuInputs = jQuery('form .column-1 input');
-        var skuMatch = $skuInputs.is(function(i, el) {
-            return skus.indexOf(jQuery(el).val()) === -1;
+        var skuMatch = false;
+        $skuInputs.each(function(i, el) {
+          skuMatch = skuMatch || skus.indexOf(jQuery(el).val()) !== -1;
         });
         var isModalSubmission = $form.data('clicked').is('[id="qo_modal_submit"]');
         if (skuMatch && !isModalSubmission) {
