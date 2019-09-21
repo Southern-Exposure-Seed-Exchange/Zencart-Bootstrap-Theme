@@ -22,12 +22,9 @@ class BootstrapBreadcrumbs
     $crumb_length = count($breadcrumbs->_trail);
     foreach ($breadcrumbs->_trail as $index => $breadcrumb) {
       $is_last_crumb = $index == $crumb_length - 1;
-      if ($is_last_crumb) {
-        $content .= "<li class='active' property='itemListElement' typeof='ListItem'>{$breadcrumb['title']}";
-      } else {
-        $content .= "<li property='itemListElement' typeof='ListItem'><a href='{$breadcrumb['link']}' property='item' typeof='WebPage'>" .
-          "<span property='name'>{$breadcrumb['title']}</span></a>";
-      }
+      $item_class = $is_last_crumb ? "class='active'" : "";
+      $content .= "<li {$item_class} property='itemListElement' typeof='ListItem'><a href='{$breadcrumb['link']}' property='item' typeof='WebPage'>" .
+        "<span property='name'>{$breadcrumb['title']}</span></a>";
       $index1 = $index + 1;
       $content .= "<meta property='position' content='{$index1}' /></li>";
     }
