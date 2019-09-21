@@ -26,7 +26,7 @@ class BootstrapBreadcrumbs
         $content .= "<li class='active' property='itemListElement' typeof='ListItem'>{$breadcrumb['title']}";
       } else {
         $content .= "<li property='itemListElement' typeof='ListItem'><a href='{$breadcrumb['link']}' property='item' typeof='WebPage'>" .
-          "{$breadcrumb['title']}</a>";
+          "<span property='name'>{$breadcrumb['title']}</span></a>";
       }
       $index1 = $index + 1;
       $content .= "<meta property='position' content='{$index1}' /></li>";
