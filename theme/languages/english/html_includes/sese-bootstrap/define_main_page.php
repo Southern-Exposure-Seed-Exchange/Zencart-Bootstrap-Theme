@@ -23,6 +23,9 @@
     <ol class="carousel-indicators">
       <!-- When adding extra slides, add an indicator here as well -->
       <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homepage-carousel" data-slide-to="1"></li>
+      <li data-target="#homepage-carousel" data-slide-to="2"></li>
+      <li data-target="#homepage-carousel" data-slide-to="3"></li>
     </ol>
     <!-- Slides -->
     <div class="carousel-inner" role="listbox">
@@ -31,66 +34,80 @@
            When removing the first slide, change the data-src attribute to src and set the active class on the next div.
         -->
       <div class="item active">
-        <a href="http://www.southernexposure.com/free-2018-catalog-and-garden-guide-p-2052.html">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/2018-catalog-w-pepper-page.jpg" alt="Request our 2008 catalog" />
+        <a href="/onions-perennial-onions-c-3_37_120.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/grey-griselle.jpg" alt="Don't forget to order shallots, perennial onions, garlic, ginseng, and goldenseal for fall planting" />
+        </a>
+      </div>
+<div class="item">
+        <a href="https://www.heritageharvestfestival.com/">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/hhf-herb-gourd-display.jpg" alt="Join us at the Heritage Harvest Festival at Monticello Sept 20th & 21st" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="/request-a-catalog-c-215.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/2019-catalog.jpg" alt="Request our 2019 catalog" />
+        </a>
+      </div>
+<div class="item">
+        <a href="/-ezp-223.html">
+          <img data-src="includes/templates/sese-bootstrap/img/carousel/summer-planting-weeding-beets.jpg" alt="Crops to Plant in Summer for an Extended Harvest" />
         </a>
       </div>
     </div>
   </div>
 
+
 <!-- Featured Products -->
 
-<h3>Featured Bulk sizes</h3>
+<h3>Featured Customer Favorites</h3>
   <p class='text-center'>
-    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=butterbush">
-      <img style="margin: 3px; height: 120px;" alt="Burpee's Butterbush squash" src="/images/large/squash-butterbush_LRG.jpg" /></a>
-        <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Schronce%27s">
-      <img style="margin: 3px; height: 120px;" alt="Schronce's Deep Black peanut"
-src="/images/medium/peanut-schronces-deep-black_MED.jpg" />
+    <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Alabama+blue">
+      <img style="margin: 3px; height: 120px;" alt="Alabama Blue collards" src="/images/medium/alabama-blue-collards_MED.jpg" /></a>
+        <a href= "/index.php?main_page=advanced_search_result&search_in_description=1&keyword=roselle">
+      <img style="margin: 3px; height: 120px;" alt="Thai Red Roselle"
+src="/images/medium/roselle_MED.jpg" />
     </a>
-<a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Daymon">
-      <img style="margin: 3px; height: 120px;" alt="Kentucky Rainbow corn" src="/images/medium/dent-corn-ky-rainbow_MED.JPG" />
+<a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=62706">
+      <img style="margin: 3px; height: 120px;" alt="Jericho lettuce" src="/images/medium/lettuce-romaine-jericho_MED.jpg" />
     </a>
   </p>
   <p>
-  Space-saving <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Butterbush">Burpee's Butterbush squash</a> also tastes great. 
- Gordon Schronce has been selcting <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=schronce%27s">Scronce's Deep Black peanut</a> since 1980 for size and dark skins. <a href="/salamander-springs-farm-ezp-208.html">Susana Lein</a> has been selecting <a href="/index.php?main_page=advanced_search_result&search_in_description=1&keyword=Daymon">Kentucky Rainbow corn</a> since 2001.</p>
+Pictured here, tender, colorful Alabama Blue collards, tangy Thai Red Roselle, and heat-tolerant Jericho lettuce. Other customer favorites include Red Japanese sweet potatoes, Cossack Pineapple ground cherries, Sugar Snap Peas, and Carolina African Runner Peanuts.
   <hr />
 
-<h3>Returning varieties for 2018</h3>
+<h3>New varieties for 2019</h3>
   <p class='text-center'>
-    <a href="/grandma-nellies-yellow-mushroom-bean-pole-snap-bean-28-g-p-1203.html">
-      <img style="margin: 3px; height: 120px;" alt="Grandma Nellie's Yellow Mushroom bean" src="/images/medium/grandma-nellies-bean_MED.jpg" />
+    <a href= "/cekirdegi-oyali-crocheted-seed-watermelon-2-g-p-2166.html">
+      <img style="margin: 3px; height: 120px;" alt="Cekirdegi Oyali watermelon seeds"
+src="/images/medium/watermelon-cekirdegi-oyali_MED.jpg" />
     </a>
-    <a href="/purple-dragon-carrots-1-g-p-898.html">
-      <img style="margin: 3px; height: 120px;" alt="Purple Dragon carrot" src="/images/medium/purple-dragon_MED.jpg" />
+    <a href="/georgia-cabbage-collards-2-g-p-2128.html">
+      <img style="margin: 3px; height: 120px;" alt="Georgia Cabbage collards" src="/images/medium/collards-georgia-cabbage_MED.jpg" />
     </a>
-    <a href= "/dr-carolyn-tomato-008-g-p-344.html">
-      <img style="margin: 3px; height: 120px;" alt="Dr. Carolyn tomato"
-src="/images/medium/tomato-dr-carolyn_MED.jpg" />
+    <a href="/kissmeoverthegardengate-1-g-p-2161.html">
+      <img style="margin: 3px; height: 120px;" alt="Kiss-Me-Over-The-Garden-Gate" src="/images/medium/kiss-me-over-the-garden-gate_MED.jpg" />
     </a>
   </p>
   <p>
-  <a href="/grandma-nellies-yellow-mushroom-bean-pole-snap-bean-28-g-p-1203.html">Grandma Nellie's Yellow Mushroom bean</a>, <a href="/purple-dragon-carrots-1-g-p-898.html">Purple Dragon carrots</a>, and <a href="/dr-carolyn-tomato-008-g-p-344.html">Dr. Carolyn tomato</a> are back this year.
+  For 2019, we're adding 23 new varieties to our listings, including Georgia Cabbage Collards, Krishna Tulsi, and Kiss-Me-Over-The-Garden-Gate, a.k.a. Prince's Feather.  More new varieties coming soon include Yellow Centiflor cherry tomato, Purple Bumble Bee cherry tomato, Mrihani basil, Zahara Starlight Rose Zinnia, Brazilian Starfish mild hot pepper, and Cekirdegi Oyali watermelon.
   <hr />
-
 
     <!-- Books -->
-<h3>New Books</h3>
+<h3>New and Local Books</h3>
   <p class='text-center'>
-    <a href="http://www.southernexposure.com/collards-a-southern-tradition-from-seed-to-table-p-1982.html">
-      <img style="margin: 3px; height: 180px;" alt="Collards book" src="/images/dvd/books-collardsasoutherntradition.jpeg" />
+    <a href="/farming-while-black-soul-fire-farms-practical-guide-to-liberation-on-the-land-p-2126.html">
+      <img style="margin: 3px; height: 180px;" alt="Farming While Black" src="/images/Farming%20While%20Black%20cover.jpg" />
     </a>
-        <a href= "http://www.southernexposure.com/planet-whizbang-idea-book-for-gardeners-the-p-1981.html">
-      <img style="margin: 3px; height: 180px;" alt="Planet Whizbang"
-src="/images/medium/book-planet-whizbang_MED.jpg" />
+        <a href= "/yearround-hoophouse-the-polytunnels-for-all-seasons-and-all-climates-p-2127.html">
+      <img style="margin: 3px; height: 180px;" alt="Year-Round Hoophouse"
+src="/images/The%20YearRound%20Hoophouse%20cover.jpg" />
     </a>
-<a href="http://www.southernexposure.com/southern-provisions-the-creation-revival-of-a-cuisine-p-2011.html">
-      <img style="margin: 3px; height: 180px;" alt="Southern Provisions" src="/images/medium/book-southern-provisions_MED.jpg" />
+<a href="/vegetable-gardening-in-the-southeast-the-timber-press-guide-to-p-1722.html">
+      <img style="margin: 3px; height: 180px;" alt="Vegetable Gardening in the SE" src="/images/medium/book-vegetable-gardening-in-the-southeast_MED.jpg" />
     </a>
   </p>
   <p>
-  We added 3 books to our selection for 2017. <a href="http://www.southernexposure.com/collards-a-southern-tradition-from-seed-to-table-p-1982.html"><u>Collards: A Southern Tradition from Seed to Table</u></a> inspired the Heirloom Collard Project. <a href="http://www.southernexposure.com/planet-whizbang-idea-book-for-gardeners-the-p-1981.html"><u>The Planet Whizbang Idea Book for Gardeners</u></a> is full of DIY projects for frugal gardeners. <a href="http://www.southernexposure.com/southern-provisions-the-creation-revival-of-a-cuisine-p-2011.html"><u>Southern Provisions: the Creation and Revival of a Cuisine</u></a> tells the stories of folks working to revive Southern cuisine.  </p>
+  </p>
   <hr />
 
 </div>
@@ -118,7 +135,7 @@ src="/images/medium/book-planet-whizbang_MED.jpg" />
   
   <!-- Mobile-friendly flipbook -->
   <a href="http://dynalog.catalogs.com/g489/southern-exposure-seed-exchange?merchantID=379">
-    <img src="images/home/mobile-friendly-flipbook-button-2017.png"
+    <img src="images/home/mobile-friendly-flipbook-button-2019-200.jpg"
          alt="Southern Exposure Mobile-Friendly Flipbook" class='img-responsive img-center' />
 	</a>
 
@@ -149,18 +166,18 @@ src="/images/medium/book-planet-whizbang_MED.jpg" />
 
   <!-- Catalog -->
   <p><a href="/request-a-catalog-c-215.html">
-    <img class='img-responsive' src="/images/medium/sese-cover-2018-web_MED.jpg" alt="Southern Exposure Catalog" />
+    <img class='img-responsive' src="/newsletter/2018-december/cover-2019-low-res-small.jpg" alt="Southern Exposure Catalog" />
   </a></p>
   <p>
-    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2018 catalog is available for pre-order!
-    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2018-for-web.pdf" target="_blank">online as a PDF</a></p>
+    <a href="http://www.southernexposure.com/request-a-catalog-c-215.html" target="_blank">Request a Catalog & Garden Guide.</a>  Our 2019 catalog is available!
+    You can also view it <a href="http://www.southernexposure.com/catalog/sese-catalog-2019-for-web.pdf" target="_blank">online as a PDF</a></p>
   <p>
     For fastest service, <strong>we recommend ordering online</strong>. Browse
     the listings above to fill your cart or
     <a href="http://www.southernexposure.com/index.php?main_page=quick_order">
       Quick Order by Item Number</a>.
-    If you need to mail in your order instead, you can print our
-    <a href="http://www.southernexposure.com/catalog/2016-order-form-southern-exposure.pdf">
+    If you want to mail in your order instead, you can print our
+    <a href="http://www.southernexposure.com/catalog/order-form-2018.pdf">
       mail-in order form</a>.
   </p>
   <hr />
