@@ -98,21 +98,6 @@
 </fieldset>
 
 <?php
-  if (ACCOUNT_NEWSLETTER_STATUS != 0) {
-?>
-<fieldset>
-<legend><?php echo ENTRY_EMAIL_PREFERENCE; ?></legend>
-<div class='form-group'>
-<?php echo
-    '<label class="col-sm-6 col-md-4 control-label" for="newsletter-checkbox">' .
-      BootstrapForms::required_text(ENTRY_NEWSLETTER_TEXT) . ENTRY_NEWSLETTER .
-    '</label><div class="col-sm-6 col-md-8">' .
-      zen_draw_checkbox_field('newsletter', '1', $newsletter, 'id="newsletter-checkbox" class="form-control" checked') .
-    '</div>'; ?>
-</div>
-</fieldset>
-<?php
-  }
 
   if (CUSTOMERS_REFERRAL_STATUS == 2) { ?>
 <fieldset>
