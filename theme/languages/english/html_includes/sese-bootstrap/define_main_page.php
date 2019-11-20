@@ -25,7 +25,6 @@
       <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
       <li data-target="#homepage-carousel" data-slide-to="1"></li>
       <li data-target="#homepage-carousel" data-slide-to="2"></li>
-      <li data-target="#homepage-carousel" data-slide-to="3"></li>
     </ol>
     <!-- Slides -->
     <div class="carousel-inner" role="listbox">
@@ -34,23 +33,18 @@
            When removing the first slide, change the data-src attribute to src and set the active class on the next div.
         -->
       <div class="item active">
-        <a href="/onions-perennial-onions-c-3_37_120.html">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/grey-griselle.jpg" alt="Don't forget to order shallots, perennial onions, garlic, ginseng, and goldenseal for fall planting" />
-        </a>
-      </div>
-<div class="item">
-        <a href="https://www.heritageharvestfestival.com/">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/hhf-herb-gourd-display.jpg" alt="Join us at the Heritage Harvest Festival at Monticello Sept 20th & 21st" />
+        <a href="/herbs-ginseng-goldenseal-c-12_115.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/goldenseal.jpg" alt="Don't forget to order shallots, perennial onions, garlic, ginseng, and goldenseal for fall planting" />
         </a>
       </div>
       <div class="item">
-        <a href="/request-a-catalog-c-215.html">
-          <img src="/includes/templates/sese-bootstrap/img/carousel/2019-catalog.jpg" alt="Request our 2019 catalog" />
+        <a href="/free-2020-catalog-and-garden-guide-p-2209.html">
+          <img src="/includes/templates/sese-bootstrap/img/carousel/catalog-greens.jpg" alt="Request our 2020 catalog" />
         </a>
       </div>
 <div class="item">
-        <a href="/-ezp-223.html">
-          <img data-src="includes/templates/sese-bootstrap/img/carousel/summer-planting-weeding-beets.jpg" alt="Crops to Plant in Summer for an Extended Harvest" />
+        <a href="/more-seedsaving-supplies-c-236_238.html?zenid=lvHGLdJZ31EkpaXJfhw223">
+          <img data-src="includes/templates/sese-bootstrap/img/carousel/screens-valerian.jpg" alt="Supplies for Saving Seeds" />
         </a>
       </div>
     </div>
